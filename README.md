@@ -1,11 +1,5 @@
-The Spacing axis
+The Spacing Axis
 ================
-
-The spacing axis is different from tracking:
-
-- Tracking is the mechanical addition/subtraction of equal space to each glyph.
-- The spacing axis is proportional to the side-bearings of each glyph.
-
 
 Resources
 ---------
@@ -14,42 +8,32 @@ Resources
 - [discussion of the proposal](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/issues/11)
 - [discussion on TypeDrawers](https://typedrawers.com/discussion/2088/otvar-spacing-axis)
 
-
-
-
 - - -
 
-
-
-
-
-
-
+Development notes
+-----------------
 
 The spacing axis employs OpenType variation technology to provide a better tracking mechanism for fonts.
 
-Tracking functionality provided by apps apply the same number of units to all glyphs in the font. The tracking axis 
+The spacing axis is used to collapse sidebearings until glyphs are almost touching.
 
+The glyph margins correspond to the max value, `SPAC` guides indicate the minimal ‘collapsed’ value.
 
-The tracking axis is used to collapse sidebearings
+first experimental implementation: [Publica](http://fonts.hipertipo.com/publica/test/)
 
-
-- glyph margins indicate the max value, TRAC guides indicate the min value
-
-
-# vertical guidelines
+### Implementation details
 
 - glyphs should contain two vertical guidelines to the left and right side of the glyph box
-- both guidelines should be named 'TRAC'
+- both guidelines should be named 'SPAC'
 
+### Appending guidelines
 
+A Python script is used to create vertical guidelines at a distance `D` to the left and right of the glyph box, or twice this distance if the glyph has no contours.
 
+### Generating spacing masters
 
+...
 
+### Kerning spacing masters
 
-append Guidelines script
-
-vertical guidelines placed at a distance D to the left and right of the glyph shape, or twice this distance if the glyph has no contours
-
-
-
+...
