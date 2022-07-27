@@ -17,17 +17,16 @@ Development notes
 
 First experimental implementation: [Publica](http://fonts.hipertipo.com/publica/test/) (grotesk sans)
 
-- spacing axis is used to collapse sidebearings until glyphs are almost touching
-- glyph margins correspond to the maximum value, `SPAC` guides indicate the minimum ‘collapsed’ value
-
 ### Implementation details
 
+- spacing axis is used to collapse sidebearings until glyphs are almost touching
 - glyphs contain two vertical guidelines to the left and right side of the glyph box
-- both guidelines are named `SPAC`
+- both guidelines must be named `SPAC`
+- glyph margins correspond to the maximum value, `SPAC` guides indicate the minimum ‘collapsed’ value
 
 ### Appending guidelines
 
-A Python script is used to create vertical guidelines at a distance `D` to the left and right of the glyph box, or twice this distance if the glyph has no contours.
+A [Python script](_py/append-guides.py) is used to create vertical guidelines at a distance `D` to the left and right of the glyph box, or twice this distance if the glyph has no contours.
 
 ### Generating spacing masters
 
