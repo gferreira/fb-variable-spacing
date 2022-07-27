@@ -1,6 +1,9 @@
 The Spacing Axis
 ================
 
+The spacing axis employs OpenType variation technology to provide a better tracking mechanism for fonts.
+
+
 Resources
 ---------
 
@@ -8,23 +11,19 @@ Resources
 - [discussion of the proposal](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/issues/11)
 - [discussion on TypeDrawers](https://typedrawers.com/discussion/2088/otvar-spacing-axis)
 
-- - -
 
 Development notes
 -----------------
 
-The spacing axis employs OpenType variation technology to provide a better tracking mechanism for fonts.
+First experimental implementation: [Publica](http://fonts.hipertipo.com/publica/test/) (grotesk sans)
 
-The spacing axis is used to collapse sidebearings until glyphs are almost touching.
-
-The glyph margins correspond to the max value, `SPAC` guides indicate the minimal ‘collapsed’ value.
-
-first experimental implementation: [Publica](http://fonts.hipertipo.com/publica/test/)
+- spacing axis is used to collapse sidebearings until glyphs are almost touching
+- glyph margins correspond to the maximum value, `SPAC` guides indicate the minimum ‘collapsed’ value
 
 ### Implementation details
 
-- glyphs should contain two vertical guidelines to the left and right side of the glyph box
-- both guidelines should be named 'SPAC'
+- glyphs contain two vertical guidelines to the left and right side of the glyph box
+- both guidelines are named `SPAC`
 
 ### Appending guidelines
 
