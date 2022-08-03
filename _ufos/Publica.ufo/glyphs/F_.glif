@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="F" format="2">
+  <advance width="391"/>
+  <unicode hex="0046"/>
+  <anchor x="195" y="523" name="top"/>
+  <outline>
+    <contour>
+      <point x="46" y="546" type="line"/>
+      <point x="381" y="546" type="line" identifier="eIS8fJ8v7D"/>
+      <point x="381" y="605" type="line"/>
+      <point x="10" y="605" type="line"/>
+      <point x="10" y="1" type="line"/>
+      <point x="80" y="1" type="line"/>
+      <point x="80" y="577" type="line" identifier="6V4VA1aoKD"/>
+    </contour>
+    <contour>
+      <point x="41" y="340" type="line"/>
+      <point x="41" y="281" type="line"/>
+      <point x="361" y="281" type="line"/>
+      <point x="361" y="340" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>eIS8fJ8v7D</string>
+          <string>6V4VA1aoKD</string>
+        </array>
+      </array>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/515A.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

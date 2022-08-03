@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="b" format="2">
+  <advance width="419"/>
+  <unicode hex="0062"/>
+  <anchor x="210" y="515" name="top"/>
+  <outline>
+    <contour>
+      <point x="409" y="236" type="curve" smooth="yes"/>
+      <point x="409" y="396"/>
+      <point x="351" y="475"/>
+      <point x="227" y="475" type="curve" smooth="yes"/>
+      <point x="140" y="475"/>
+      <point x="78" y="428"/>
+      <point x="64" y="329" type="curve"/>
+      <point x="80" y="329" type="line"/>
+      <point x="80" y="675" type="line"/>
+      <point x="10" y="675" type="line"/>
+      <point x="10" y="0" type="line"/>
+      <point x="80" y="0" type="line"/>
+      <point x="80" y="127" type="line"/>
+      <point x="64" y="127" type="line"/>
+      <point x="72" y="25"/>
+      <point x="151" y="-10"/>
+      <point x="222" y="-10" type="curve" smooth="yes"/>
+      <point x="348" y="-10"/>
+      <point x="409" y="72"/>
+    </contour>
+    <contour>
+      <point x="337" y="234" type="curve" smooth="yes"/>
+      <point x="337" y="94"/>
+      <point x="294" y="42"/>
+      <point x="212" y="42" type="curve" smooth="yes"/>
+      <point x="128" y="42"/>
+      <point x="80" y="94"/>
+      <point x="80" y="229" type="curve" smooth="yes"/>
+      <point x="80" y="368"/>
+      <point x="127" y="420"/>
+      <point x="215" y="420" type="curve" smooth="yes"/>
+      <point x="298" y="420"/>
+      <point x="337" y="366"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/515A.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

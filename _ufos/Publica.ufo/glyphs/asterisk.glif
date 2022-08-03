@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="asterisk" format="2">
+  <advance width="336"/>
+  <unicode hex="002A"/>
+  <outline>
+    <contour>
+      <point x="192" y="545" type="line"/>
+      <point x="195" y="685" type="line" identifier="ObESNQDXnn"/>
+      <point x="142" y="685" type="line" identifier="tld0Fzb48f"/>
+      <point x="145" y="543" type="line"/>
+      <point x="158" y="550" type="line"/>
+      <point x="28" y="603" type="line" identifier="C6LzypZL0H"/>
+      <point x="10" y="549" type="line" identifier="012Pb8FdcB"/>
+      <point x="145" y="511" type="line"/>
+      <point x="139" y="522" type="line"/>
+      <point x="51" y="407" type="line" identifier="nvC1Z1FTXT"/>
+      <point x="98" y="377" type="line"/>
+      <point x="177" y="503" type="line"/>
+      <point x="161" y="503" type="line"/>
+      <point x="235" y="376" type="line"/>
+      <point x="282" y="406" type="line" identifier="pyrPLTtqwf"/>
+      <point x="196" y="522" type="line"/>
+      <point x="190" y="511" type="line"/>
+      <point x="326" y="549" type="line" identifier="Yiehyk2Xwd"/>
+      <point x="308" y="602" type="line" identifier="8Wfjk58h5n"/>
+      <point x="178" y="550" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>ObESNQDXnn</string>
+          <string>8Wfjk58h5n</string>
+        </array>
+        <array>
+          <string>tld0Fzb48f</string>
+          <string>C6LzypZL0H</string>
+        </array>
+        <array>
+          <string>012Pb8FdcB</string>
+          <string>nvC1Z1FTXT</string>
+        </array>
+        <array>
+          <string>pyrPLTtqwf</string>
+          <string>Yiehyk2Xwd</string>
+        </array>
+      </array>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/515A.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zero" format="2">
+  <advance width="448"/>
+  <outline>
+    <contour>
+      <point x="365" y="303" type="curve" smooth="yes" identifier="HWUfvAtdpV"/>
+      <point x="365" y="114"/>
+      <point x="309" y="49"/>
+      <point x="224" y="49" type="curve" smooth="yes" identifier="7RMOTEpiEm"/>
+      <point x="136" y="49"/>
+      <point x="84" y="116"/>
+      <point x="84" y="303" type="curve" smooth="yes" identifier="c6UtGIrppP"/>
+      <point x="84" y="498"/>
+      <point x="135" y="557"/>
+      <point x="226" y="557" type="curve" smooth="yes" identifier="nTwCKFYDf7"/>
+      <point x="311" y="557"/>
+      <point x="365" y="499"/>
+    </contour>
+    <contour>
+      <point x="438" y="303" type="curve" smooth="yes" identifier="FDO260Jc5i"/>
+      <point x="438" y="546"/>
+      <point x="342" y="615"/>
+      <point x="226" y="615" type="curve" smooth="yes" identifier="YdnFQWCm0r"/>
+      <point x="104" y="615"/>
+      <point x="10" y="546"/>
+      <point x="10" y="303" type="curve" smooth="yes" identifier="kNhbVaEv5l"/>
+      <point x="10" y="70"/>
+      <point x="104" y="-10"/>
+      <point x="223" y="-10" type="curve" smooth="yes" identifier="IjT9E9CNEg"/>
+      <point x="342" y="-10"/>
+      <point x="438" y="70"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>nTwCKFYDf7</string>
+          <string>YdnFQWCm0r</string>
+        </array>
+        <array>
+          <string>7RMOTEpiEm</string>
+          <string>IjT9E9CNEg</string>
+        </array>
+        <array>
+          <string>c6UtGIrppP</string>
+          <string>kNhbVaEv5l</string>
+        </array>
+        <array>
+          <string>HWUfvAtdpV</string>
+          <string>FDO260Jc5i</string>
+        </array>
+      </array>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

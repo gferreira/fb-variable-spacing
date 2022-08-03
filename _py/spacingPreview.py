@@ -38,9 +38,9 @@ def factorySpacing(glyph, color1=(0.5, 0, 1, 0.5), color2=(0, 1, 0.5, 0.5), yMin
     G.setParameters(glyphParameters)
     return G
 
-# --------------
-# dialog objects
-# --------------
+# -------
+# objects
+# -------
 
 class PreviewSpacing(hDialog, BaseWindowController):
 

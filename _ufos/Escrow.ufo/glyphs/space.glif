@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="space" format="2">
+  <advance width="243"/>
+  <unicode hex="0020"/>
+  <outline>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz48_wdth100_wght400.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>1,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

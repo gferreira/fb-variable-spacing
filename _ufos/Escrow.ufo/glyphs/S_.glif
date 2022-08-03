@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="S" format="2">
+  <advance width="623"/>
+  <unicode hex="0053"/>
+  <outline>
+    <contour>
+      <point x="350" y="-12" type="curve" smooth="yes"/>
+      <point x="247" y="-12"/>
+      <point x="202" y="53"/>
+      <point x="174" y="53" type="curve" smooth="yes"/>
+      <point x="154" y="53"/>
+      <point x="125" y="31"/>
+      <point x="105" y="0" type="curve"/>
+      <point x="88" y="0" type="line"/>
+      <point x="88" y="225" type="line"/>
+      <point x="105" y="225" type="line"/>
+      <point x="144" y="104"/>
+      <point x="249" y="13"/>
+      <point x="347" y="13" type="curve" smooth="yes"/>
+      <point x="434" y="13"/>
+      <point x="485" y="63"/>
+      <point x="485" y="146" type="curve" smooth="yes"/>
+      <point x="485" y="228"/>
+      <point x="438" y="268"/>
+      <point x="304" y="299" type="curve" smooth="yes"/>
+      <point x="145" y="336"/>
+      <point x="91" y="388"/>
+      <point x="91" y="507" type="curve" smooth="yes"/>
+      <point x="91" y="619"/>
+      <point x="181" y="702"/>
+      <point x="302" y="702" type="curve" smooth="yes"/>
+      <point x="394" y="702"/>
+      <point x="423" y="651"/>
+      <point x="458" y="651" type="curve" smooth="yes"/>
+      <point x="477" y="651"/>
+      <point x="495" y="664"/>
+      <point x="514" y="693" type="curve"/>
+      <point x="526" y="693" type="line"/>
+      <point x="526" y="489" type="line"/>
+      <point x="509" y="489" type="line"/>
+      <point x="466" y="606"/>
+      <point x="389" y="677"/>
+      <point x="306" y="677" type="curve" smooth="yes"/>
+      <point x="225" y="677"/>
+      <point x="174" y="631"/>
+      <point x="174" y="556" type="curve" smooth="yes"/>
+      <point x="174" y="481"/>
+      <point x="221" y="445"/>
+      <point x="357" y="415" type="curve" smooth="yes"/>
+      <point x="508" y="382"/>
+      <point x="568" y="318"/>
+      <point x="568" y="192" type="curve" smooth="yes"/>
+      <point x="568" y="75"/>
+      <point x="476" y="-12"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz48_wdth100_wght400.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>
