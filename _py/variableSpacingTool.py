@@ -1,3 +1,4 @@
+import os, shutil
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
@@ -105,7 +106,13 @@ def loadSpacingFromLib(font, spacingKey, name):
         glyph.width = font.lib[spacingKey][name][glyphName]['width']
 
 def loadKerningFromLib(font, kerningKey, name):
-    pass
+    if not kerningKey in font.lib:
+        return
+    if not name in font.lib[kerningKey]:
+        return
+    font.kerning.clear()
+    kerningDict = {(g1, g2): value for g1, g2, value in font.lib[kerningKey][name]}
+    font.kerning.update(kerningDict)
 
 # reading
 
@@ -172,8 +179,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
     verbose    = True
 
     def __init__(self):
-        self.height  = self.textHeight*9
-        self.height += self.padding*7
+        self.height  = self.textHeight*10
+        self.height += self.padding*8
         self.w = FloatingWindow((self.width, self.height), "spacing")
 
         x = y = p = self.padding
@@ -189,7 +196,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             allowsEmptySelection=False,
             allowsMultipleSelection=False,
             enableDelete=True,
-            editCallback=self.editStateNameCallback,
+            # editCallback=self.editStateNameCallback,
             drawFocusRing=False,
             selectionCallback=self.updatePreviewCallback)
 
@@ -198,7 +205,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             (x,  y, -p, self.textHeight),
             "preview",
             value=True,
-            sizeStyle='small')
+            sizeStyle='small',
+            callback=self.updatePreviewCallback)
 
         y += self.textHeight + p
         self.w.newState = Button(
@@ -226,6 +234,13 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             (x, y, -p, self.textHeight),
             'delete',
             callback=self.deleteStateCallback,
+            sizeStyle='small')
+
+        y += self.textHeight + p
+        self.w.generateState = Button(
+            (x, y, -p, self.textHeight),
+            'generate',
+            callback=self.generateStateCallback,
             sizeStyle='small')
 
         self.setUpBaseWindowBehavior()
@@ -268,11 +283,13 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if self.verbose:
             print('creating new spacing state...', end=' ')
 
-        if len(self.w.statesList.get()) == 0:
+        statesList = self.w.statesList.get()
+
+        if len(statesList) == 0:
             newStateName = 'default'
-        elif 'default' in self.spacingLib and 'tight' not in self.spacingLib:
+        elif 'default' in statesList and 'tight' not in statesList:
             newStateName = 'tight'
-        elif 'default' in self.spacingLib and 'tight' in self.spacingLib:
+        elif 'default' in statesList and 'tight' in statesList:
             newStateName = 'loose'
         else:
             newStateName = 'new state'
@@ -289,6 +306,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
     def loadStateCallback(self, sender):
         print(f'loading spacing state {self.currentState}...', end=' ')
         loadSpacingFromLib(self.font, self.spacingKey, self.currentState)
+        loadKerningFromLib(self.font, self.kerningKey, self.currentState)
         print('done.\n')
 
     def saveStateCallback(self, sender):
@@ -301,29 +319,29 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if self.verbose:
             print('done.\n')
 
-    def editStateNameCallback(self, sender):
-        itemsBefore  = set(self.spacingLib.keys())
-        itemsAfter   = set(self.w.statesList.get())
-        oldName = list(itemsBefore.difference(itemsAfter))
-        if not len(oldName):
-            return
-        oldName = oldName[0]
-        newName = self.currentState
-        if newName is None:
-            return
-        if oldName == newName:
-            return
-        if newName in self.spacingLib:
-            print('ERROR: please use unique names for spacing states\n')
-            return 
-        if self.verbose:
-            print("renaming spacing state '{oldName}' to '{newName}...", end=' ')
-        self.spacingLib[newName] = self.spacingLib[oldName]
-        del self.spacingLib[oldName]
-        # print(self.font.lib.keys())
-        # self.font.lib[self.spacingKey][newName] = self.font.lib[self.spacingKey][oldName]
-        # del self.font.lib[self.spacingKey][oldName]
-        # print(self.font.lib.keys())
+    # def editStateNameCallback(self, sender):
+    #     itemsBefore  = set(self.spacingLib.keys())
+    #     itemsAfter   = set(self.w.statesList.get())
+    #     oldName = list(itemsBefore.difference(itemsAfter))
+    #     if not len(oldName):
+    #         return
+    #     oldName = oldName[0]
+    #     newName = self.currentState
+    #     if newName is None:
+    #         return
+    #     if oldName == newName:
+    #         return
+    #     if newName in self.spacingLib:
+    #         print('ERROR: please use unique names for spacing states\n')
+    #         return 
+    #     if self.verbose:
+    #         print("renaming spacing state '{oldName}' to '{newName}...", end=' ')
+    #     self.spacingLib[newName] = self.spacingLib[oldName]
+    #     del self.spacingLib[oldName]
+    #     # print(self.font.lib.keys())
+    #     # self.font.lib[self.spacingKey][newName] = self.font.lib[self.spacingKey][oldName]
+    #     # del self.font.lib[self.spacingKey][oldName]
+    #     # print(self.font.lib.keys())
 
     def deleteStateCallback(self, sender):
         if self.font is None:
@@ -338,6 +356,22 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         self.loadFontStates()
         if self.verbose:
             print('done.\n')
+
+    def generateStateCallback(self, sender):
+        if self.font is None:
+            return
+        if self.verbose:
+            print(f"generate source with spacing state '{self.currentState}'...")
+        ufoPathSrc = self.font.path
+        ufoPathDst = ufoPathSrc.replace('.ufo', f'_{self.currentState}.ufo')
+        if os.path.exists(ufoPathDst):
+            shutil.rmtree(ufoPathDst)
+        shutil.copytree(ufoPathSrc, ufoPathDst)
+        
+        dstFont = OpenFont(ufoPathDst, showInterface=False)
+        loadSpacingFromLib(dstFont, self.spacingKey, self.currentState)
+        loadKerningFromLib(dstFont, self.kerningKey, self.currentState)
+        dstFont.openInterface()
 
     def windowCloseCallback(self, sender):
         removeObserver(self, "drawBackground")

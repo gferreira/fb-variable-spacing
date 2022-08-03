@@ -1,21 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="grave" format="2">
-  <advance width="219"/>
+  <advance width="404"/>
   <unicode hex="0060"/>
   <outline>
     <contour>
-      <point x="147" y="522" type="line"/>
-      <point x="209" y="522" type="line"/>
-      <point x="209" y="523" type="line"/>
-      <point x="109" y="655" type="line"/>
-      <point x="10" y="655" type="line"/>
-      <point x="10" y="654" type="line"/>
+      <point x="240" y="522" type="line"/>
+      <point x="302" y="522" type="line"/>
+      <point x="302" y="523" type="line"/>
+      <point x="202" y="655" type="line"/>
+      <point x="103" y="655" type="line"/>
+      <point x="103" y="654" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0,0.5</string>
-    </dict>
-  </lib>
 </glyph>

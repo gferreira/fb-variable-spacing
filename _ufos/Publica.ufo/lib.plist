@@ -2918,67 +2918,67 @@
         <array>
           <string>B</string>
           <string>J</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>B</string>
           <string>T</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>B</string>
           <string>X</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>B</string>
           <string>backslash</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>B</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>B</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>B</string>
           <string>f</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>g.alt</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>parenright</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>public.kern2.A</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>public.kern2.O</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>public.kern2.V</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>B</string>
-          <string>public.kern2.Y</string>
+          <string>g.alt</string>
           <integer>-40</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>parenright</string>
+          <integer>-130</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.A</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.O</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.V</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.Y</string>
+          <integer>-90</integer>
         </array>
         <array>
           <string>B</string>
@@ -2988,47 +2988,47 @@
         <array>
           <string>B</string>
           <string>public.kern2.o</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>B</string>
           <string>public.kern2.quoteright</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>public.kern2.v</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>question</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>B</string>
-          <string>questiondown</string>
           <integer>-40</integer>
         </array>
         <array>
           <string>B</string>
+          <string>public.kern2.v</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>question</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>questiondown</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>B</string>
           <string>slash</string>
-          <integer>-60</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>B</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>B</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>F</string>
           <string>J</string>
-          <integer>-95</integer>
+          <integer>-185</integer>
         </array>
         <array>
           <string>F</string>
@@ -3038,22 +3038,22 @@
         <array>
           <string>F</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>F</string>
           <string>g.alt</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.A</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.O</string>
-          <integer>-10</integer>
+          <integer>-15</integer>
         </array>
         <array>
           <string>F</string>
@@ -3063,17 +3063,17 @@
         <array>
           <string>F</string>
           <string>public.kern2.Y</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.Z</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.a</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>F</string>
@@ -3083,22 +3083,22 @@
         <array>
           <string>F</string>
           <string>public.kern2.o</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.period</string>
-          <integer>-50</integer>
+          <integer>-200</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.s</string>
-          <integer>-25</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>F</string>
@@ -3108,52 +3108,52 @@
         <array>
           <string>F</string>
           <string>questiondown</string>
-          <integer>-60</integer>
+          <integer>-180</integer>
         </array>
         <array>
           <string>F</string>
           <string>slash</string>
-          <integer>-80</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>F</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>F</string>
           <string>underscore</string>
-          <integer>-90</integer>
+          <integer>-230</integer>
         </array>
         <array>
           <string>F</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>G</string>
           <string>J</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>G</string>
           <string>T</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>G</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>G</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>G</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>G</string>
@@ -3163,17 +3163,17 @@
         <array>
           <string>G</string>
           <string>parenright</string>
-          <integer>-20</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>G</string>
           <string>public.kern2.V</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>G</string>
           <string>public.kern2.Y</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>G</string>
@@ -3198,7 +3198,7 @@
         <array>
           <string>G</string>
           <string>question</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>G</string>
@@ -3223,37 +3223,37 @@
         <array>
           <string>J</string>
           <string>questiondown</string>
-          <integer>-40</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>J</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>J</string>
           <string>underscore</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>J</string>
           <string>x</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L</string>
           <string>J</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L</string>
           <string>T</string>
-          <integer>-90</integer>
+          <integer>-145</integer>
         </array>
         <array>
           <string>L</string>
           <string>X</string>
-          <integer>-30</integer>
+          <integer>-15</integer>
         </array>
         <array>
           <string>L</string>
@@ -3263,37 +3263,37 @@
         <array>
           <string>L</string>
           <string>backslash</string>
-          <integer>-60</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>L</string>
           <string>braceright</string>
-          <integer>-25</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>L</string>
           <string>bracketright</string>
-          <integer>-25</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>L</string>
           <string>f</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>L</string>
           <string>g.alt</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>L</string>
-          <string>parenright</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>L</string>
+          <string>parenright</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>L</string>
           <string>periodcentered</string>
-          <integer>-40</integer>
+          <integer>-200</integer>
         </array>
         <array>
           <string>L</string>
@@ -3313,12 +3313,12 @@
         <array>
           <string>L</string>
           <string>public.kern2.V</string>
-          <integer>-70</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>L</string>
           <string>public.kern2.Y</string>
-          <integer>-80</integer>
+          <integer>-180</integer>
         </array>
         <array>
           <string>L</string>
@@ -3333,7 +3333,7 @@
         <array>
           <string>L</string>
           <string>public.kern2.hyphen</string>
-          <integer>-40</integer>
+          <integer>-245</integer>
         </array>
         <array>
           <string>L</string>
@@ -3343,27 +3343,27 @@
         <array>
           <string>L</string>
           <string>public.kern2.o</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>L</string>
-          <string>public.kern2.quoteleft</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>L</string>
-          <string>public.kern2.quoteright</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>L</string>
-          <string>public.kern2.s</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>L</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-220</integer>
+        </array>
+        <array>
+          <string>L</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-215</integer>
+        </array>
+        <array>
+          <string>L</string>
+          <string>public.kern2.s</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>L</string>
           <string>public.kern2.v</string>
-          <integer>-80</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>L</string>
@@ -3373,7 +3373,7 @@
         <array>
           <string>L</string>
           <string>question</string>
-          <integer>-70</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>L</string>
@@ -3383,32 +3383,32 @@
         <array>
           <string>L</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>L</string>
           <string>t</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>L</string>
           <string>x</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>J</string>
-          <integer>-100</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>T</string>
           <integer>-10</integer>
         </array>
         <array>
           <string>P</string>
+          <string>J</string>
+          <integer>-155</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>T</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>P</string>
           <string>X</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>P</string>
@@ -3418,17 +3418,17 @@
         <array>
           <string>P</string>
           <string>backslash</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>P</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>P</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>P</string>
@@ -3443,197 +3443,197 @@
         <array>
           <string>P</string>
           <string>parenright</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.A</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.O</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.V</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.Y</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.Z</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.a</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.h</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.n</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.o</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.period</string>
-          <integer>-70</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.s</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.v</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>public.kern2.z</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>questiondown</string>
-          <integer>-80</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>slash</string>
-          <integer>-90</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>t</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>P</string>
-          <string>underscore</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>P</string>
-          <string>x</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>J</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>T</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>X</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>backslash</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>braceright</string>
-          <integer>-15</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>bracketright</string>
-          <integer>-15</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>f</string>
-          <integer>0</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>g.alt</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>parenright</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
-          <string>periodcentered</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>R</string>
           <string>public.kern2.A</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
-          <string>R</string>
+          <string>P</string>
           <string>public.kern2.O</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
-          <string>R</string>
-          <string>public.kern2.S</string>
-          <integer>-15</integer>
-        </array>
-        <array>
-          <string>R</string>
+          <string>P</string>
           <string>public.kern2.V</string>
-          <integer>-15</integer>
+          <integer>-50</integer>
         </array>
         <array>
-          <string>R</string>
+          <string>P</string>
           <string>public.kern2.Y</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
-          <string>R</string>
+          <string>P</string>
           <string>public.kern2.Z</string>
-          <integer>-15</integer>
+          <integer>-40</integer>
         </array>
         <array>
-          <string>R</string>
+          <string>P</string>
           <string>public.kern2.a</string>
           <integer>-30</integer>
         </array>
         <array>
+          <string>P</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.n</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.o</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.period</string>
+          <integer>-200</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.s</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.v</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>questiondown</string>
+          <integer>-160</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>slash</string>
+          <integer>-170</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>t</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>underscore</string>
+          <integer>-240</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>x</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>J</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>T</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>X</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>backslash</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>braceright</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>bracketright</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>g.alt</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>parenright</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>periodcentered</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.A</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.O</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.S</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.V</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.Y</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.Z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.a</string>
+          <integer>-20</integer>
+        </array>
+        <array>
           <string>R</string>
           <string>public.kern2.o</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>R</string>
           <string>public.kern2.s</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>R</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>R</string>
@@ -3643,32 +3643,32 @@
         <array>
           <string>R</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>R</string>
           <string>t</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>R</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>T</string>
           <string>J</string>
-          <integer>-70</integer>
+          <integer>-161</integer>
         </array>
         <array>
           <string>T</string>
           <string>T</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>T</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-53</integer>
         </array>
         <array>
           <string>T</string>
@@ -3678,32 +3678,32 @@
         <array>
           <string>T</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>T</string>
           <string>g.alt</string>
-          <integer>-50</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>T</string>
           <string>periodcentered</string>
-          <integer>-50</integer>
+          <integer>-170</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.A</string>
-          <integer>-60</integer>
+          <integer>-115</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.O</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.S</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>T</string>
@@ -3713,7 +3713,7 @@
         <array>
           <string>T</string>
           <string>public.kern2.Y</string>
-          <integer>-20</integer>
+          <integer>-25</integer>
         </array>
         <array>
           <string>T</string>
@@ -3723,7 +3723,7 @@
         <array>
           <string>T</string>
           <string>public.kern2.a</string>
-          <integer>-60</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>T</string>
@@ -3733,62 +3733,62 @@
         <array>
           <string>T</string>
           <string>public.kern2.hyphen</string>
-          <integer>-50</integer>
+          <integer>-165</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.n</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.o</string>
-          <integer>-60</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.period</string>
-          <integer>-60</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.s</string>
-          <integer>-50</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.v</string>
-          <integer>-30</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>T</string>
           <string>public.kern2.z</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>T</string>
           <string>questiondown</string>
-          <integer>-90</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>T</string>
           <string>slash</string>
-          <integer>-80</integer>
+          <integer>-200</integer>
         </array>
         <array>
           <string>T</string>
           <string>t</string>
-          <integer>-15</integer>
-        </array>
-        <array>
-          <string>T</string>
-          <string>underscore</string>
           <integer>-50</integer>
         </array>
         <array>
           <string>T</string>
+          <string>underscore</string>
+          <integer>-150</integer>
+        </array>
+        <array>
+          <string>T</string>
           <string>x</string>
-          <integer>-40</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>X</string>
@@ -3843,12 +3843,12 @@
         <array>
           <string>Y</string>
           <string>public.kern2.n</string>
-          <integer>-50</integer>
+          <integer>-55</integer>
         </array>
         <array>
           <string>Y</string>
           <string>public.kern2.period</string>
-          <integer>-90</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>Y</string>
@@ -3858,27 +3858,27 @@
         <array>
           <string>f</string>
           <string>f</string>
-          <integer>-40</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>f</string>
           <string>g.alt</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>f</string>
           <string>public.kern2.A</string>
-          <integer>-30</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>f</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>f</string>
           <string>public.kern2.hyphen</string>
-          <integer>-20</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>f</string>
@@ -3888,7 +3888,7 @@
         <array>
           <string>f</string>
           <string>public.kern2.period</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>f</string>
@@ -3908,62 +3908,62 @@
         <array>
           <string>f</string>
           <string>questiondown</string>
-          <integer>-60</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>f</string>
           <string>slash</string>
-          <integer>-40</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>f</string>
           <string>t</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>f</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>f</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>braceright</string>
-          <integer>-10</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>bracketright</string>
-          <integer>-10</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>parenright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>public.kern2.hyphen</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>public.kern2.o</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>g.alt</string>
@@ -3973,22 +3973,22 @@
         <array>
           <string>g.alt</string>
           <string>public.kern2.s</string>
-          <integer>-15</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>questiondown</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>g.alt</string>
           <string>x</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>l.alt</string>
           <string>slash</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>period</string>
@@ -4018,17 +4018,17 @@
         <array>
           <string>public.kern1.A</string>
           <string>J</string>
-          <integer>-20</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>T</string>
-          <integer>-60</integer>
+          <integer>-115</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-85</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -4038,37 +4038,37 @@
         <array>
           <string>public.kern1.A</string>
           <string>backslash</string>
-          <integer>-50</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>f</string>
-          <integer>-25</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>g.alt</string>
-          <integer>-10</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>periodcentered</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -4083,12 +4083,12 @@
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.V</string>
-          <integer>-40</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.Y</string>
-          <integer>-60</integer>
+          <integer>-165</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -4098,22 +4098,22 @@
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.o</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.quoteright</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.s</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.v</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -4123,32 +4123,32 @@
         <array>
           <string>public.kern1.A</string>
           <string>question</string>
-          <integer>-60</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>questiondown</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>slash</string>
-          <integer>-40</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>t</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>J</string>
-          <integer>-30</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -4158,37 +4158,37 @@
         <array>
           <string>public.kern1.C</string>
           <string>X</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>backslash</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>braceright</string>
-          <integer>-15</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>bracketright</string>
-          <integer>-15</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>g.alt</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>parenright</string>
-          <integer>-25</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.A</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -4198,12 +4198,12 @@
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.V</string>
-          <integer>-15</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.Y</string>
-          <integer>-20</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -4213,17 +4213,17 @@
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.o</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.s</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -4233,22 +4233,22 @@
         <array>
           <string>public.kern1.C</string>
           <string>questiondown</string>
-          <integer>-50</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>slash</string>
-          <integer>-50</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -4268,27 +4268,27 @@
         <array>
           <string>public.kern1.E</string>
           <string>g.alt</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.V</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.Y</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -4298,7 +4298,7 @@
         <array>
           <string>public.kern1.E</string>
           <string>t</string>
-          <integer>-12</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -4308,7 +4308,7 @@
         <array>
           <string>public.kern1.H</string>
           <string>g.alt</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.H</string>
@@ -4328,12 +4328,12 @@
         <array>
           <string>public.kern1.H</string>
           <string>questiondown</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.H</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.H</string>
@@ -4348,47 +4348,47 @@
         <array>
           <string>public.kern1.O</string>
           <string>T</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>X</string>
           <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
+          <string>X</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
           <string>backslash</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
           <string>g.alt</string>
-          <integer>-15</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>parenright</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>public.kern2.A</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>public.kern2.V</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
+          <string>parenright</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.A</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.V</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
           <string>public.kern2.Y</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
           <string>public.kern2.a</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
@@ -4408,97 +4408,97 @@
         <array>
           <string>public.kern1.O</string>
           <string>public.kern2.s</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
           <string>public.kern2.z</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
           <string>question</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>questiondown</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>slash</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>t</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>public.kern1.O</string>
-          <string>underscore</string>
           <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
-          <string>x</string>
-          <integer>-30</integer>
+          <string>questiondown</string>
+          <integer>-120</integer>
         </array>
         <array>
-          <string>public.kern1.S</string>
-          <string>J</string>
-          <integer>-30</integer>
+          <string>public.kern1.O</string>
+          <string>slash</string>
+          <integer>-130</integer>
         </array>
         <array>
-          <string>public.kern1.S</string>
-          <string>T</string>
+          <string>public.kern1.O</string>
+          <string>t</string>
           <integer>-20</integer>
         </array>
         <array>
-          <string>public.kern1.S</string>
-          <string>X</string>
+          <string>public.kern1.O</string>
+          <string>underscore</string>
+          <integer>-170</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>x</string>
           <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
+          <string>J</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>T</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>X</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>g.alt</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>public.kern1.S</string>
-          <string>parenright</string>
-          <integer>-35</integer>
-        </array>
-        <array>
-          <string>public.kern1.S</string>
-          <string>public.kern2.A</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
+          <string>parenright</string>
+          <integer>-110</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>public.kern2.A</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
           <string>public.kern2.O</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
@@ -4508,22 +4508,22 @@
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.V</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.Y</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.Z</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
@@ -4533,42 +4533,42 @@
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.v</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.z</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>questiondown</string>
-          <integer>-40</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>t</string>
-          <integer>-15</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>underscore</string>
-          <integer>-20</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
           <string>J</string>
-          <integer>-65</integer>
+          <integer>-125</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
@@ -4578,7 +4578,7 @@
         <array>
           <string>public.kern1.V</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
@@ -4588,217 +4588,217 @@
         <array>
           <string>public.kern1.V</string>
           <string>f</string>
-          <integer>-10</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
           <string>g.alt</string>
-          <integer>-40</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
           <string>periodcentered</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.A</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.O</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.S</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.V</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.Y</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.Z</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.a</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.h</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.hyphen</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.n</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.o</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.period</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.s</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.v</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>public.kern2.z</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>questiondown</string>
           <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.V</string>
-          <string>slash</string>
-          <integer>-90</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>t</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>underscore</string>
-          <integer>-60</integer>
-        </array>
-        <array>
-          <string>public.kern1.V</string>
-          <string>x</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>J</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>T</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>X</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>braceright</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>bracketright</string>
-          <integer>-10</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>f</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>g.alt</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>parenright</string>
-          <integer>-25</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
-          <string>periodcentered</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.X</string>
           <string>public.kern2.A</string>
-          <integer>-30</integer>
+          <integer>-120</integer>
         </array>
         <array>
-          <string>public.kern1.X</string>
+          <string>public.kern1.V</string>
           <string>public.kern2.O</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
-          <string>public.kern1.X</string>
+          <string>public.kern1.V</string>
           <string>public.kern2.S</string>
-          <integer>-35</integer>
+          <integer>-70</integer>
         </array>
         <array>
-          <string>public.kern1.X</string>
+          <string>public.kern1.V</string>
           <string>public.kern2.V</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
-          <string>public.kern1.X</string>
+          <string>public.kern1.V</string>
           <string>public.kern2.Y</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
-          <string>public.kern1.X</string>
+          <string>public.kern1.V</string>
           <string>public.kern2.Z</string>
           <integer>-20</integer>
         </array>
         <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.a</string>
+          <integer>-85</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.h</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.n</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.o</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.period</string>
+          <integer>-130</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.s</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.v</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.z</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>questiondown</string>
+          <integer>-170</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>slash</string>
+          <integer>-180</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>t</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>underscore</string>
+          <integer>-140</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>x</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>J</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>T</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>X</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>braceright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>bracketright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>f</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>g.alt</string>
+          <integer>-55</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>parenright</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>periodcentered</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.A</string>
+          <integer>-35</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.O</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.S</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.V</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.Y</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.Z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
           <string>public.kern1.X</string>
           <string>public.kern2.a</string>
-          <integer>-40</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.h</string>
-          <integer>-15</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.hyphen</string>
-          <integer>-40</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.n</string>
-          <integer>-20</integer>
+          <integer>0</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.o</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
@@ -4808,112 +4808,112 @@
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.s</string>
-          <integer>-40</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.v</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>public.kern2.z</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>question</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>slash</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>t</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.X</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>J</string>
-          <integer>-90</integer>
+          <integer>-175</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>T</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>X</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>colon</string>
-          <integer>-30</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>g.alt</string>
-          <integer>-40</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>parenright</string>
-          <integer>-15</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>periodcentered</string>
-          <integer>-50</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.A</string>
-          <integer>-70</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.O</string>
-          <integer>-40</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.S</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.V</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.Y</string>
-          <integer>-20</integer>
+          <integer>-35</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.Z</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.a</string>
-          <integer>-70</integer>
+          <integer>-125</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
@@ -4923,67 +4923,67 @@
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.hyphen</string>
-          <integer>-60</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.n</string>
-          <integer>-40</integer>
+          <integer>0</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.o</string>
-          <integer>-80</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.period</string>
-          <integer>-70</integer>
+          <integer>0</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.s</string>
-          <integer>-60</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
           <string>public.kern2.v</string>
-          <integer>-35</integer>
-        </array>
-        <array>
-          <string>public.kern1.Y</string>
-          <string>public.kern2.z</string>
-          <integer>-40</integer>
-        </array>
-        <array>
-          <string>public.kern1.Y</string>
-          <string>questiondown</string>
-          <integer>-80</integer>
-        </array>
-        <array>
-          <string>public.kern1.Y</string>
-          <string>semicolon</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.Y</string>
-          <string>slash</string>
           <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
-          <string>t</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.Y</string>
-          <string>underscore</string>
+          <string>public.kern2.z</string>
           <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
+          <string>questiondown</string>
+          <integer>-180</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>semicolon</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>slash</string>
+          <integer>-210</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>t</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>underscore</string>
+          <integer>-160</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
           <string>x</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
@@ -4998,7 +4998,7 @@
         <array>
           <string>public.kern1.Z</string>
           <string>X</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
@@ -5008,7 +5008,7 @@
         <array>
           <string>public.kern1.Z</string>
           <string>g.alt</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
@@ -5018,7 +5018,7 @@
         <array>
           <string>public.kern1.Z</string>
           <string>public.kern2.O</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
@@ -5028,12 +5028,12 @@
         <array>
           <string>public.kern1.Z</string>
           <string>public.kern2.V</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
           <string>public.kern2.Y</string>
-          <integer>-15</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
@@ -5063,47 +5063,47 @@
         <array>
           <string>public.kern1.Z</string>
           <string>public.kern2.v</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
           <string>t</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.Z</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
@@ -5113,57 +5113,57 @@
         <array>
           <string>public.kern1.a_alt2</string>
           <string>public.kern2.o</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>public.kern2.v</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>question</string>
-          <integer>-35</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>questiondown</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>slash</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.a_alt2</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>backslash</string>
-          <integer>-25</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>braceright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>bracketright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>parenright</string>
-          <integer>-40</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>public.kern2.quoteleft</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
@@ -5173,37 +5173,37 @@
         <array>
           <string>public.kern1.c</string>
           <string>public.kern2.v</string>
-          <integer>-15</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>public.kern2.z</string>
-          <integer>-5</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>question</string>
-          <integer>-30</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>questiondown</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>slash</string>
-          <integer>-20</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>x</string>
-          <integer>-25</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.d</string>
@@ -5213,22 +5213,22 @@
         <array>
           <string>public.kern1.e</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>braceright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>bracketright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
@@ -5238,57 +5238,57 @@
         <array>
           <string>public.kern1.e</string>
           <string>public.kern2.v</string>
-          <integer>-15</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>question</string>
-          <integer>-30</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>questiondown</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>slash</string>
-          <integer>-25</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>backslash</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>parenright</string>
-          <integer>-25</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>question</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
@@ -5298,27 +5298,27 @@
         <array>
           <string>public.kern1.o</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>braceright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>bracketright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>f</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
@@ -5328,82 +5328,82 @@
         <array>
           <string>public.kern1.o</string>
           <string>public.kern2.v</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>question</string>
-          <integer>-30</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>questiondown</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.period</string>
           <string>T</string>
-          <integer>-50</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.period</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-85</integer>
         </array>
         <array>
           <string>public.kern1.period</string>
           <string>public.kern2.V</string>
-          <integer>-50</integer>
+          <integer>-115</integer>
         </array>
         <array>
           <string>public.kern1.period</string>
           <string>public.kern2.Y</string>
-          <integer>-50</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.period</string>
           <string>public.kern2.v</string>
-          <integer>-35</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>braceright</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>bracketright</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
@@ -5428,17 +5428,17 @@
         <array>
           <string>public.kern1.s</string>
           <string>question</string>
-          <integer>-30</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>questiondown</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
@@ -5448,22 +5448,22 @@
         <array>
           <string>public.kern1.s</string>
           <string>underscore</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>T</string>
-          <integer>-20</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>X</string>
-          <integer>-25</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
@@ -5473,32 +5473,32 @@
         <array>
           <string>public.kern1.v</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>parenright</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>periodcentered</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>public.kern2.A</string>
-          <integer>-30</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>public.kern2.Y</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
@@ -5508,22 +5508,22 @@
         <array>
           <string>public.kern1.v</string>
           <string>public.kern2.hyphen</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.v</string>
-          <string>public.kern2.o</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.v</string>
-          <string>public.kern2.period</string>
           <integer>-35</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
+          <string>public.kern2.o</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
+          <string>public.kern2.period</string>
+          <integer>-85</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
           <string>public.kern2.s</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
@@ -5533,17 +5533,17 @@
         <array>
           <string>public.kern1.v</string>
           <string>questiondown</string>
-          <integer>-50</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>slash</string>
-          <integer>-40</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
           <string>underscore</string>
-          <integer>-40</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.v</string>
@@ -5553,52 +5553,52 @@
         <array>
           <string>public.kern1.x</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>braceright</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>bracketright</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>g.alt</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>periodcentered</string>
-          <integer>-40</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>public.kern2.a</string>
-          <integer>-25</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>public.kern2.hyphen</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>public.kern2.o</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
           <string>public.kern2.s</string>
-          <integer>-25</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.x</string>
@@ -5613,27 +5613,27 @@
         <array>
           <string>public.kern1.x</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>parenright</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>periodcentered</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -5643,7 +5643,7 @@
         <array>
           <string>public.kern1.z</string>
           <string>public.kern2.hyphen</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -5653,7 +5653,7 @@
         <array>
           <string>public.kern1.z</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -5663,12 +5663,12 @@
         <array>
           <string>r</string>
           <string>T</string>
-          <integer>-20</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>r</string>
           <string>X</string>
-          <integer>-25</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>r</string>
@@ -5678,27 +5678,27 @@
         <array>
           <string>r</string>
           <string>braceright</string>
-          <integer>-15</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>r</string>
           <string>bracketright</string>
-          <integer>-15</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>r</string>
           <string>parenright</string>
-          <integer>-20</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>r</string>
           <string>public.kern2.A</string>
-          <integer>-25</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>r</string>
           <string>public.kern2.Y</string>
-          <integer>-25</integer>
+          <integer>-85</integer>
         </array>
         <array>
           <string>r</string>
@@ -5708,12 +5708,12 @@
         <array>
           <string>r</string>
           <string>public.kern2.o</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>r</string>
           <string>public.kern2.period</string>
-          <integer>-55</integer>
+          <integer>-105</integer>
         </array>
         <array>
           <string>r</string>
@@ -5733,37 +5733,37 @@
         <array>
           <string>r</string>
           <string>questiondown</string>
-          <integer>-40</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>r</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-150</integer>
         </array>
         <array>
           <string>r</string>
           <string>underscore</string>
-          <integer>-40</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>r</string>
           <string>x</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>t</string>
           <string>backslash</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>t</string>
           <string>braceright</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>t</string>
           <string>bracketright</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>t</string>
@@ -5773,7 +5773,7 @@
         <array>
           <string>t</string>
           <string>parenright</string>
-          <integer>-30</integer>
+          <integer>-75</integer>
         </array>
         <array>
           <string>t</string>
@@ -5798,7 +5798,7 @@
         <array>
           <string>t</string>
           <string>slash</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>t</string>
@@ -5808,6 +5808,1166 @@
         <array>
           <string>t</string>
           <string>x</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.S</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.Z</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.n</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.s</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>underscore</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>backslash</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>colon</string>
+          <integer>-15</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>exclamdown</string>
+          <integer>-14</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>parenright</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>periodcentered</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>public.kern2.S</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>question</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>semicolon</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>backslash</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>public.kern2.A</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>questiondown</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>slash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>G</string>
+          <string>t</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>X</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>g.alt</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>parenright</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>public.kern2.o</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>public.kern2.v</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>colon</string>
+          <integer>-5</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>periodcentered</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.S</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>question</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>P</string>
+          <string>semicolon</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>colon</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>exclam</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>exclamdown</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.n</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.period</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>question</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>questiondown</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>semicolon</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>braceleft</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>colon</string>
+          <integer>-15</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>parenleft</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>parenright</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>question</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>semicolon</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>X</string>
+          <string>public.kern2.n</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>X</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>periodcentered</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>public.kern2.Y</string>
+          <integer>-35</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>braceleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>g.alt</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>periodcentered</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>public.kern2.v</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>question</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>g.alt</string>
+          <string>slash</string>
+          <integer>-35</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>backslash</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>braceleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>braceright</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>bracketright</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>f</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>g.alt</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>parenright</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>periodcentered</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.o</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.s</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>public.kern2.v</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>question</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>questiondown</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>t</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l.alt</string>
+          <string>x</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>parenleft</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>public.kern2.A</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>public.kern2.Z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-55</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>public.kern2.n</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-115</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>public.kern2.S</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>public.kern2.Z</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>question</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>t</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>backslash</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>parenright</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>periodcentered</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>public.kern2.O</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>public.kern2.S</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>public.kern2.s</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>question</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>questiondown</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
+          <string>slash</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.H</string>
+          <string>parenright</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.H</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>braceright</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>bracketright</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.S</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.Z</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>f</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>public.kern2.n</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.S</string>
+          <string>question</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>backslash</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>braceleft</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>colon</string>
+          <integer>-45</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>exclamdown</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>parenleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>parenright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>question</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.V</string>
+          <string>semicolon</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>backslash</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>braceleft</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>colon</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>exclam</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>exclamdown</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>parenleft</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-25</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>questiondown</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.X</string>
+          <string>semicolon</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>braceleft</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>braceright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>bracketright</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>exclamdown</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>parenleft</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>public.kern2.H</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-35</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
+          <string>question</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>backslash</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>braceleft</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>braceright</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>bracketright</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>parenright</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>periodcentered</string>
+          <integer>-130</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-150</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>question</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.Z</string>
+          <string>questiondown</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>braceleft</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>g.alt</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>periodcentered</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>public.kern2.s</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.a_alt2</string>
+          <string>t</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>g.alt</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>public.kern2.o</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>t</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.d</string>
+          <string>parenright</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.d</string>
+          <string>question</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.d</string>
+          <string>slash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>g.alt</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>t</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>T</string>
+          <integer>-165</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>X</string>
+          <integer>-120</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>f</string>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>public.kern2.A</string>
+          <integer>-75</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>public.kern2.Y</string>
+          <integer>-180</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-55</integer>
+        </array>
+        <array>
+          <string>public.kern1.hyphen</string>
+          <string>public.kern2.v</string>
+          <integer>-75</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>public.kern2.v</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>questiondown</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>slash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>colon</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>exclam</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>exclamdown</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>g.alt</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>public.kern2.period</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>public.kern2.quoteright</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>public.kern2.s</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>public.kern2.z</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>semicolon</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.period</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteleft</string>
+          <string>X</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteleft</string>
+          <string>public.kern2.A</string>
+          <integer>-165</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteleft</string>
+          <string>public.kern2.Y</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteleft</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-55</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteleft</string>
+          <string>public.kern2.period</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteright</string>
+          <string>X</string>
+          <integer>-25</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteright</string>
+          <string>f</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteright</string>
+          <string>public.kern2.A</string>
+          <integer>-200</integer>
+        </array>
+        <array>
+          <string>public.kern1.quoteright</string>
+          <string>public.kern2.v</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
+          <string>public.kern2.quoteleft</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
+          <string>backslash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
+          <string>braceleft</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
+          <string>g.alt</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.v</string>
+          <string>question</string>
+          <integer>-110</integer>
+        </array>
+        <array>
+          <string>public.kern1.x</string>
+          <string>braceleft</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.x</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.x</string>
+          <string>question</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>backslash</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>braceleft</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>g.alt</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>question</string>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>questiondown</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>r</string>
+          <string>backslash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>r</string>
+          <string>braceleft</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>r</string>
+          <string>public.kern2.hyphen</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>r</string>
+          <string>question</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>t</string>
+          <string>questiondown</string>
           <integer>-10</integer>
         </array>
       </array>

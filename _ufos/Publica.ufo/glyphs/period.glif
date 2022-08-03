@@ -1,21 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="period" format="2">
-  <advance width="109"/>
+  <advance width="280"/>
   <unicode hex="002E"/>
   <outline>
     <contour>
-      <point x="10" y="0" type="line"/>
-      <point x="99" y="0" type="line"/>
-      <point x="99" y="92" type="line"/>
-      <point x="10" y="92" type="line"/>
+      <point x="96" y="0" type="line"/>
+      <point x="185" y="0" type="line"/>
+      <point x="185" y="92" type="line"/>
+      <point x="96" y="92" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/hipertipo/fonts/Publica/_ufos/515A.ufo/glyphs</string>
-      <key>public.markColor</key>
-      <string>0,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>

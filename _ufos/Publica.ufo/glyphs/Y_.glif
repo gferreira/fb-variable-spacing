@@ -1,26 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Y" format="2">
-  <advance width="520"/>
+  <advance width="597"/>
   <unicode hex="0059"/>
-  <anchor x="259" y="655" name="top"/>
+  <anchor x="298" y="655" name="top"/>
   <outline>
     <contour>
-      <point x="294" y="252" type="line"/>
-      <point x="510" y="605" type="line"/>
-      <point x="431" y="605" type="line"/>
-      <point x="245" y="285" type="line"/>
-      <point x="276" y="285" type="line"/>
-      <point x="89" y="605" type="line"/>
-      <point x="10" y="605" type="line"/>
-      <point x="224" y="252" type="line"/>
-      <point x="224" y="0" type="line"/>
-      <point x="294" y="0" type="line"/>
+      <point x="333" y="252" type="line"/>
+      <point x="549" y="605" type="line"/>
+      <point x="470" y="605" type="line"/>
+      <point x="284" y="285" type="line"/>
+      <point x="315" y="285" type="line"/>
+      <point x="128" y="605" type="line"/>
+      <point x="49" y="605" type="line"/>
+      <point x="263" y="252" type="line"/>
+      <point x="263" y="0" type="line"/>
+      <point x="333" y="0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0,0.5</string>
-    </dict>
-  </lib>
 </glyph>
