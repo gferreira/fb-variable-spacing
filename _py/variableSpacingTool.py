@@ -8,9 +8,7 @@ from hTools3.dialogs import *
 
 '''
 
-# ------------
-# SPACING DICT
-# ------------
+# data format
 
 font.lib[f'{KEY}.spacing'] = {
     'default' : {
@@ -23,11 +21,8 @@ font.lib[f'{KEY}.spacing'] = {
         },
     }
     'tight' : {},
+    'loose' : {},
 }
-
-# ------------
-# KERNING DICT
-# ------------
 
 font.lib[f'{KEY}.kerning'] = {
     'default' : [
@@ -35,13 +30,10 @@ font.lib[f'{KEY}.kerning'] = {
         ('B', 'J', -20),
     ],
     'tight' : [],
+    'loose' : [],
 }
 
 '''
-
-# -------
-# globals
-# -------
 
 KEY = 'com.hipertipo.spacingaxis'
 
@@ -49,15 +41,49 @@ KEY = 'com.hipertipo.spacingaxis'
 # functions
 # ---------
 
-def deleteLib(font, key):
+# reading
+
+def getStatesNames(font, KEY):
     '''
-    Delete top-level lib with the given key from the font.
+    Get the name of all spacing states available in the font.
 
     '''
-    if key in font.lib:
-        del font.lib[key]
+    spacingKey = f'{KEY}.spacing'
+    kerningKey = f'{KEY}.kerning'
 
-# saving
+    spacingLib = []
+    if spacingKey in font.lib:
+        if len(font.lib[spacingKey]):
+            spacingLib += list(font.lib[spacingKey].keys())
+
+    kerningLib = []
+    if kerningKey in font.lib:
+        if len(font.lib[kerningKey]):
+            kerningLib += list(font.lib[kerningKey].keys())
+
+    return list(set(spacingLib + kerningLib))
+
+def getSpacingLib(font, spacingKey):
+    '''
+    Get the spacing lib from a given font.
+
+    '''
+    if spacingKey in font.lib:
+        return font.lib[spacingKey]
+    else:
+        return {}
+
+def getKerningLib(font, kerningKey):
+    '''
+    Get the kerning lib from a given font.
+
+    '''
+    if kerningKey in font.lib:
+        return font.lib[kerningKey]
+    else:
+        return {}
+
+# writing
 
 def saveSpacingToLib(font, spacingKey, name):
     '''
@@ -71,9 +97,11 @@ def saveSpacingToLib(font, spacingKey, name):
         D[glyphName]['width'] = font[glyphName].width
         if font[glyphName].leftMargin is not None:
             D[glyphName]['leftMargin'] = font[glyphName].leftMargin
+
     # store spacing in lib
     if spacingKey not in font.lib:
         font.lib[spacingKey] = {}
+
     font.lib[spacingKey][name] = D
 
 def saveKerningToLib(font, kerningKey, name):
@@ -81,77 +109,61 @@ def saveKerningToLib(font, kerningKey, name):
     Save the font’s kerning values to the font lib.
 
     '''
-    # make kerning dict
+    # make list of kerning pairs
     L = []
     for pair, value in font.kerning.items():
         g1, g2 = pair
-        # pairKey = f'%{g1}%{g2}'
         L.append((g1, g2, value))
+
     # store kerning in lib
     if kerningKey not in font.lib:
         font.lib[kerningKey] = {}
+
     font.lib[kerningKey][name] = L
 
 # loading
 
 def loadSpacingFromLib(font, spacingKey, name):
+    '''
+    Load spacing data for a given state from the lib into the font.
+
+    '''
     if not spacingKey in font.lib:
         return
+
     if not name in font.lib[spacingKey]:
         return
+
     for glyphName in font.lib[spacingKey][name].keys():
         glyph = font[glyphName]
+
         if 'leftMargin' in font.lib[spacingKey][name][glyphName]:
             glyph.leftMargin = font.lib[spacingKey][name][glyphName]['leftMargin']
+
         glyph.width = font.lib[spacingKey][name][glyphName]['width']
 
 def loadKerningFromLib(font, kerningKey, name):
+    '''
+    Load kerning data for a given state from the lib into the font.
+
+    '''
     if not kerningKey in font.lib:
         return
+
     if not name in font.lib[kerningKey]:
         return
+
     font.kerning.clear()
+
     kerningDict = {(g1, g2): value for g1, g2, value in font.lib[kerningKey][name]}
+
     font.kerning.update(kerningDict)
 
-# reading
-
-def getSpacingLib(font, spacingKey):
-    '''
-    Return the spacing lib from a given font.
-
-    '''
-    if spacingKey in font.lib:
-        return font.lib[spacingKey]
-    else:
-        return {}
-
-def getKerningLib(font, kerningKey):
-    '''
-    Return the kerning lib from a given font.
-
-    '''
-    if kerningKey in font.lib:
-        return font.lib[kerningKey]
-    else:
-        return {}
-
-def getLibNames(font, KEY):
-    spacingKey = f'{KEY}.spacing'
-    kerningKey = f'{KEY}.kerning'
-    spacingLib = []
-    kerningLib = []
-    if spacingKey in font.lib:
-        if len(font.lib[spacingKey]):
-            spacingLib += list(font.lib[spacingKey].keys())
-    if kerningKey in font.lib:
-        if len(font.lib[kerningKey]):
-            kerningLib += list(font.lib[kerningKey].keys())
-    return list(set(spacingLib + kerningLib))
+# deleting
 
 def deleteSpacingState(font, KEY, stateName):
     '''
-    Delete a given state from the spacing and kerning libs in a font.
+    Delete a given state from the spacing and kerning libs in the font.
 
     '''
     # delete state from spacing lib
@@ -159,22 +171,32 @@ def deleteSpacingState(font, KEY, stateName):
     if spacingKey in font.lib:
         if stateName in font.lib[spacingKey]:
             del font.lib[spacingKey][stateName]
+
     # delete state from kerning lib
     kerningKey = f'{KEY}.kerning'
     if kerningKey in font.lib:
         if stateName in font.lib[kerningKey]:
             del font.lib[kerningKey][stateName]
 
+def deleteLib(font, key):
+    '''
+    Delete top-level font lib with the given key from the font.
+
+    '''
+    if key in font.lib:
+        del font.lib[key]
+
 # -------
 # objects
 # -------
 
 class VariableSpacingTool(hDialog, BaseWindowController):
+    '''
+    A tool to enable multiple spacing states for the same set of glyph contours.
 
+    '''
     spacingKey = f'{KEY}.spacing'
     kerningKey = f'{KEY}.kerning'
-    spacingLib = {}
-    kerningLib = {}
     font       = None
     verbose    = True
 
@@ -196,7 +218,6 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             allowsEmptySelection=False,
             allowsMultipleSelection=False,
             enableDelete=True,
-            # editCallback=self.editStateNameCallback,
             drawFocusRing=False,
             selectionCallback=self.updatePreviewCallback)
 
@@ -237,10 +258,10 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             sizeStyle='small')
 
         y += self.textHeight + p
-        self.w.generateState = Button(
+        self.w.exportState = Button(
             (x, y, -p, self.textHeight),
-            'generate',
-            callback=self.generateStateCallback,
+            'export',
+            callback=self.exportStateCallback,
             sizeStyle='small')
 
         self.setUpBaseWindowBehavior()
@@ -260,6 +281,10 @@ class VariableSpacingTool(hDialog, BaseWindowController):
 
     @property
     def currentState(self):
+        '''
+        Return the name of the spacing state which is currently selected in the UI.
+
+        '''
         selection = self.w.statesList.getSelection()
         if not selection:
             return
@@ -269,19 +294,17 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             return
         return items[selection]
 
-    @property
-    def synchronize(self):
-        pass
-
     # ---------
     # callbacks
     # ---------
 
     def newStateCallback(self, sender):
+        '''
+        Create a new spacing & kerning state in the current font.
+
+        '''
         if self.font is None:
             return
-        if self.verbose:
-            print('creating new spacing state...', end=' ')
 
         statesList = self.w.statesList.get()
 
@@ -294,95 +317,122 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         else:
             newStateName = 'new state'
 
-        # update UI
-        self.w.statesList.append(newStateName)
+        if self.verbose:
+            print(f"creating new spacing state '{newStateName}'...", end=' ')
 
-        # update internal dicts
+        # add new empty state to font libs
         saveSpacingToLib(self.font, self.spacingKey, newStateName)
         saveKerningToLib(self.font, self.kerningKey, newStateName)
+
+        # update list UI
+        self.w.statesList.append(newStateName)
+
         if self.verbose:
             print('done.\n')
 
     def loadStateCallback(self, sender):
-        print(f'loading spacing state {self.currentState}...', end=' ')
+        '''
+        Load the selected state from the lib into the font.
+
+        '''
+        if self.font is None:
+            return
+
+        if self.verbose:
+            print(f"loading spacing state '{self.currentState}' from the lib...", end=' ')
+
         loadSpacingFromLib(self.font, self.spacingKey, self.currentState)
         loadKerningFromLib(self.font, self.kerningKey, self.currentState)
-        print('done.\n')
+
+        if self.verbose:
+            print('done.\n')
+
+        UpdateCurrentGlyphView()
 
     def saveStateCallback(self, sender):
+        '''
+        Save the selected state to the font lib.
+
+        '''
         if self.font is None:
             return
+
         if self.verbose:
-            print(f'saving spacing state {self.currentState} in the lib...', end=' ')
+            print(f"saving spacing state '{self.currentState}'' to the lib...", end=' ')
+
         saveSpacingToLib(self.font, self.spacingKey, self.currentState)
         saveKerningToLib(self.font, self.kerningKey, self.currentState)
+
         if self.verbose:
             print('done.\n')
-
-    # def editStateNameCallback(self, sender):
-    #     itemsBefore  = set(self.spacingLib.keys())
-    #     itemsAfter   = set(self.w.statesList.get())
-    #     oldName = list(itemsBefore.difference(itemsAfter))
-    #     if not len(oldName):
-    #         return
-    #     oldName = oldName[0]
-    #     newName = self.currentState
-    #     if newName is None:
-    #         return
-    #     if oldName == newName:
-    #         return
-    #     if newName in self.spacingLib:
-    #         print('ERROR: please use unique names for spacing states\n')
-    #         return 
-    #     if self.verbose:
-    #         print("renaming spacing state '{oldName}' to '{newName}...", end=' ')
-    #     self.spacingLib[newName] = self.spacingLib[oldName]
-    #     del self.spacingLib[oldName]
-    #     # print(self.font.lib.keys())
-    #     # self.font.lib[self.spacingKey][newName] = self.font.lib[self.spacingKey][oldName]
-    #     # del self.font.lib[self.spacingKey][oldName]
-    #     # print(self.font.lib.keys())
 
     def deleteStateCallback(self, sender):
+        '''
+        Delete the selected state from the font lib.
+
+        '''
         if self.font is None:
             return
+
         if self.verbose:
             print(f"deleting spacing state '{self.currentState}'...", end='')
+
         deleteSpacingState(self.font, KEY, self.currentState)
-        if self.currentState in self.spacingLib:
-            del self.spacingLib[self.currentState]
-        if self.currentState in self.kerningLib:
-            del self.kerningLib[self.currentState]
+
         self.loadFontStates()
+
         if self.verbose:
             print('done.\n')
 
-    def generateStateCallback(self, sender):
+    def exportStateCallback(self, sender):
+        '''
+        Export the selected state as a separate font.
+
+        '''
         if self.font is None:
             return
+
         if self.verbose:
-            print(f"generate source with spacing state '{self.currentState}'...")
+            print(f"exporting spacing state '{self.currentState}' as a separate UFO...")
+
         ufoPathSrc = self.font.path
         ufoPathDst = ufoPathSrc.replace('.ufo', f'_{self.currentState}.ufo')
+
+        # if duplicate already exists, delete it
         if os.path.exists(ufoPathDst):
             shutil.rmtree(ufoPathDst)
+
+        # duplicate UFO
         shutil.copytree(ufoPathSrc, ufoPathDst)
-        
+        if self.verbose:
+            print(f"\tsaving '{ufoPathDst}'...")
+
+        # set font info in duplicate
         dstFont = OpenFont(ufoPathDst, showInterface=False)
+        dstFont.info.styleName += f' {self.currentState.capitalize()}'
+
+        # load spacing state
         loadSpacingFromLib(dstFont, self.spacingKey, self.currentState)
         loadKerningFromLib(dstFont, self.kerningKey, self.currentState)
+
+        # clear spacing states
+        deleteLib(dstFont, KEY) 
+
+        # done!
         dstFont.openInterface()
+        if self.verbose:
+            print('...done.\n')
 
     def windowCloseCallback(self, sender):
+        '''
+        Clear all observers when closing the tool.
+
+        '''
         removeObserver(self, "drawBackground")
-        # removeObserver(self, "drawPreview")
-        # removeObserver(self, "viewDidChangeGlyph")
-        # removeObserver(self, "spaceCenterDraw")
         removeObserver(self, 'fontBecameCurrent')
         removeObserver(self, 'fontDidClose')
         super().windowCloseCallback(sender)
-        # unregisterRepresentationFactory(Glyph, f"{self.key}")
-        # UpdateCurrentGlyphView()
+        UpdateCurrentGlyphView()
 
     def updatePreviewCallback(self, sender):
         UpdateCurrentGlyphView()
@@ -395,8 +445,6 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         font = notification['font']
         self.font = font
         self.loadFontStates()
-        # print(self.spacingLib.keys())
-        # print(self.kerningLib.keys())
 
     def fontDidCloseCallback(self, notitication):
         self.font = CurrentFont()
@@ -417,8 +465,6 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if font is None:
             return
 
-        scale = notification['scale']
-
         if not self.spacingKey in font.lib:
             return
 
@@ -428,17 +474,23 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if not glyph.name in font.lib[self.spacingKey][self.currentState]:
             return
 
-        xMin, yMin, xMax, yMax = glyph.bounds
+        scale      = notification['scale']
         glyphWidth = font.lib[self.spacingKey][self.currentState][glyph.name]['width']
-        glyphLeft  = font.lib[self.spacingKey][self.currentState][glyph.name]['leftMargin']
+        yBottom    = -abs(font.info.descender)
+        yTop       = font.info.ascender
 
-        xLeft   = xMin - glyphLeft
-        xRight  = xLeft + glyphWidth
-        yBottom = -abs(font.info.descender)
-        yTop    = font.info.ascender
+        if 'leftMargin' in font.lib[self.spacingKey][self.currentState][glyph.name]:
+            xMin, yMin, xMax, yMax = glyph.bounds
+            glyphLeft = font.lib[self.spacingKey][self.currentState][glyph.name]['leftMargin']
+            xLeft = xMin - glyphLeft
+        else:
+            xLeft = 0 # (glyph.width - glyphWidth) / 2
+
+        xRight = xLeft + glyphWidth
         
         ctx.save()
-        ctx.strokeWidth(3*scale)
+        ctx.lineDash(3*scale, 3*scale)
+        ctx.strokeWidth(2*scale)
         ctx.stroke(1, 0, 0)
         ctx.line((xLeft,  yBottom), (xLeft,  yTop))
         ctx.line((xRight, yBottom), (xRight, yTop))
@@ -450,17 +502,15 @@ class VariableSpacingTool(hDialog, BaseWindowController):
 
     def loadFontStates(self):
         '''
-        Load the font spacing states from the lib into the object dicts and UI.
+        Load the names of the font spacing states from the lib into the UI.
 
         '''
         # no font open
         if self.font is None:
             self.w.statesList.set([])
             return
-        # load spacing states from font lib
-        self.w.statesList.set(sorted(getLibNames(self.font, KEY)))
-        self.spacingLib = getSpacingLib(self.font, self.spacingKey)
-        self.kerningLib = getKerningLib(self.font, self.kerningKey)
+        # get states names from font lib
+        self.w.statesList.set(sorted(getStatesNames(self.font, KEY)))
 
 # -------
 # testing
@@ -469,12 +519,3 @@ class VariableSpacingTool(hDialog, BaseWindowController):
 if __name__ == '__main__':
 
     OpenWindow(VariableSpacingTool)
-    # f = CurrentFont()
-    # deleteLib(f, f'{KEY}.spacing')
-    # deleteLib(f, f'{KEY}.kerning')
-    # saveSpacingToLib(f, KEY, 'default')
-    # saveKerningToLib(f, KEY, 'default')
-    # print(f.lib.keys())
-    # print(f.lib[f'{KEY}.spacing'])
-    # print()
-    # print(f.lib[f'{KEY}.kerning'])
