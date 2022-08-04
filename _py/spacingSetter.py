@@ -7,7 +7,6 @@ except:
     import ufoProcessor
 
 import drawBot
-# from random import randint
 from defcon.objects.component import _defaultTransformation
 from ufoProcessor import DesignSpaceProcessor, Location
 from fontTools.agl import UV2AGL
@@ -37,19 +36,19 @@ class DecomposePointPen(object):
             else:
                 transformPointPen = TransformPointPen(self, transformation)
                 baseGlyph.drawPoints(transformPointPen)
-                
+
 
 class SpacingSetter:
 
-    fontInfo   = {}
-    kerning    = {}
-    glyphs     = {}
-    glyphNames = []
+    fontInfo     = {}
+    kerning      = {}
+    glyphs       = {}
+    glyphNames   = []
 
-    useKerning = True
-    drawGlyphs     = True
-    drawKerning    = True
-    drawWidths     = True
+    useKerning   = True
+    drawGlyphs   = True
+    drawKerning  = True
+    drawWidths   = True
 
     colorKerning = 0.5,
     colorBox     = 0.8,

@@ -14,8 +14,6 @@
     <dict>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/hipertipo/fonts/Escrow-Roman/_ufos/Display_Roman.ufo/glyphs</string>
-      <key>public.markColor</key>
-      <string>0,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>

@@ -4,7 +4,6 @@ from fontParts.world import OpenFont, RGlyph
 from hTools3.modules.primitives import rect as Rect
 # from progvis.modules.DB.tools import drawGlyph
 
-
 # --------
 # settings
 # --------

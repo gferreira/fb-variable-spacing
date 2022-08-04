@@ -5,7 +5,7 @@
 # --------
 
 txt = 'HARLEY'
-fn = ['SourceSerifRoman-Bold', 'Georgia'][0] # fontname
+fn = ['SourceSerifRoman-Bold', 'Georgia'][1] # fontname
 fs = 180 # fontsize
 x, y = 34, 156
 

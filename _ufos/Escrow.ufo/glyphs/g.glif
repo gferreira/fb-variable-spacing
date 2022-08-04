@@ -98,8 +98,6 @@
     <dict>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz48_wdth100_wght400.ufo/glyphs</string>
-      <key>public.markColor</key>
-      <string>0,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>

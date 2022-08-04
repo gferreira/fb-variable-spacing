@@ -1,3 +1,5 @@
+# menuTitle: VariableSpacing
+
 import os, shutil
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController

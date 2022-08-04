@@ -1,11 +1,8 @@
-# from importlib import reload
-# import hTools3.modules.primitives
-# reload(hTools3.modules.primitives)
-
 import drawBot as DB
 from drawBot import BezierPath
 from fontParts.world import OpenFont, RGlyph
 from fontPens.marginPen import MarginPen
+
 from progvis.modules.vector import getVector, vector
 from progvis.modules.DB.tools import drawGlyph, glyph2bezier
 from hTools3.modules.primitives import polygon as Polygon, rect as Rect
@@ -79,14 +76,8 @@ class SpacingGlyph:
         rightSide.append((self.glyph.width, self.yMax))
         rightSide.append((self.glyph.width, self.yMin))
 
-        # gRight = RGlyph()
-        # Polygon(gRight.getPen(), rightSide, close=True)
-        # gRight = gRight % self.glyph
-
-        # gRight = RGlyph()
         _gRight = BezierPath()
         _gRight.polygon(*rightSide, close=True)
-        # _gRight.drawToPen(gRight.getPen())
 
         return _gRight
 
@@ -118,15 +109,8 @@ class SpacingGlyph:
         leftSide.append((0, self.yMax))
         leftSide.append((0, self.yMin))
 
-        # gLeft = RGlyph()
-        # Polygon(gLeft.getPen(), leftSide, close=True)
-        # gLeft = gLeft % self.glyph
-
-        # gLeft = RGlyph()
-
         _gLeft = BezierPath()
         _gLeft.polygon(*leftSide, close=True)
-        # _gLeft.drawToPen(gLeft.getPen())
 
         return _gLeft
 
@@ -144,29 +128,18 @@ class SpacingGlyph:
 
     @property
     def box(self):
-        # gBox = RGlyph()
-        # Rect(gBox.getPen(), 0, self.yMin, self.glyph.width, self.yMax - self.yMin)
-        # return gBox
         _gBox = BezierPath()
         _gBox.rect(0, self.yMin, self.glyph.width, self.yMax - self.yMin)
         return _gBox
 
     @property
     def inner(self):
-        # box       = glyph2bezier(self.box)
-        # leftSide  = glyph2bezier(self.leftSide)
-        # rightSide = glyph2bezier(self.rightSide)
-        
-        # g = RGlyph()
         glyph = BezierPath()
         self.glyph.draw(glyph)
-        # glyph = glyph2bezier(g)
 
-        # gInner = RGlyph()
         _gInner = self.box.difference(self.leftSide)
         _gInner = _gInner.difference(self.rightSide)
         _gInner = _gInner.difference(glyph)
-        # _gInner.drawToPen(gInner.getPen())
         
         return _gInner
 
