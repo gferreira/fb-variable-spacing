@@ -1,7 +1,12 @@
 import sys
+
+# ufoProcessor is not embedded in DrawBot
+# so you’ll need to install it yourself
 try:
     import ufoProcessor
 except:
+    # download or clone the repository:
+    # http://github.com/LettError/ufoProcessor
     ufoProcessorPath = '/_code/ufoProcessor/Lib'
     sys.path.append(ufoProcessorPath)
     import ufoProcessor
@@ -21,6 +26,9 @@ def drawGlyph(g):
 
 class DecomposePointPen(object):
 
+    # copied from ufoProcessor
+    # added support for *args and **kwargs
+
     def __init__(self, glyphSet, outPointPen):
         self._glyphSet = glyphSet
         self._outPointPen = outPointPen
@@ -39,6 +47,13 @@ class DecomposePointPen(object):
 
 
 class SpacingSetter:
+
+    '''
+    An object to visualize horizontal glyph metrics in a string of text.  
+    The object takes a UFO designspace as input.
+    It can output an image showing glyphs, widths and kerning.
+
+    '''
 
     fontInfo     = {}
     kerning      = {}
@@ -60,6 +75,11 @@ class SpacingSetter:
         self.ctx = ctx
 
     def draw(self, text, pos, scale, locationDict):
+        '''
+        Set a given string of text  at a given position and scale,
+        in the designspace instance defined by the given location.
+        
+        '''
         x, y = pos
 
         doc = DesignSpaceProcessor()
@@ -92,14 +112,12 @@ class SpacingSetter:
                 continue
             glyphMutator = doc.getGlyphMutator(glyphName)
             instanceGlyph = glyphMutator.makeInstance(location)
-
             for comp in instanceGlyph.components:
                 compName = comp['baseGlyph']
                 if compName not in self.glyphs:
                     compGlyphMutator = doc.getGlyphMutator(compName)
                     compGlyph = compGlyphMutator.makeInstance(location)
                     self.glyphs[compName] = compGlyph
-
             g = RGlyph()
             pointPen = g.getPointPen()
             decomposePen = DecomposePointPen(self.glyphs, pointPen)
@@ -147,24 +165,19 @@ class SpacingSetter:
         # draw margins
         for i, glyphName in enumerate(self.glyphNames):
             g = self.glyphs[glyphName]
-
             yMin = self.fontInfo.descender
             yMax = self.fontInfo.unitsPerEm - abs(self.fontInfo.descender)
-
             if self.useKerning and i > 0:
                 pair = self.glyphNames[i-1], glyphName
                 kernValue = self.kerning.get(pair)
                 if kernValue:
                     self.ctx.translate(kernValue, 0)
-
             self.ctx.stroke(*self.colorMargins)
             self.ctx.strokeWidth(5)
             self.ctx.line((0, yMin), (0, yMax))
-
             self.ctx.translate(g.width, 0)
             if i == len(text)-1:
                 self.ctx.line((0, yMin), (0, yMax))
-
         self.ctx.restore()
 
         # draw glyphs
@@ -172,23 +185,16 @@ class SpacingSetter:
             self.ctx.save()
             self.ctx.translate(x, y)
             self.ctx.scale(scale)
-
             for i, glyphName in enumerate(self.glyphNames):
                 g = self.glyphs[glyphName]
-
                 if self.useKerning and i > 0:
                     pair = self.glyphNames[i-1], glyphName
                     kernValue = self.kerning.get(pair)
                     if kernValue:
                         self.ctx.translate(kernValue, 0)
-
                 self.ctx.fill(*self.colorGlyphs)
                 drawGlyph(g)
-
                 if i == len(text)-1:
                     continue
-
                 self.ctx.translate(g.width, 0)
-
             self.ctx.restore()
-

@@ -1,9 +1,8 @@
 from importlib import reload
-import spacingLib
-reload(spacingLib)
+import spacingAreasLib
+reload(spacingAreasLib)
 
-import drawBot as ctx
-from spacingLib import *
+from spacingAreasLib import *
 
 # --------
 # settings
@@ -13,14 +12,23 @@ ufoPath = '/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz12_wdth100_wght400.ufo
 
 f = OpenFont(ufoPath, showInterface=False)
 
-x, y = 40, 240
+x, y = 40, 440
+s = 0.1
+lh = 1
+
+txt = '''\
+nhnmnuninjnln
+noncnbndnpnqn
+nanengnsnrnfntn
+nvnwnknynxnzn
+'''
 
 parameters = {
-    'text'  : 'agendsc',
-    'scale' : 0.21,
+    'scale' : s,
     'glyphParameters' : {
-        'color1'  : (0.5, 0, 1),
-        'color2'  : (0, 1, 0.5),
+        'color1'  : (1, 0.5, 0), # inner
+        'color2'  : (0, 0.5, 1), # outer
+        'color3'  : (1,),        # glyph
         'ySteps'  : 50,
         'yMin'    : 0,
         'yMax'    : f.info.xHeight,
@@ -37,8 +45,11 @@ size('A4Landscape')
 fill(1)
 rect(0, 0, width(), height())
 
-S = SpacingWord(f)
-S.setParameters(parameters)
-S.draw((x, y))
+for L in txt.split('\n'):
+    S = SpacingAreasLine(f)
+    S.setParameters(parameters)
+    S.text = L
+    S.draw((x, y))
+    translate(0, -f.info.unitsPerEm*s*lh)
 
 # saveImage('acefgrstzj_2.png')

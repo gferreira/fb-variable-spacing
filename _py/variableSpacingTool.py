@@ -6,7 +6,7 @@ from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView
 from mojo import drawingTools as ctx
-from hTools3.dialogs import *
+from extras.hTools3_dialogs import * # hTools3.dialogs
 
 '''
 
@@ -136,13 +136,25 @@ def loadSpacingFromLib(font, spacingKey, name):
     if not name in font.lib[spacingKey]:
         return
 
+    changedGlyphs = {}
     for glyphName in font.lib[spacingKey][name].keys():
         glyph = font[glyphName]
-
         if 'leftMargin' in font.lib[spacingKey][name][glyphName]:
+            changedGlyphs[glyphName] = glyph.leftMargin
             glyph.leftMargin = font.lib[spacingKey][name][glyphName]['leftMargin']
-
         glyph.width = font.lib[spacingKey][name][glyphName]['width']
+
+    # fix component positions
+    for glyphName in font.glyphOrder:
+        glyph = font[glyphName]
+        if not len(glyph.components):
+            continue
+        for comp in glyph.components:
+            baseGlyph = font[comp.baseGlyph]
+            if comp.baseGlyph not in changedGlyphs:
+                continue
+            deltaX = changedGlyphs[glyphName] - font.lib[spacingKey][name][glyphName]['leftMargin']
+            comp.moveBy((deltaX, 0))
 
 def loadKerningFromLib(font, kerningKey, name):
     '''

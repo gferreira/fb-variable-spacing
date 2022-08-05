@@ -1,6 +1,6 @@
 from importlib import reload
-import spacingLib
-reload(spacingLib)
+import spacingAreasLib
+reload(spacingAreasLib)
 
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
@@ -9,16 +9,17 @@ from mojo import drawingTools as ctx
 from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView, NumberEditText
 from mojo.roboFont import RGlyph
-from hTools3.dialogs import *
-from hTools3.dialogs.misc.spinnerSlider import SpinnerSlider
-from hTools3.modules.color import rgb2nscolor, nscolor2rgb
-from spacingLib import *
+
+from extras.hTools3_dialogs import *
+from extras.hTools3_spinnerSlider import SpinnerSlider
+from extras.hTools3_color import rgb2nscolor, nscolor2rgb
+from spacingAreasLib import *
 
 # ----------------
 # global variables
 # ----------------
 
-KEY = 'previewSpacing'
+KEY = 'previewSpacingAreas'
 
 # ------------------------
 # representation factories

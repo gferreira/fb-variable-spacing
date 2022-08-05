@@ -1,15 +1,25 @@
 import drawBot as DB
 from drawBot import BezierPath
+from fontTools.agl import UV2AGL
 from fontParts.world import OpenFont, RGlyph
 from fontPens.marginPen import MarginPen
 
-from progvis.modules.vector import getVector, vector
-from progvis.modules.DB.tools import drawGlyph, glyph2bezier
-from hTools3.modules.primitives import polygon as Polygon, rect as Rect
+from extras.progvis_vector import getVector, vector
+from extras.progvis_toolsDB import drawGlyph, glyph2bezier
+from extras.hTools3_primitives import polygon as Polygon, rect as Rect
 
 
-class SpacingGlyph:
+class SpacingAreasGlyph:
+    '''
+    An object to visualize the inside and outside of a glyph using color areas.
 
+    *This version works only inside the RoboFont DrawBot Extension.*
+
+    TODO:
+    - rewrite glyph boolean operations with BezierPath
+    - make it work with designspace files?
+
+    '''
     ySteps  = 10
     color2  = 1, 0, 1
     color1  = 0, 1, 1
@@ -162,7 +172,11 @@ class SpacingGlyph:
             drawGlyph(self.glyph)
 
 
-class SpacingWord:
+class SpacingAreasLine:
+    '''
+    An object to visualize the inside and outside of all glyphs in a string of text.
+
+    '''
 
     text            = 'SPACE'
     scale           = 1.0
@@ -180,15 +194,16 @@ class SpacingWord:
             setattr(self, k, v)
             
     def draw(self, pos):
+        self.ctx.save()
         self.ctx.translate(*pos)
         self.ctx.scale(self.scale)
 
         if self.innerDraw or self.outerDraw:
             with self.ctx.savedState():
                 for char in self.text:
-                    glyphName = char
+                    glyphName = UV2AGL.get(ord(char)) # char
                     g = self.font[glyphName]
-                    G = SpacingGlyph(g, self.ctx)
+                    G = SpacingAreasGlyph(g, self.ctx)
                     G.setParameters(self.glyphParameters)
                     G.draw((0, 0), inner=self.innerDraw, outer=self.outerDraw, glyph=False)
                     self.ctx.translate(g.width, 0)
@@ -196,10 +211,11 @@ class SpacingWord:
         if self.glyphsDraw:
             with self.ctx.savedState():
                 for char in self.text:
-                    glyphName = char
+                    glyphName = UV2AGL.get(ord(char)) # char
                     g = self.font[glyphName]
-                    G = SpacingGlyph(g)
+                    G = SpacingAreasGlyph(g)
                     G.setParameters(self.glyphParameters)
                     G.draw((0, 0), inner=False, outer=False, glyph=True)
                     self.ctx.translate(g.width, 0)
 
+        self.ctx.restore()

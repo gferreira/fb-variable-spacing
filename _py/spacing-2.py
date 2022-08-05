@@ -88,7 +88,7 @@ for i, glyph in enumerate(glyphs):
             drawContour = True
             for p in contour.bPoints:
                 if glyph.name not in closedStart and p.anchor[0] <= _xMin:
-                    drawContour = False               
+                    drawContour = False
                 if glyph.name not in closedEnd and p.anchor[0] >= _xMax:
                     drawContour = False
             if drawContour:
