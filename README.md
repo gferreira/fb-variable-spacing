@@ -1,5 +1,8 @@
-The Spacing Axis
+Variable Spacing
 ================
+
+Background
+----------
 
 - [Spacing Axis Proposal by Frank Blokland](http://github.com/Microsoft/OpenTypeDesignVariationAxisTags/blob/master/Proposals/Spacing_Axis/ProposalSummary.md)
 - [discussion of the proposal](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/issues/11)
@@ -7,22 +10,25 @@ The Spacing Axis
 
 - - -
 
-this repository contains:
+in this repository:
 
-## VariableSpacing tools
+VariableSpacing tools
+---------------------
 
 data format and tools to work with variable fonts containing a spacing axis
 
-- definition of “spacing state”: a snapshot of glyph metrics and kerning data
+- definition of **spacing state**: a snapshot of all glyph metrics (width and left margin) and kerning values
 - a set of functions to load, save, delete, generate spacing states in Python
 - a RoboFont dialog to preview and use spacing states
 
-## Demo fonts and build scripts
+Demo fonts and build scripts
+----------------------------
 
 - Publica
 - Escrow
 
-## Spacing visualization tools
+Spacing visualization tools
+---------------------------
 
 - Internal and external areas
 - Glyph metrics and kerning
