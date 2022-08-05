@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.1">
   <axes>
-    <axis tag="SPAC" name="spacing" minimum="0" maximum="1000" default="0"/>
+    <axis tag="SPAC" name="spacing" minimum="-1000" maximum="0" default="0"/>
   </axes>
   <sources>
-    <source filename="normal.ufo" name="normal" familyname="VariableSpacingDemo" stylename="normal">
+    <source filename="Publica.ufo" name="normal" familyname="VariableSpacingDemo" stylename="normal">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
@@ -13,9 +13,9 @@
         <dimension name="spacing" xvalue="0"/>
       </location>
     </source>
-    <source filename="tight.ufo" name="tight" familyname="VariableSpacingDemo" stylename="tight">
+    <source filename="Publica_tight.ufo" name="tight" familyname="VariableSpacingDemo" stylename="tight">
       <location>
-        <dimension name="spacing" xvalue="1000"/>
+        <dimension name="spacing" xvalue="-1000"/>
       </location>
     </source>
   </sources>

@@ -1,8 +1,7 @@
 from random import uniform
-from grapefruit import Color
 from fontParts.world import OpenFont, RGlyph
-from hTools3.modules.primitives import rect as Rect
-# from progvis.modules.DB.tools import drawGlyph
+from extras.grapefruit import Color
+from extras.hTools3_primitives import rect as Rect
 
 # --------
 # settings
