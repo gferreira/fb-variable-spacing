@@ -24,8 +24,8 @@ data format and tools to work with variable fonts containing a spacing axis
 Demo fonts and build scripts
 ----------------------------
 
-- Publica
-- Escrow
+- [x] Publica
+- [ ] Escrow
 
 Spacing visualization tools
 ---------------------------
