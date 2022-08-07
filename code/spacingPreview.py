@@ -35,7 +35,7 @@ def factorySpacing(glyph, color1=(0.5, 0, 1, 0.5), color2=(0, 1, 0.5, 0.5), yMin
         'xFactor' : xFactor,
         'dMax'    : dMax,
     }
-    G = SpacingGlyph(glyph, ctx=ctx)
+    G = SpacingAreasGlyph(glyph, ctx=ctx)
     G.setParameters(glyphParameters)
     return G
 

@@ -17,7 +17,7 @@ from variableSpacingLib import *
 newSources = buildSpacingSources(folder)
 
 # generate variable font
-designspacePath = os.path.join(folder, 'Publica.designspace')
+designspacePath = os.path.join(folder, 'Escrow.designspace')
 varFontPath = designspacePath.replace('.designspace', '.ttf')
 P = FontProject()
 P.build_variable_font(designspacePath, output_path=varFontPath, verbose=True)

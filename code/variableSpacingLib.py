@@ -1,3 +1,5 @@
+import os, glob, shutil
+from fontParts.world import OpenFont
 
 '''
 
@@ -30,11 +32,9 @@ font.lib[f'{KEY}.kerning'] = {
 
 KEY = 'com.hipertipo.spacingaxis'
 
-# ---------
-# functions
-# ---------
-
+# -------
 # reading
+# -------
 
 def getStatesNames(font, KEY):
     '''
@@ -76,7 +76,9 @@ def getKerningLib(font, kerningKey):
     else:
         return {}
 
+# -------
 # writing
+# -------
 
 def saveSpacingToLib(font, spacingKey, name):
     '''
@@ -114,7 +116,9 @@ def saveKerningToLib(font, kerningKey, name):
 
     font.lib[kerningKey][name] = L
 
+# -------
 # loading
+# -------
 
 def loadSpacingFromLib(font, spacingKey, name):
     '''
@@ -164,7 +168,9 @@ def loadKerningFromLib(font, kerningKey, name):
 
     font.kerning.update(kerningDict)
 
+# --------
 # deleting
+# --------
 
 def deleteSpacingState(font, KEY, stateName):
     '''
@@ -190,3 +196,58 @@ def deleteLib(font, key):
     '''
     if key in font.lib:
         del font.lib[key]
+
+# ----------
+# generating
+# ----------
+
+def buildSpacingSources(folder):
+
+    # get all ufo sources in folder
+    sources = [ufo for ufo in glob.glob(f'{folder}/*.ufo')]
+
+    # keep a list of all new sources
+    newSources = []
+
+    for src in sources:
+        srcPath = os.path.join(folder, src)
+        srcFont = OpenFont(srcPath, showInterface=False)
+        
+        # loadSpacingFromLib(srcFont, f'{KEY}.spacing', 'default')
+        # loadKerningFromLib(srcFont, f'{KEY}.kerning', 'default')
+        # srcFont.save()
+
+        states = getStatesNames(srcFont, KEY)
+        if 'default' in states:
+            states.remove('default')
+
+        if not len(states):
+            continue
+
+        for stateName in states:
+            dstPath = srcPath.replace('.ufo', f'_{stateName}.ufo')
+            # if duplicate already exists, delete it
+            if os.path.exists(dstPath):
+                shutil.rmtree(dstPath)
+            # duplicate UFO source
+            shutil.copytree(srcPath, dstPath)
+
+            # set font info in duplicate
+            dstFont = OpenFont(dstPath, showInterface=False)
+            dstFont.info.styleName += f' {stateName.capitalize()}'
+
+            # load spacing state
+            loadSpacingFromLib(dstFont, f'{KEY}.spacing', stateName)
+            loadKerningFromLib(dstFont, f'{KEY}.kerning', stateName)
+
+            # clear spacing states from lib
+            deleteLib(dstFont, KEY) 
+
+            # done!
+            dstFont.save()
+            dstFont.close()
+
+        srcFont.close()
+        newSources.append(dstPath)
+    
+    return newSources

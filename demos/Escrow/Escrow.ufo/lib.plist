@@ -21597,6 +21597,11 @@
         </array>
         <array>
           <string>B</string>
+          <string>b</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>B</string>
           <string>backslash</string>
           <integer>-20</integer>
         </array>
@@ -21622,6 +21627,11 @@
         </array>
         <array>
           <string>B</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>B</string>
           <string>g</string>
           <integer>-20</integer>
         </array>
@@ -21633,7 +21643,7 @@
         <array>
           <string>B</string>
           <string>j</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>B</string>
@@ -21648,7 +21658,7 @@
         <array>
           <string>B</string>
           <string>p</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>B</string>
@@ -21703,7 +21713,7 @@
         <array>
           <string>B</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>B</string>
@@ -21714,6 +21724,16 @@
           <string>B</string>
           <string>public.kern2.e</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.h</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>B</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>B</string>
@@ -21728,7 +21748,7 @@
         <array>
           <string>B</string>
           <string>public.kern2.s</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>B</string>
@@ -21738,7 +21758,7 @@
         <array>
           <string>B</string>
           <string>public.kern2.y</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>B</string>
@@ -21768,12 +21788,12 @@
         <array>
           <string>B</string>
           <string>r</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>B</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>B</string>
@@ -21783,17 +21803,17 @@
         <array>
           <string>B</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>B</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>B</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>B.sc</string>
@@ -22257,6 +22277,11 @@
         </array>
         <array>
           <string>F</string>
+          <string>b</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>F</string>
           <string>backslash</string>
           <integer>-7</integer>
         </array>
@@ -22293,6 +22318,11 @@
         <array>
           <string>F</string>
           <string>endash</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>F</string>
+          <string>f</string>
           <integer>-50</integer>
         </array>
         <array>
@@ -22432,13 +22462,18 @@
         </array>
         <array>
           <string>F</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>F</string>
           <string>public.kern2.i</string>
           <integer>-50</integer>
         </array>
         <array>
           <string>F</string>
           <string>public.kern2.n</string>
-          <integer>-120</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>F</string>
@@ -22782,6 +22817,11 @@
         </array>
         <array>
           <string>G</string>
+          <string>public.kern2.a</string>
+          <integer>20</integer>
+        </array>
+        <array>
+          <string>G</string>
           <string>quotedblbase</string>
           <integer>-20</integer>
         </array>
@@ -22928,7 +22968,7 @@
         <array>
           <string>H</string>
           <string>g</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>H</string>
@@ -22948,7 +22988,7 @@
         <array>
           <string>H</string>
           <string>p</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>H</string>
@@ -23003,12 +23043,12 @@
         <array>
           <string>H</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>H</string>
           <string>public.kern2.y</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>H</string>
@@ -23022,18 +23062,28 @@
         </array>
         <array>
           <string>H</string>
-          <string>t</string>
+          <string>r</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>H</string>
+          <string>t</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>H</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>H</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>H</string>
+          <string>x</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>J</string>
@@ -23117,6 +23167,11 @@
         </array>
         <array>
           <string>J</string>
+          <string>b</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>J</string>
           <string>colon</string>
           <integer>-30</integer>
         </array>
@@ -23143,7 +23198,7 @@
         <array>
           <string>J</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>J</string>
@@ -23243,7 +23298,7 @@
         <array>
           <string>J</string>
           <string>j</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>J</string>
@@ -23328,7 +23383,7 @@
         <array>
           <string>J</string>
           <string>public.kern2.a</string>
-          <integer>-70</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>J</string>
@@ -23339,6 +23394,11 @@
           <string>J</string>
           <string>public.kern2.e</string>
           <integer>-50</integer>
+        </array>
+        <array>
+          <string>J</string>
+          <string>public.kern2.h</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>J</string>
@@ -23358,12 +23418,12 @@
         <array>
           <string>J</string>
           <string>public.kern2.s</string>
-          <integer>-70</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>J</string>
           <string>public.kern2.u</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>J</string>
@@ -23403,7 +23463,7 @@
         <array>
           <string>J</string>
           <string>r</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>J</string>
@@ -23672,6 +23732,11 @@
         </array>
         <array>
           <string>K</string>
+          <string>b</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>K</string>
           <string>braceright</string>
           <integer>-10</integer>
         </array>
@@ -23702,6 +23767,11 @@
         </array>
         <array>
           <string>K</string>
+          <string>f</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>K</string>
           <string>g</string>
           <integer>-30</integer>
         </array>
@@ -23728,7 +23798,7 @@
         <array>
           <string>K</string>
           <string>j</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>K</string>
@@ -23738,7 +23808,7 @@
         <array>
           <string>K</string>
           <string>p</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>K</string>
@@ -23812,8 +23882,23 @@
         </array>
         <array>
           <string>K</string>
+          <string>public.kern2.h</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>K</string>
+          <string>public.kern2.i</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>K</string>
+          <string>public.kern2.n</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>K</string>
           <string>public.kern2.o</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>K</string>
@@ -23823,17 +23908,17 @@
         <array>
           <string>K</string>
           <string>public.kern2.u</string>
-          <integer>-40</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>K</string>
           <string>public.kern2.y</string>
-          <integer>-100</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>K</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>K</string>
@@ -23849,6 +23934,11 @@
           <string>K</string>
           <string>quoteleft</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>K</string>
+          <string>r</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>K</string>
@@ -23868,12 +23958,17 @@
         <array>
           <string>K</string>
           <string>v</string>
-          <integer>-100</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>K</string>
           <string>w</string>
-          <integer>-100</integer>
+          <integer>-160</integer>
+        </array>
+        <array>
+          <string>K</string>
+          <string>x</string>
+          <integer>-120</integer>
         </array>
         <array>
           <string>K.sc</string>
@@ -24098,7 +24193,7 @@
         <array>
           <string>L</string>
           <string>b</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>L</string>
@@ -24127,6 +24222,11 @@
         </array>
         <array>
           <string>L</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>L</string>
           <string>g</string>
           <integer>-10</integer>
         </array>
@@ -24134,6 +24234,11 @@
           <string>L</string>
           <string>germandbls.sc</string>
           <integer>-9</integer>
+        </array>
+        <array>
+          <string>L</string>
+          <string>j</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>L</string>
@@ -24148,7 +24253,7 @@
         <array>
           <string>L</string>
           <string>p</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>L</string>
@@ -24213,7 +24318,7 @@
         <array>
           <string>L</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>L</string>
@@ -24224,6 +24329,11 @@
           <string>L</string>
           <string>public.kern2.e</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>L</string>
+          <string>public.kern2.h</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L</string>
@@ -24243,12 +24353,12 @@
         <array>
           <string>L</string>
           <string>public.kern2.s</string>
-          <integer>-10</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>L</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L</string>
@@ -24293,7 +24403,7 @@
         <array>
           <string>L</string>
           <string>r</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L</string>
@@ -24314,6 +24424,11 @@
           <string>L</string>
           <string>w</string>
           <integer>-80</integer>
+        </array>
+        <array>
+          <string>L</string>
+          <string>x</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>L.sc</string>
@@ -24497,7 +24612,17 @@
         </array>
         <array>
           <string>M</string>
+          <string>b</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
           <string>d</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
+          <string>f</string>
           <integer>-30</integer>
         </array>
         <array>
@@ -24512,13 +24637,18 @@
         </array>
         <array>
           <string>M</string>
+          <string>j</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
           <string>oe</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>M</string>
           <string>p</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>M</string>
@@ -24562,6 +24692,16 @@
         </array>
         <array>
           <string>M</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
+          <string>public.kern2.i</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
           <string>public.kern2.o</string>
           <integer>-30</integer>
         </array>
@@ -24573,17 +24713,17 @@
         <array>
           <string>M</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>M</string>
           <string>public.kern2.y</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>M</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>M</string>
@@ -24592,17 +24732,27 @@
         </array>
         <array>
           <string>M</string>
-          <string>t</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>M</string>
-          <string>v</string>
+          <string>r</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>M</string>
+          <string>t</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>M</string>
+          <string>v</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>M</string>
           <string>w</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>M</string>
+          <string>x</string>
           <integer>-30</integer>
         </array>
         <array>
@@ -24972,6 +25122,11 @@
         </array>
         <array>
           <string>P</string>
+          <string>b</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>P</string>
           <string>backslash</string>
           <integer>-50</integer>
         </array>
@@ -25013,7 +25168,7 @@
         <array>
           <string>P</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>P</string>
@@ -25108,7 +25263,7 @@
         <array>
           <string>P</string>
           <string>h</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>P</string>
@@ -25118,7 +25273,7 @@
         <array>
           <string>P</string>
           <string>j</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>P</string>
@@ -25143,7 +25298,7 @@
         <array>
           <string>P</string>
           <string>p</string>
-          <integer>-40</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>P</string>
@@ -25253,12 +25408,12 @@
         <array>
           <string>P</string>
           <string>public.kern2.u</string>
-          <integer>-40</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>P</string>
           <string>public.kern2.y</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>P</string>
@@ -25303,17 +25458,17 @@
         <array>
           <string>P</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>P</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>P</string>
           <string>x</string>
-          <integer>-50</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>P.sc</string>
@@ -25877,6 +26032,11 @@
         </array>
         <array>
           <string>R</string>
+          <string>b</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
           <string>backslash</string>
           <integer>-90</integer>
         </array>
@@ -25898,6 +26058,11 @@
         <array>
           <string>R</string>
           <string>endash</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>f</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -25987,18 +26152,43 @@
         </array>
         <array>
           <string>R</string>
-          <string>public.kern2.u</string>
+          <string>public.kern2.a</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.h</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>R</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.n</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
+          <string>public.kern2.u</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>R</string>
           <string>public.kern2.y</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>R</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>R</string>
@@ -26022,6 +26212,11 @@
         </array>
         <array>
           <string>R</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>R</string>
           <string>t</string>
           <integer>-20</integer>
         </array>
@@ -26033,17 +26228,17 @@
         <array>
           <string>R</string>
           <string>v</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>R</string>
           <string>w</string>
-          <integer>-50</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>R</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>R.sc</string>
@@ -26259,6 +26454,11 @@
           <string>T</string>
           <string>asciicircum</string>
           <integer>-50</integer>
+        </array>
+        <array>
+          <string>T</string>
+          <string>b</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>T</string>
@@ -26498,7 +26698,7 @@
         <array>
           <string>T</string>
           <string>public.kern2.s</string>
-          <integer>-140</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>T</string>
@@ -26513,7 +26713,7 @@
         <array>
           <string>T</string>
           <string>public.kern2.z</string>
-          <integer>-130</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>T</string>
@@ -26852,6 +27052,11 @@
         </array>
         <array>
           <string>V</string>
+          <string>b</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>V</string>
           <string>colon</string>
           <integer>-110</integer>
         </array>
@@ -26878,7 +27083,7 @@
         <array>
           <string>V</string>
           <string>f</string>
-          <integer>-70</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>V</string>
@@ -26978,7 +27183,7 @@
         <array>
           <string>V</string>
           <string>j</string>
-          <integer>-50</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>V</string>
@@ -27097,8 +27302,13 @@
         </array>
         <array>
           <string>V</string>
-          <string>public.kern2.i</string>
+          <string>public.kern2.h</string>
           <integer>-70</integer>
+        </array>
+        <array>
+          <string>V</string>
+          <string>public.kern2.i</string>
+          <integer>-80</integer>
         </array>
         <array>
           <string>V</string>
@@ -27108,17 +27318,17 @@
         <array>
           <string>V</string>
           <string>public.kern2.o</string>
-          <integer>-155</integer>
+          <integer>-145</integer>
         </array>
         <array>
           <string>V</string>
           <string>public.kern2.s</string>
-          <integer>-160</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>V</string>
           <string>public.kern2.u</string>
-          <integer>-110</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>V</string>
@@ -27128,7 +27338,7 @@
         <array>
           <string>V</string>
           <string>public.kern2.z</string>
-          <integer>-150</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>V</string>
@@ -27158,7 +27368,7 @@
         <array>
           <string>V</string>
           <string>r</string>
-          <integer>-110</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>V</string>
@@ -27173,7 +27383,7 @@
         <array>
           <string>V</string>
           <string>t</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>V</string>
@@ -27492,6 +27702,11 @@
         </array>
         <array>
           <string>W</string>
+          <string>b</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>W</string>
           <string>colon</string>
           <integer>-100</integer>
         </array>
@@ -27518,7 +27733,7 @@
         <array>
           <string>W</string>
           <string>f</string>
-          <integer>-50</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>W</string>
@@ -27583,7 +27798,7 @@
         <array>
           <string>W</string>
           <string>g</string>
-          <integer>-150</integer>
+          <integer>-160</integer>
         </array>
         <array>
           <string>W</string>
@@ -27618,7 +27833,7 @@
         <array>
           <string>W</string>
           <string>j</string>
-          <integer>-50</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>W</string>
@@ -27633,7 +27848,7 @@
         <array>
           <string>W</string>
           <string>p</string>
-          <integer>-100</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>W</string>
@@ -27737,13 +27952,18 @@
         </array>
         <array>
           <string>W</string>
+          <string>public.kern2.h</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>W</string>
           <string>public.kern2.i</string>
-          <integer>-60</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>W</string>
           <string>public.kern2.n</string>
-          <integer>-100</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>W</string>
@@ -27753,22 +27973,22 @@
         <array>
           <string>W</string>
           <string>public.kern2.s</string>
-          <integer>-150</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>W</string>
           <string>public.kern2.u</string>
-          <integer>-100</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>W</string>
           <string>public.kern2.y</string>
-          <integer>-110</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>W</string>
           <string>public.kern2.z</string>
-          <integer>-140</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>W</string>
@@ -27798,7 +28018,7 @@
         <array>
           <string>W</string>
           <string>r</string>
-          <integer>-100</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>W</string>
@@ -27813,7 +28033,7 @@
         <array>
           <string>W</string>
           <string>t</string>
-          <integer>-50</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>W</string>
@@ -27823,17 +28043,17 @@
         <array>
           <string>W</string>
           <string>v</string>
-          <integer>-110</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>W</string>
           <string>w</string>
-          <integer>-110</integer>
+          <integer>-120</integer>
         </array>
         <array>
           <string>W</string>
           <string>x</string>
-          <integer>-120</integer>
+          <integer>-130</integer>
         </array>
         <array>
           <string>W.sc</string>
@@ -28067,6 +28287,11 @@
         </array>
         <array>
           <string>X</string>
+          <string>b</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>X</string>
           <string>backslash</string>
           <integer>-30</integer>
         </array>
@@ -28102,6 +28327,11 @@
         </array>
         <array>
           <string>X</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>X</string>
           <string>g</string>
           <integer>-20</integer>
         </array>
@@ -28128,7 +28358,7 @@
         <array>
           <string>X</string>
           <string>j</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>X</string>
@@ -28207,6 +28437,16 @@
         </array>
         <array>
           <string>X</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>X</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>X</string>
           <string>public.kern2.o</string>
           <integer>-60</integer>
         </array>
@@ -28223,7 +28463,7 @@
         <array>
           <string>X</string>
           <string>public.kern2.y</string>
-          <integer>-130</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>X</string>
@@ -28263,12 +28503,17 @@
         <array>
           <string>X</string>
           <string>v</string>
-          <integer>-130</integer>
+          <integer>-110</integer>
         </array>
         <array>
           <string>X</string>
           <string>w</string>
-          <integer>-130</integer>
+          <integer>-110</integer>
+        </array>
+        <array>
+          <string>X</string>
+          <string>x</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>X.sc</string>
@@ -29867,8 +30112,23 @@
         </array>
         <array>
           <string>d</string>
+          <string>public.kern2.u</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>d</string>
           <string>public.kern2.y</string>
-          <integer>-15</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>d</string>
+          <string>public.kern2.z</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>d</string>
+          <string>t</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>d</string>
@@ -29878,12 +30138,17 @@
         <array>
           <string>d</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>d</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>d</string>
+          <string>x</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>dagger</string>
@@ -30367,11 +30632,6 @@
         </array>
         <array>
           <string>f</string>
-          <string>b</string>
-          <integer>90</integer>
-        </array>
-        <array>
-          <string>f</string>
           <string>backslash</string>
           <integer>70</integer>
         </array>
@@ -30407,8 +30667,13 @@
         </array>
         <array>
           <string>f</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>f</string>
           <string>g</string>
-          <integer>-17</integer>
+          <integer>-37</integer>
         </array>
         <array>
           <string>f</string>
@@ -30428,12 +30693,12 @@
         <array>
           <string>f</string>
           <string>h</string>
-          <integer>70</integer>
+          <integer>0</integer>
         </array>
         <array>
           <string>f</string>
           <string>j</string>
-          <integer>30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>f</string>
@@ -30448,6 +30713,11 @@
         <array>
           <string>f</string>
           <string>oe</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>p</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -30478,12 +30748,17 @@
         <array>
           <string>f</string>
           <string>public.kern2.i</string>
-          <integer>30</integer>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>public.kern2.n</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>f</string>
           <string>public.kern2.o</string>
-          <integer>-15</integer>
+          <integer>-35</integer>
         </array>
         <array>
           <string>f</string>
@@ -30492,8 +30767,18 @@
         </array>
         <array>
           <string>f</string>
+          <string>public.kern2.u</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>public.kern2.y</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>f</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>f</string>
@@ -30537,18 +30822,38 @@
         </array>
         <array>
           <string>f</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>f</string>
           <string>registered</string>
           <integer>60</integer>
         </array>
         <array>
           <string>f</string>
           <string>t</string>
-          <integer>20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>f</string>
           <string>trademark</string>
           <integer>80</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>v</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>w</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>f</string>
+          <string>x</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>f_f</string>
@@ -32303,7 +32608,7 @@
         <array>
           <string>g</string>
           <string>b</string>
-          <integer>-5</integer>
+          <integer>-25</integer>
         </array>
         <array>
           <string>g</string>
@@ -32443,12 +32748,12 @@
         <array>
           <string>g</string>
           <string>public.kern2.s</string>
-          <integer>-25</integer>
+          <integer>-15</integer>
         </array>
         <array>
           <string>g</string>
           <string>public.kern2.y</string>
-          <integer>-25</integer>
+          <integer>-35</integer>
         </array>
         <array>
           <string>g</string>
@@ -32488,17 +32793,17 @@
         <array>
           <string>g</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>g</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>g</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>germandbls</string>
@@ -33372,6 +33677,11 @@
         </array>
         <array>
           <string>j</string>
+          <string>b</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>j</string>
           <string>backslash</string>
           <integer>-40</integer>
         </array>
@@ -33379,6 +33689,16 @@
           <string>j</string>
           <string>comma</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>g</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>j</string>
@@ -33403,7 +33723,12 @@
         <array>
           <string>j</string>
           <string>j</string>
-          <integer>40</integer>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>p</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>j</string>
@@ -33417,6 +33742,41 @@
         </array>
         <array>
           <string>j</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.o</string>
+          <integer>-5</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.s</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.u</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.y</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>public.kern2.z</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>j</string>
           <string>quotedblbase</string>
           <integer>-10</integer>
         </array>
@@ -33427,13 +33787,43 @@
         </array>
         <array>
           <string>j</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>t</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>j</string>
           <string>trademark</string>
           <integer>-60</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>v</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>w</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>j</string>
+          <string>x</string>
+          <integer>-50</integer>
         </array>
         <array>
           <string>k</string>
           <string>ae</string>
           <integer>-25</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>b</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>k</string>
@@ -33457,8 +33847,13 @@
         </array>
         <array>
           <string>k</string>
+          <string>f</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>k</string>
           <string>g</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>k</string>
@@ -33477,8 +33872,18 @@
         </array>
         <array>
           <string>k</string>
+          <string>j</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>k</string>
           <string>oe</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>p</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>k</string>
@@ -33488,7 +33893,7 @@
         <array>
           <string>k</string>
           <string>public.kern2.a</string>
-          <integer>-25</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>k</string>
@@ -33502,18 +33907,43 @@
         </array>
         <array>
           <string>k</string>
+          <string>public.kern2.h</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>public.kern2.i</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>public.kern2.n</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>k</string>
           <string>public.kern2.o</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>k</string>
           <string>public.kern2.s</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>public.kern2.u</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>k</string>
           <string>public.kern2.y</string>
-          <integer>-10</integer>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>public.kern2.z</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>k</string>
@@ -33532,18 +33962,38 @@
         </array>
         <array>
           <string>k</string>
+          <string>r</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>t</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>k</string>
           <string>trademark</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>k</string>
           <string>v</string>
-          <integer>-10</integer>
+          <integer>-100</integer>
         </array>
         <array>
           <string>k</string>
           <string>w</string>
-          <integer>-10</integer>
+          <integer>-100</integer>
+        </array>
+        <array>
+          <string>k</string>
+          <string>x</string>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>b</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>l</string>
@@ -33552,8 +34002,43 @@
         </array>
         <array>
           <string>l</string>
-          <string>public.kern2.y</string>
+          <string>f</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>g</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>p</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>public.kern2.u</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>public.kern2.y</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>t</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>l</string>
@@ -33563,12 +34048,17 @@
         <array>
           <string>l</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>l</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>l</string>
+          <string>x</string>
+          <integer>-50</integer>
         </array>
         <array>
           <string>less</string>
@@ -34553,7 +35043,7 @@
         <array>
           <string>public.kern1.A</string>
           <string>b</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34592,8 +35082,13 @@
         </array>
         <array>
           <string>public.kern1.A</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
           <string>g</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34618,7 +35113,7 @@
         <array>
           <string>public.kern1.A</string>
           <string>j</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34628,7 +35123,7 @@
         <array>
           <string>public.kern1.A</string>
           <string>p</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34707,8 +35202,13 @@
         </array>
         <array>
           <string>public.kern1.A</string>
+          <string>public.kern2.i</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
           <string>public.kern2.o</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34718,17 +35218,17 @@
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.u</string>
-          <integer>-30</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.y</string>
-          <integer>-100</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34762,8 +35262,13 @@
         </array>
         <array>
           <string>public.kern1.A</string>
+          <string>r</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
           <string>t</string>
-          <integer>-60</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
@@ -34773,11 +35278,16 @@
         <array>
           <string>public.kern1.A</string>
           <string>v</string>
-          <integer>-100</integer>
+          <integer>-140</integer>
         </array>
         <array>
           <string>public.kern1.A</string>
           <string>w</string>
+          <integer>-140</integer>
+        </array>
+        <array>
+          <string>public.kern1.A</string>
+          <string>x</string>
           <integer>-100</integer>
         </array>
         <array>
@@ -34967,8 +35477,18 @@
         </array>
         <array>
           <string>public.kern1.C</string>
+          <string>b</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
           <string>comma</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>f</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -34982,13 +35502,18 @@
         </array>
         <array>
           <string>public.kern1.C</string>
+          <string>j</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
           <string>m</string>
           <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
           <string>p</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -35032,8 +35557,23 @@
         </array>
         <array>
           <string>public.kern1.C</string>
+          <string>public.kern2.h</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
           <string>public.kern2.n</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -35043,7 +35583,7 @@
         <array>
           <string>public.kern1.C</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.C</string>
@@ -35068,6 +35608,11 @@
         <array>
           <string>public.kern1.C</string>
           <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.C</string>
+          <string>t</string>
           <integer>-10</integer>
         </array>
         <array>
@@ -35227,6 +35772,11 @@
         </array>
         <array>
           <string>public.kern1.E</string>
+          <string>b</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
           <string>backslash</string>
           <integer>-20</integer>
         </array>
@@ -35247,8 +35797,13 @@
         </array>
         <array>
           <string>public.kern1.E</string>
+          <string>f</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.E</string>
           <string>g</string>
-          <integer>-30</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -35328,7 +35883,7 @@
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -35358,12 +35913,12 @@
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.s</string>
-          <integer>-30</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -35373,7 +35928,7 @@
         <array>
           <string>public.kern1.E</string>
           <string>public.kern2.z</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -35398,7 +35953,7 @@
         <array>
           <string>public.kern1.E</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.E</string>
@@ -35578,7 +36133,7 @@
         <array>
           <string>public.kern1.I</string>
           <string>p</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.I</string>
@@ -35633,12 +36188,12 @@
         <array>
           <string>public.kern1.I</string>
           <string>public.kern2.u</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.I</string>
           <string>public.kern2.y</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.I</string>
@@ -35652,17 +36207,27 @@
         </array>
         <array>
           <string>public.kern1.I</string>
+          <string>r</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.I</string>
           <string>t</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.I</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.I</string>
           <string>w</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.I</string>
+          <string>x</string>
           <integer>-30</integer>
         </array>
         <array>
@@ -35787,6 +36352,11 @@
         </array>
         <array>
           <string>public.kern1.N</string>
+          <string>b</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.N</string>
           <string>colon</string>
           <integer>-40</integer>
         </array>
@@ -35803,7 +36373,7 @@
         <array>
           <string>public.kern1.N</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -35868,7 +36438,7 @@
         <array>
           <string>public.kern1.N</string>
           <string>g</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -35888,7 +36458,7 @@
         <array>
           <string>public.kern1.N</string>
           <string>j</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -35903,7 +36473,7 @@
         <array>
           <string>public.kern1.N</string>
           <string>p</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -36002,13 +36572,18 @@
         </array>
         <array>
           <string>public.kern1.N</string>
+          <string>public.kern2.h</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.N</string>
           <string>public.kern2.i</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
           <string>public.kern2.n</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -36023,12 +36598,12 @@
         <array>
           <string>public.kern1.N</string>
           <string>public.kern2.u</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
           <string>public.kern2.y</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -36053,7 +36628,7 @@
         <array>
           <string>public.kern1.N</string>
           <string>r</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
@@ -36063,22 +36638,22 @@
         <array>
           <string>public.kern1.N</string>
           <string>t</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
           <string>v</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
           <string>w</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.N</string>
           <string>x</string>
-          <integer>-70</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.N.sc</string>
@@ -36342,8 +36917,13 @@
         </array>
         <array>
           <string>public.kern1.O</string>
-          <string>public.kern2.s</string>
+          <string>public.kern2.u</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>public.kern2.y</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.O</string>
@@ -36368,6 +36948,16 @@
         <array>
           <string>public.kern1.O</string>
           <string>trademark</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>v</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.O</string>
+          <string>w</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -36688,7 +37278,7 @@
         <array>
           <string>public.kern1.S</string>
           <string>g</string>
-          <integer>-30</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.S</string>
@@ -36787,11 +37377,6 @@
         </array>
         <array>
           <string>public.kern1.S</string>
-          <string>public.kern2.a</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.S</string>
           <string>public.kern2.c</string>
           <integer>-20</integer>
         </array>
@@ -36808,16 +37393,6 @@
         <array>
           <string>public.kern1.S</string>
           <string>public.kern2.n</string>
-          <integer>-30</integer>
-        </array>
-        <array>
-          <string>public.kern1.S</string>
-          <string>public.kern2.o</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>public.kern1.S</string>
-          <string>public.kern2.s</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -37157,6 +37732,11 @@
         </array>
         <array>
           <string>public.kern1.U</string>
+          <string>b</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.U</string>
           <string>colon</string>
           <integer>-30</integer>
         </array>
@@ -37183,7 +37763,7 @@
         <array>
           <string>public.kern1.U</string>
           <string>f</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.U</string>
@@ -37397,6 +37977,11 @@
         </array>
         <array>
           <string>public.kern1.U</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.U</string>
           <string>public.kern2.i</string>
           <integer>-30</integer>
         </array>
@@ -37423,7 +38008,7 @@
         <array>
           <string>public.kern1.U</string>
           <string>public.kern2.y</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.U</string>
@@ -37468,17 +38053,17 @@
         <array>
           <string>public.kern1.U</string>
           <string>v</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.U</string>
           <string>w</string>
-          <integer>-50</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.U</string>
           <string>x</string>
-          <integer>-40</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.U.sc</string>
@@ -37762,6 +38347,11 @@
         </array>
         <array>
           <string>public.kern1.Y</string>
+          <string>b</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
           <string>colon</string>
           <integer>-100</integer>
         </array>
@@ -37788,7 +38378,7 @@
         <array>
           <string>public.kern1.Y</string>
           <string>f</string>
-          <integer>-70</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
@@ -38007,6 +38597,11 @@
         </array>
         <array>
           <string>public.kern1.Y</string>
+          <string>public.kern2.h</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.Y</string>
           <string>public.kern2.i</string>
           <integer>-60</integer>
         </array>
@@ -38083,7 +38678,7 @@
         <array>
           <string>public.kern1.Y</string>
           <string>t</string>
-          <integer>-80</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.Y</string>
@@ -38438,7 +39033,7 @@
         <array>
           <string>public.kern1.a</string>
           <string>b</string>
-          <integer>-5</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.a</string>
@@ -38457,8 +39052,18 @@
         </array>
         <array>
           <string>public.kern1.a</string>
-          <string>public.kern2.y</string>
+          <string>g</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.a</string>
+          <string>public.kern2.u</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.a</string>
+          <string>public.kern2.y</string>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.a</string>
@@ -38477,23 +39082,38 @@
         </array>
         <array>
           <string>public.kern1.a</string>
+          <string>t</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.a</string>
           <string>trademark</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.a</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.a</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-80</integer>
+        </array>
+        <array>
+          <string>public.kern1.a</string>
+          <string>x</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>ae</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>b</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
@@ -38508,6 +39128,11 @@
         <array>
           <string>public.kern1.c</string>
           <string>bracketright</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>f</string>
           <integer>-10</integer>
         </array>
         <array>
@@ -38527,13 +39152,23 @@
         </array>
         <array>
           <string>public.kern1.c</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
           <string>public.kern2.y</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.c</string>
+          <string>r</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
@@ -38548,17 +39183,17 @@
         <array>
           <string>public.kern1.c</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.c</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
@@ -38568,7 +39203,7 @@
         <array>
           <string>public.kern1.e</string>
           <string>b</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
@@ -38588,6 +39223,11 @@
         <array>
           <string>public.kern1.e</string>
           <string>comma</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>f</string>
           <integer>-10</integer>
         </array>
         <array>
@@ -38622,8 +39262,23 @@
         </array>
         <array>
           <string>public.kern1.e</string>
+          <string>public.kern2.h</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.u</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
           <string>public.kern2.y</string>
-          <integer>-15</integer>
+          <integer>-55</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
+          <string>public.kern2.z</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
@@ -38652,23 +39307,33 @@
         </array>
         <array>
           <string>public.kern1.e</string>
+          <string>t</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.e</string>
           <string>trademark</string>
           <integer>-90</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.e</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>b</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.i</string>
@@ -38677,7 +39342,37 @@
         </array>
         <array>
           <string>public.kern1.i</string>
+          <string>g</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>j</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>p</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>public.kern2.o</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>public.kern2.u</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
           <string>public.kern2.y</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>public.kern2.z</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -38689,6 +39384,16 @@
           <string>public.kern1.i</string>
           <string>quoteleft</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>t</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.i</string>
@@ -38698,12 +39403,22 @@
         <array>
           <string>public.kern1.i</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.i</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.i</string>
+          <string>x</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>b</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
@@ -38712,7 +39427,32 @@
         </array>
         <array>
           <string>public.kern1.n</string>
+          <string>g</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>j</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>p</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>public.kern2.u</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
           <string>public.kern2.y</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>public.kern2.z</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -38727,23 +39467,43 @@
         </array>
         <array>
           <string>public.kern1.n</string>
+          <string>r</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>t</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
           <string>trademark</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.n</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.n</string>
+          <string>x</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>ae</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
+          <string>b</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
@@ -38793,7 +39553,7 @@
         <array>
           <string>public.kern1.o</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
@@ -38803,12 +39563,12 @@
         <array>
           <string>public.kern1.o</string>
           <string>public.kern2.y</string>
-          <integer>-25</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
@@ -38837,6 +39597,11 @@
         </array>
         <array>
           <string>public.kern1.o</string>
+          <string>r</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.o</string>
           <string>slash</string>
           <integer>-30</integer>
         </array>
@@ -38848,22 +39613,27 @@
         <array>
           <string>public.kern1.o</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.o</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>ae</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
+          <string>b</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
@@ -38897,6 +39667,11 @@
         </array>
         <array>
           <string>public.kern1.s</string>
+          <string>p</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
           <string>parenright</string>
           <integer>-10</integer>
         </array>
@@ -38907,18 +39682,28 @@
         </array>
         <array>
           <string>public.kern1.s</string>
+          <string>public.kern2.h</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
           <string>public.kern2.s</string>
           <integer>-10</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
+          <string>public.kern2.u</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
           <string>public.kern2.y</string>
-          <integer>-25</integer>
+          <integer>-45</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>public.kern2.z</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
@@ -38937,13 +39722,18 @@
         </array>
         <array>
           <string>public.kern1.s</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.s</string>
           <string>slash</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>t</string>
-          <integer>-10</integer>
+          <integer>-20</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
@@ -38953,17 +39743,22 @@
         <array>
           <string>public.kern1.s</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.s</string>
           <string>x</string>
-          <integer>-10</integer>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>b</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.u</string>
@@ -38972,7 +39767,37 @@
         </array>
         <array>
           <string>public.kern1.u</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>g</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>p</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>public.kern2.u</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
           <string>public.kern2.y</string>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>public.kern2.z</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>r</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -38983,12 +39808,17 @@
         <array>
           <string>public.kern1.u</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.u</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.u</string>
+          <string>x</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39003,7 +39833,7 @@
         <array>
           <string>public.kern1.y</string>
           <string>b</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39047,8 +39877,13 @@
         </array>
         <array>
           <string>public.kern1.y</string>
+          <string>f</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
           <string>g</string>
-          <integer>-52</integer>
+          <integer>-82</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39063,12 +39898,17 @@
         <array>
           <string>public.kern1.y</string>
           <string>h</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
           <string>hyphen</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>j</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39087,6 +39927,11 @@
         </array>
         <array>
           <string>public.kern1.y</string>
+          <string>p</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
           <string>parenright</string>
           <integer>-20</integer>
         </array>
@@ -39098,7 +39943,7 @@
         <array>
           <string>public.kern1.y</string>
           <string>public.kern2.a</string>
-          <integer>-45</integer>
+          <integer>-55</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39112,18 +39957,38 @@
         </array>
         <array>
           <string>public.kern1.y</string>
-          <string>public.kern2.o</string>
+          <string>public.kern2.i</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>public.kern2.n</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>public.kern2.o</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
           <string>public.kern2.s</string>
-          <integer>-30</integer>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>public.kern2.u</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>public.kern2.y</string>
+          <integer>-80</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
           <string>public.kern2.z</string>
-          <integer>-40</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>public.kern1.y</string>
@@ -39147,6 +40012,11 @@
         </array>
         <array>
           <string>public.kern1.y</string>
+          <string>r</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
           <string>semicolon</string>
           <integer>-20</integer>
         </array>
@@ -39157,8 +40027,28 @@
         </array>
         <array>
           <string>public.kern1.y</string>
+          <string>t</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
           <string>trademark</string>
           <integer>-60</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>v</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>w</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.y</string>
+          <string>x</string>
+          <integer>-70</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -39168,7 +40058,7 @@
         <array>
           <string>public.kern1.z</string>
           <string>b</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -39178,6 +40068,11 @@
         <array>
           <string>public.kern1.z</string>
           <string>d</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>f</string>
           <integer>-10</integer>
         </array>
         <array>
@@ -39193,7 +40088,7 @@
         <array>
           <string>public.kern1.z</string>
           <string>public.kern2.a</string>
-          <integer>-25</integer>
+          <integer>-15</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
@@ -39217,7 +40112,17 @@
         </array>
         <array>
           <string>public.kern1.z</string>
+          <string>public.kern2.u</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
           <string>public.kern2.y</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
+          <string>public.kern2.z</string>
           <integer>-20</integer>
         </array>
         <array>
@@ -39232,28 +40137,38 @@
         </array>
         <array>
           <string>public.kern1.z</string>
+          <string>t</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>public.kern1.z</string>
           <string>trademark</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>public.kern1.z</string>
           <string>x</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>q</string>
           <string>ae</string>
           <integer>-25</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>b</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>q</string>
@@ -39264,6 +40179,16 @@
           <string>q</string>
           <string>comma</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>g</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>q</string>
@@ -39278,7 +40203,7 @@
         <array>
           <string>q</string>
           <string>j</string>
-          <integer>70</integer>
+          <integer>10</integer>
         </array>
         <array>
           <string>q</string>
@@ -39292,13 +40217,38 @@
         </array>
         <array>
           <string>q</string>
+          <string>public.kern2.h</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>public.kern2.i</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>public.kern2.o</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>q</string>
           <string>public.kern2.s</string>
           <integer>-10</integer>
         </array>
         <array>
           <string>q</string>
-          <string>public.kern2.z</string>
+          <string>public.kern2.u</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>public.kern2.y</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>public.kern2.z</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>q</string>
@@ -39322,8 +40272,18 @@
         </array>
         <array>
           <string>q</string>
+          <string>r</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>q</string>
           <string>slash</string>
           <integer>-10</integer>
+        </array>
+        <array>
+          <string>q</string>
+          <string>t</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>q</string>
@@ -39333,17 +40293,17 @@
         <array>
           <string>q</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>q</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>q</string>
           <string>x</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>question</string>
@@ -40558,7 +41518,7 @@
         <array>
           <string>r</string>
           <string>b</string>
-          <integer>-10</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>r</string>
@@ -40623,7 +41583,7 @@
         <array>
           <string>r</string>
           <string>h</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>r</string>
@@ -40682,13 +41642,18 @@
         </array>
         <array>
           <string>r</string>
-          <string>public.kern2.y</string>
+          <string>public.kern2.u</string>
           <integer>-20</integer>
         </array>
         <array>
           <string>r</string>
+          <string>public.kern2.y</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>r</string>
           <string>public.kern2.z</string>
-          <integer>-40</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>r</string>
@@ -40738,17 +41703,17 @@
         <array>
           <string>r</string>
           <string>v</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>r</string>
           <string>w</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>r</string>
           <string>x</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>registered</string>
@@ -41417,6 +42382,11 @@
         </array>
         <array>
           <string>t</string>
+          <string>b</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>t</string>
           <string>backslash</string>
           <integer>-100</integer>
         </array>
@@ -41427,8 +42397,18 @@
         </array>
         <array>
           <string>t</string>
+          <string>f</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>t</string>
           <string>g</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>t</string>
+          <string>j</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>t</string>
@@ -41457,6 +42437,16 @@
         </array>
         <array>
           <string>t</string>
+          <string>public.kern2.i</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>t</string>
+          <string>public.kern2.n</string>
+          <integer>-10</integer>
+        </array>
+        <array>
+          <string>t</string>
           <string>public.kern2.o</string>
           <integer>-20</integer>
         </array>
@@ -41467,8 +42457,13 @@
         </array>
         <array>
           <string>t</string>
-          <string>public.kern2.y</string>
+          <string>public.kern2.u</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>t</string>
+          <string>public.kern2.y</string>
+          <integer>-70</integer>
         </array>
         <array>
           <string>t</string>
@@ -41482,8 +42477,13 @@
         </array>
         <array>
           <string>t</string>
+          <string>r</string>
+          <integer>-30</integer>
+        </array>
+        <array>
           <string>t</string>
-          <integer>-10</integer>
+          <string>t</string>
+          <integer>-20</integer>
         </array>
         <array>
           <string>t</string>
@@ -41493,17 +42493,17 @@
         <array>
           <string>t</string>
           <string>v</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>t</string>
           <string>w</string>
-          <integer>-30</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>t</string>
           <string>x</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>three</string>
@@ -41848,7 +42848,7 @@
         <array>
           <string>w</string>
           <string>b</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>w</string>
@@ -41892,8 +42892,13 @@
         </array>
         <array>
           <string>w</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>w</string>
           <string>g</string>
-          <integer>-50</integer>
+          <integer>-80</integer>
         </array>
         <array>
           <string>w</string>
@@ -41908,12 +42913,17 @@
         <array>
           <string>w</string>
           <string>h</string>
-          <integer>-20</integer>
+          <integer>-50</integer>
         </array>
         <array>
           <string>w</string>
           <string>hyphen</string>
           <integer>-20</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>j</string>
+          <integer>-30</integer>
         </array>
         <array>
           <string>w</string>
@@ -41932,6 +42942,11 @@
         </array>
         <array>
           <string>w</string>
+          <string>p</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>w</string>
           <string>parenright</string>
           <integer>-20</integer>
         </array>
@@ -41943,7 +42958,7 @@
         <array>
           <string>w</string>
           <string>public.kern2.a</string>
-          <integer>-45</integer>
+          <integer>-55</integer>
         </array>
         <array>
           <string>w</string>
@@ -41957,18 +42972,38 @@
         </array>
         <array>
           <string>w</string>
-          <string>public.kern2.o</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>public.kern2.n</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>public.kern2.o</string>
+          <integer>-60</integer>
         </array>
         <array>
           <string>w</string>
           <string>public.kern2.s</string>
-          <integer>-30</integer>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>public.kern2.u</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>public.kern2.y</string>
+          <integer>-70</integer>
         </array>
         <array>
           <string>w</string>
           <string>public.kern2.z</string>
-          <integer>-40</integer>
+          <integer>-70</integer>
         </array>
         <array>
           <string>w</string>
@@ -41992,6 +43027,11 @@
         </array>
         <array>
           <string>w</string>
+          <string>r</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>w</string>
           <string>semicolon</string>
           <integer>-20</integer>
         </array>
@@ -42002,8 +43042,28 @@
         </array>
         <array>
           <string>w</string>
+          <string>t</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>w</string>
           <string>trademark</string>
           <integer>-50</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>v</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>w</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>w</string>
+          <string>x</string>
+          <integer>-70</integer>
         </array>
         <array>
           <string>x</string>
@@ -42013,7 +43073,7 @@
         <array>
           <string>x</string>
           <string>b</string>
-          <integer>-10</integer>
+          <integer>-60</integer>
         </array>
         <array>
           <string>x</string>
@@ -42042,6 +43102,11 @@
         </array>
         <array>
           <string>x</string>
+          <string>f</string>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>x</string>
           <string>g</string>
           <integer>-30</integer>
         </array>
@@ -42062,8 +43127,18 @@
         </array>
         <array>
           <string>x</string>
+          <string>j</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>x</string>
           <string>oe</string>
           <integer>-30</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>p</string>
+          <integer>-40</integer>
         </array>
         <array>
           <string>x</string>
@@ -42078,7 +43153,7 @@
         <array>
           <string>x</string>
           <string>public.kern2.a</string>
-          <integer>-20</integer>
+          <integer>-30</integer>
         </array>
         <array>
           <string>x</string>
@@ -42092,23 +43167,43 @@
         </array>
         <array>
           <string>x</string>
-          <string>public.kern2.o</string>
+          <string>public.kern2.h</string>
           <integer>-30</integer>
         </array>
         <array>
           <string>x</string>
+          <string>public.kern2.i</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>public.kern2.n</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>public.kern2.o</string>
+          <integer>-65</integer>
+        </array>
+        <array>
+          <string>x</string>
           <string>public.kern2.s</string>
-          <integer>-10</integer>
+          <integer>-30</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>public.kern2.u</string>
+          <integer>-50</integer>
         </array>
         <array>
           <string>x</string>
           <string>public.kern2.y</string>
-          <integer>-10</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>x</string>
           <string>public.kern2.z</string>
-          <integer>-10</integer>
+          <integer>-40</integer>
         </array>
         <array>
           <string>x</string>
@@ -42127,18 +43222,33 @@
         </array>
         <array>
           <string>x</string>
+          <string>r</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>t</string>
+          <integer>-40</integer>
+        </array>
+        <array>
+          <string>x</string>
           <string>trademark</string>
           <integer>-100</integer>
         </array>
         <array>
           <string>x</string>
           <string>v</string>
-          <integer>-10</integer>
+          <integer>-90</integer>
         </array>
         <array>
           <string>x</string>
           <string>w</string>
-          <integer>-10</integer>
+          <integer>-90</integer>
+        </array>
+        <array>
+          <string>x</string>
+          <string>x</string>
+          <integer>-70</integer>
         </array>
         <array>
           <string>yen</string>
@@ -42910,177 +44020,177 @@
         <key>A</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>722</integer>
+          <integer>702</integer>
         </dict>
         <key>B</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>604</integer>
+          <integer>584</integer>
         </dict>
         <key>C</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>619</integer>
+          <integer>599</integer>
         </dict>
         <key>D</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>726</integer>
+          <integer>706</integer>
         </dict>
         <key>E</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>620</integer>
+          <integer>590</integer>
         </dict>
         <key>F</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>622</integer>
+          <integer>592</integer>
         </dict>
         <key>G</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>703</integer>
+          <integer>633</integer>
         </dict>
         <key>H</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>758</integer>
+          <integer>738</integer>
         </dict>
         <key>I</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>361</integer>
+          <integer>341</integer>
         </dict>
         <key>J</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-20</integer>
           <key>width</key>
-          <integer>444</integer>
+          <integer>404</integer>
         </dict>
         <key>K</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>758</integer>
+          <integer>738</integer>
         </dict>
         <key>L</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>617</integer>
+          <integer>582</integer>
         </dict>
         <key>M</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>888</integer>
+          <integer>868</integer>
         </dict>
         <key>N</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>731</integer>
+          <integer>711</integer>
         </dict>
         <key>O</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>682</integer>
+          <integer>662</integer>
         </dict>
         <key>P</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>615</integer>
+          <integer>595</integer>
         </dict>
         <key>Q</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>683</integer>
+          <integer>662</integer>
         </dict>
         <key>R</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>720</integer>
+          <integer>685</integer>
         </dict>
         <key>S</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>500</integer>
+          <integer>460</integer>
         </dict>
         <key>T</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-10</integer>
           <key>width</key>
-          <integer>664</integer>
+          <integer>624</integer>
         </dict>
         <key>U</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>711</integer>
+          <integer>691</integer>
         </dict>
         <key>V</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>722</integer>
+          <integer>702</integer>
         </dict>
         <key>W</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>1027</integer>
+          <integer>1007</integer>
         </dict>
         <key>X</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-10</integer>
           <key>width</key>
-          <integer>755</integer>
+          <integer>690</integer>
         </dict>
         <key>Y</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>723</integer>
+          <integer>703</integer>
         </dict>
         <key>Z</key>
         <dict>
@@ -43092,9 +44202,9 @@
         <key>a</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>477</integer>
+          <integer>432</integer>
         </dict>
         <key>ampersand</key>
         <dict>
@@ -43134,9 +44244,9 @@
         <key>b</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-10</integer>
           <key>width</key>
-          <integer>539</integer>
+          <integer>509</integer>
         </dict>
         <key>backslash</key>
         <dict>
@@ -43183,9 +44293,9 @@
         <key>c</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>429</integer>
+          <integer>399</integer>
         </dict>
         <key>colon</key>
         <dict>
@@ -43204,9 +44314,9 @@
         <key>d</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>541</integer>
+          <integer>509</integer>
         </dict>
         <key>dollar</key>
         <dict>
@@ -43218,9 +44328,9 @@
         <key>e</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>429</integer>
+          <integer>409</integer>
         </dict>
         <key>eight</key>
         <dict>
@@ -43246,9 +44356,9 @@
         <key>f</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>299</integer>
+          <integer>274</integer>
         </dict>
         <key>five</key>
         <dict>
@@ -43267,9 +44377,9 @@
         <key>g</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-25</integer>
           <key>width</key>
-          <integer>499</integer>
+          <integer>404</integer>
         </dict>
         <key>grave</key>
         <dict>
@@ -43288,9 +44398,9 @@
         <key>h</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-6</integer>
           <key>width</key>
-          <integer>539</integer>
+          <integer>513</integer>
         </dict>
         <key>hyphen</key>
         <dict>
@@ -43302,30 +44412,30 @@
         <key>i</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-1</integer>
           <key>width</key>
-          <integer>281</integer>
+          <integer>260</integer>
         </dict>
         <key>j</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-95</integer>
+          <integer>-106</integer>
           <key>width</key>
-          <integer>200</integer>
+          <integer>240</integer>
         </dict>
         <key>k</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>519</integer>
+          <integer>489</integer>
         </dict>
         <key>l</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-6</integer>
           <key>width</key>
-          <integer>271</integer>
+          <integer>245</integer>
         </dict>
         <key>less</key>
         <dict>
@@ -43337,16 +44447,16 @@
         <key>m</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>802</integer>
+          <integer>782</integer>
         </dict>
         <key>n</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-4</integer>
           <key>width</key>
-          <integer>538</integer>
+          <integer>508</integer>
         </dict>
         <key>nine</key>
         <dict>
@@ -43365,9 +44475,9 @@
         <key>o</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>484</integer>
+          <integer>464</integer>
         </dict>
         <key>one</key>
         <dict>
@@ -43379,9 +44489,9 @@
         <key>p</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-15</integer>
           <key>width</key>
-          <integer>544</integer>
+          <integer>509</integer>
         </dict>
         <key>parenleft</key>
         <dict>
@@ -43421,9 +44531,9 @@
         <key>q</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>527</integer>
+          <integer>509</integer>
         </dict>
         <key>question</key>
         <dict>
@@ -43456,9 +44566,9 @@
         <key>s</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>349</integer>
+          <integer>329</integer>
         </dict>
         <key>semicolon</key>
         <dict>
@@ -43491,14 +44601,14 @@
         <key>space</key>
         <dict>
           <key>width</key>
-          <integer>40</integer>
+          <integer>243</integer>
         </dict>
         <key>t</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>-10</integer>
           <key>width</key>
-          <integer>324</integer>
+          <integer>304</integer>
         </dict>
         <key>three</key>
         <dict>
@@ -43519,7 +44629,7 @@
           <key>leftMargin</key>
           <integer>10</integer>
           <key>width</key>
-          <integer>536</integer>
+          <integer>526</integer>
         </dict>
         <key>underscore</key>
         <dict>
@@ -43531,37 +44641,37 @@
         <key>v</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>505</integer>
+          <integer>485</integer>
         </dict>
         <key>w</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>699</integer>
+          <integer>679</integer>
         </dict>
         <key>x</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>518</integer>
+          <integer>498</integer>
         </dict>
         <key>y</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>508</integer>
+          <integer>488</integer>
         </dict>
         <key>z</key>
         <dict>
           <key>leftMargin</key>
-          <integer>10</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>404</integer>
+          <integer>384</integer>
         </dict>
         <key>zero</key>
         <dict>

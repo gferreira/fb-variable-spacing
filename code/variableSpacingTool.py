@@ -6,7 +6,8 @@ from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView
 from mojo import drawingTools as ctx
-from extras.hTools3_dialogs import * # hTools3.dialogs
+from extras.hTools3_dialogs import *
+from variableSpacingLib import *
 
 # -------
 # objects
@@ -180,7 +181,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             return
 
         if self.verbose:
-            print(f"saving spacing state '{self.currentState}'' to the lib...", end=' ')
+            print(f"saving spacing state '{self.currentState}' to the lib...", end=' ')
 
         saveSpacingToLib(self.font, self.spacingKey, self.currentState)
         saveKerningToLib(self.font, self.kerningKey, self.currentState)
