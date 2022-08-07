@@ -15,7 +15,7 @@ txt = 'AVATAR voxr.'
 
 steps = 5
 s = 0.15
-savePDF = True
+savePDF = False
 
 # -----
 # draw!
