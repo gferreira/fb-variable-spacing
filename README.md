@@ -25,7 +25,7 @@ Demo fonts and build scripts
 ----------------------------
 
 - [x] Publica
-- [ ] Escrow
+- [x] Escrow
 
 Spacing visualization tools
 ---------------------------
