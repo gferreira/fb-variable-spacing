@@ -4,6 +4,13 @@ layout : default
 order  : 1
 ---
 
+How to generate a variable font with a spacing axis using the spacing states as sources.
+{: .lead }
+
+* Table of Contents
+{:toc}
+
+
 Folder structure
 ----------------
 

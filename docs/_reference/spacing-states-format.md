@@ -63,6 +63,8 @@ A **spacing state** is a snapshot of the font’s glyph width and left margin va
 
 Empty glyphs are described only by their width; as there are no contours, there are also no left or right margins.
 
+##### XML example
+
 ```xml
 <key>com.hipertipo.spacingaxis.spacing</key>
 <dict>
@@ -71,7 +73,7 @@ Empty glyphs are described only by their width; as there are no contours, there 
     <key>a</key>
     <dict>
       <key>leftMargin</key>
-      <real>74.98881178188978</real>
+      <real>75</real>
       <key>width</key>
       <integer>543</integer>
     </dict>
@@ -91,6 +93,20 @@ Empty glyphs are described only by their width; as there are no contours, there 
 </dict>
 ```
 
+##### Python example 
+
+```python
+font.lib[f'com.hipertipo.spacingaxis.spacing'] = {
+    'default' : {
+        'a': {'width': 543, 'leftMargin': 75},
+        'space': {'width': 270},
+    }
+    'tight' : {
+        'a': {},
+    },
+}
+```
+
 ### Kerning lib
 
 The kerning lib contains data for one or more kerning states.
@@ -100,6 +116,8 @@ A **kerning state** is a snapshot of the font’s kerning pair values at a given
 The value for each kerning pair is stored as an array of first glyph, second glyph, and kerning value.
 
 The glyphs in each pair can be defined by glyph name or kerning group.
+
+##### XML example
 
 ```xml
 <key>com.hipertipo.spacingaxis.kerning</key>
@@ -122,4 +140,16 @@ The glyphs in each pair can be defined by glyph name or kerning group.
     <!-- etc. -->
   </array>
 </dict>
+```
+
+##### Python example 
+
+```python
+font.lib['com.hipertipo.spacingaxis.kerning'] = {
+    'default' : [
+        ('public.kern1.A', 'public.kern2.V', -40),
+        ('B', 'J', -20),
+    ],
+    'tight' : [],
+}
 ```

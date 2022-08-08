@@ -37,6 +37,4 @@ types of changes:
 0.1
 ---
 
-Initial public release.
-
-- <span class='badge'>Added</span> Rebuilding documentation with Jekyll and GitHub Pages.
+Initial private release.
