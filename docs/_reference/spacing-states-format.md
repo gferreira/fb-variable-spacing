@@ -7,22 +7,29 @@ order  : 1
 A format to store various sets of glyph metrics and kerning values inside the same font.
 {: .lead}
 
+* Table of Contents
+{:toc}
 
-Spacing State definition
-------------------------
 
-The **spacing state** of a font is defined as the sum of:
+Definition of Spacing State
+---------------------------
+
+A single set of glyph contours can have multiple spacing configurations or “states”. For example: *normal*, *tight* and *loose*.
+
+A **spacing state** in a font is defined as the sum of:
 
 - glyph width and left margin of all glyphs
 - all kerning values
 
-Multiple spacing states share the same set of glyph contours.
 
 
 Spacing State libs
 ------------------
 
-Spacing states are stored under two separate custom font-level libs: one for the actual spacing (glyph metrics), and the other one for the kerning.
+Spacing states are stored under two separate custom font-level libs:
+
+- one for the actual spacing (glyph metrics)
+- one for the kerning
 
 The prefix `com.hipertipo.spacingaxis` is used to identify both libs:
 
@@ -32,11 +39,11 @@ The prefix `com.hipertipo.spacingaxis` is used to identify both libs:
     <th>key</th>
   </tr>
   <tr>
-    <td>spacing</td>
+    <td><a href='#spacing-lib'>spacing lib</a></td>
     <td><code>com.hipertipo.spacingaxis.spacing</code></td>
   </tr>
   <tr>
-    <td>kerning</td>
+    <td><a href='#kerning-lib'>kerning lib</a></td>
     <td><code>com.hipertipo.spacingaxis.kerning</code></td>
   </tr>
 </table>
@@ -54,7 +61,7 @@ The spacing lib contains data for one or more spacing states.
 
 A **spacing state** is a snapshot of the font’s glyph width and left margin values at a given state.
 
-Empty glyphs are described only by their width, as without contours there are also no left or right margins.
+Empty glyphs are described only by their width; as there are no contours, there are also no left or right margins.
 
 ```xml
 <key>com.hipertipo.spacingaxis.spacing</key>

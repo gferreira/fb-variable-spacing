@@ -10,15 +10,17 @@ Information and tools to create a spacing axis in variable fonts.
 
 <div class='row'>
 
-<div class='col-12 col-sm-6 mb-1' markdown='1'>
+{% comment %}
+<div class='col-12 col-md-4 mb-1' markdown='1'>
 Topics
 ------
 
 - [Overview](overview)
 - [Installation](install)
 </div>
+{% endcomment %}
 
-<div class='col-12 col-sm-6 mb-1' markdown='1'>
+<div class='col-12 col-md-4 mb-1' markdown='1'>
 Reference
 ---------
 
@@ -26,7 +28,7 @@ Reference
 - [SpacingStates tool](reference/spacing-states-tool)
 </div>
 
-<div class='col-12 col-sm-6 mb-1' markdown='1'>
+<div class='col-12 col-md-4 mb-1' markdown='1'>
 Tutorials
 ---------
 
@@ -36,7 +38,7 @@ Tutorials
 - [visualize spacing areas](tutorials/visualize-spacing-areas)
 </div>
 
-<div class='col-12 col-sm-6 mb-1' markdown='1'>
+<div class='col-12 col-md-4 mb-1' markdown='1'>
 Development
 -----------
 
