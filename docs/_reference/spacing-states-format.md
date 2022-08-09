@@ -14,13 +14,10 @@ A format to store various sets of glyph metrics and kerning values inside the sa
 Definition of Spacing State
 ---------------------------
 
-A single set of glyph contours can have multiple spacing configurations or “states”. For example: *normal*, *tight* and *loose*.
-
 A **spacing state** in a font is defined as the sum of:
 
 - glyph width and left margin of all glyphs
 - all kerning values
-
 
 
 Spacing State libs

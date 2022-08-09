@@ -1,20 +1,14 @@
 ---
-title  : Installing VariableSpacing
+title  : Installing Variable Spacing tools
 layout : default
 order  : 1
 ---
 
-VariableSpacing tools are available as a Python module and as a RoboFont extension.
+Variable Spacing tools are available as a Python module and as a RoboFont extension.
 {: .lead }
 
 * Table of Contents
 {:toc}
-
-<!--
-The repository currently contains various scripts rather than a single module or tool, so there is no single central installation process.
-
-See the sections below for instructions on how to use each one of the tools.
--->
 
 Installing the Python module
 ----------------------------
@@ -24,7 +18,7 @@ If you use the RoboFont extension, you don’t need to install the module separa
 {: .card-text }
 </div>
 
-The `VariableSpacing` Python module contains various functions to create and edit spacing states in UFO fonts. The functions can be used in any Python environment alongside [FontParts](#).
+The `VariableSpacingLib` Python module contains various functions to create and edit spacing states in UFO fonts. The functions can be used in any Python environment alongside [FontParts](#).
 
 To use the module outside of RoboFont, you can copy the file `variableSpacingLib.py` into the same repository as your script, so you can simply import the functions into your code:
 
@@ -48,8 +42,13 @@ from variableSpacingLib import *
 ```
 
 
+
 Installing the RoboFont extension
 ---------------------------------
+
+coming soon…
+
+{% comment %}
 
 <div class="alert alert-warning" role="alert" markdown='1'>
 The extension is being developed in RoboFont 3. It probably works in RoboFont 4 too, but the preview may look blurry.
@@ -80,4 +79,4 @@ This mode allows developers to make changes to the code while using and testing 
 
 [Extensions > Start Up Scripts]: http://robofont.com/documentation/workspace/preferences-window/extensions/#start-up-scripts
 
-
+{% endcomment %}
