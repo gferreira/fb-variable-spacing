@@ -1,6 +1,6 @@
-from importlib import reload
-import spacingSetter
-reload(spacingSetter)
+# from importlib import reload
+# import spacingSetter
+# reload(spacingSetter)
 
 import os
 from spacingSetter import *
@@ -20,6 +20,9 @@ savePDF = False
 # -----
 # draw!
 # -----
+
+fill(1)
+rect(0, 0, height(), width())
 
 x, y = 40, height() * 0.8
 

@@ -1,8 +1,8 @@
-from importlib import reload
-import spacingAreasLib
-reload(spacingAreasLib)
+# from importlib import reload
+# import spacingAreas
+# reload(spacingAreas)
 
-from spacingAreasLib import *
+from spacingAreas import *
 
 # --------
 # settings

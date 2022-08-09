@@ -7,7 +7,7 @@ from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView
 from mojo import drawingTools as ctx
 from extras.hTools3_dialogs import *
-from variableSpacingLib import *
+from variableSpacing import *
 
 # -------
 # objects
