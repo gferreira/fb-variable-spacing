@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="asciicircum" format="2">
+  <advance width="454"/>
+  <unicode hex="005E"/>
+  <outline>
+    <contour>
+      <point x="92" y="306" type="line"/>
+      <point x="92" y="383" type="line"/>
+      <point x="362" y="383" type="line"/>
+      <point x="362" y="306" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Escrow-Roman/_ufos/Display_Black.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

@@ -8,7 +8,7 @@ from spacingAreas import *
 # settings
 # --------
 
-ufoPath = '/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz12_wdth100_wght400.ufo'
+ufoPath = '/hipertipo/tools/VariableSpacing/demos/Escrow/Escrow.ufo'
 
 f = OpenFont(ufoPath, showInterface=False)
 
@@ -28,7 +28,7 @@ parameters = {
     'glyphParameters' : {
         'color1'  : (1, 0.5, 0), # inner
         'color2'  : (0, 0.5, 1), # outer
-        'color3'  : (1,),        # glyph
+        'color3'  : (0,),        # glyph
         'ySteps'  : 50,
         'yMin'    : 0,
         'yMax'    : f.info.xHeight,

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Z" format="2">
+  <advance width="634"/>
+  <unicode hex="005A"/>
+  <outline>
+    <contour>
+      <point x="-11" y="0" type="line"/>
+      <point x="-11" y="33" type="line"/>
+      <point x="427" y="656" type="line"/>
+      <point x="238" y="656" type="line"/>
+      <point x="210" y="651"/>
+      <point x="128" y="548"/>
+      <point x="67" y="442" type="curve"/>
+      <point x="41" y="446" type="line"/>
+      <point x="70" y="689" type="line"/>
+      <point x="632" y="689" type="line"/>
+      <point x="632" y="656" type="line"/>
+      <point x="194" y="33" type="line"/>
+      <point x="412" y="36" type="line"/>
+      <point x="457" y="49"/>
+      <point x="522" y="122"/>
+      <point x="601" y="250" type="curve"/>
+      <point x="626" y="248" type="line"/>
+      <point x="598" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Escrow/Escrow-Roman/_ufos/opsz48_wdth100_wght900.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>
