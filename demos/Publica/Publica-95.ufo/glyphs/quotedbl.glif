@@ -2,8 +2,6 @@
 <glyph name="quotedbl" format="2">
   <advance width="462"/>
   <unicode hex="0022"/>
-  <guideline x="40.0" y="0" angle="90.0" name="TRAC"/>
-  <guideline x="422.0" y="0" angle="90.0" name="TRAC"/>
   <outline>
     <contour>
       <point x="399" y="398" type="line"/>

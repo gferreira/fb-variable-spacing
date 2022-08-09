@@ -2,8 +2,6 @@
 <glyph name="semicolon" format="2">
   <advance width="295"/>
   <unicode hex="003B"/>
-  <guideline x="40" y="0" angle="90.0" name="TRAC" identifier="sc1dNiYcZ4"/>
-  <guideline x="255" y="0" angle="90.0" name="TRAC" identifier="ZbGszjI8s8"/>
   <outline>
     <contour>
       <point x="65" y="315" type="line"/>

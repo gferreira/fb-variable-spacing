@@ -4,9 +4,9 @@ from fontTools.agl import UV2AGL
 from fontParts.world import OpenFont, RGlyph
 from fontPens.marginPen import MarginPen
 
-from extras.progvis_vector import getVector, vector
-from extras.progvis_toolsDB import drawGlyph, glyph2bezier
-from extras.hTools3_primitives import polygon as Polygon, rect as Rect
+from variableSpacing.extras.progvis_vector import getVector, vector
+from variableSpacing.extras.progvis_toolsDB import drawGlyph, glyph2bezier
+from variableSpacing.extras.hTools3_primitives import polygon as Polygon, rect as Rect
 
 
 class SpacingAreasGlyph:

@@ -1,14 +1,14 @@
 # from importlib import reload
-# import spacingAreas
-# reload(spacingAreas)
+# import variableSpacing.modules.spacingAreas
+# reload(variableSpacing.modules.spacingAreas)
 
-from spacingAreas import *
+from variableSpacing.modules.spacingAreas import *
 
 # --------
 # settings
 # --------
 
-ufoPath = '/hipertipo/tools/VariableSpacing/demos/Escrow/Escrow.ufo'
+ufoPath = '/hipertipo/tools/VariableSpacing/demos/Escrow/Escrow-400.ufo'
 
 f = OpenFont(ufoPath, showInterface=False)
 

@@ -2,8 +2,6 @@
 <glyph name="x" format="2">
   <advance width="538"/>
   <unicode hex="0078"/>
-  <guideline x="8" y="0" angle="90.0" name="TRAC" identifier="G4AglEjP85"/>
-  <guideline x="515" y="0" angle="90.0" name="TRAC" identifier="44Xz2wxuwn"/>
   <anchor x="220" y="537" name="top"/>
   <outline>
     <contour>

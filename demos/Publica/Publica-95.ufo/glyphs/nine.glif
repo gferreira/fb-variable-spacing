@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="nine" format="2">
   <advance width="546"/>
-  <guideline x="25" y="0" angle="90.0" name="TRAC"/>
-  <guideline x="521" y="0" angle="90.0" name="TRAC"/>
   <outline>
     <contour>
       <point x="35" y="409" type="curve" smooth="yes"/>

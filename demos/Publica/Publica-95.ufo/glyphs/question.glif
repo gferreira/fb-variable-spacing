@@ -2,8 +2,6 @@
 <glyph name="question" format="2">
   <advance width="519"/>
   <unicode hex="003F"/>
-  <guideline x="10" y="0" angle="90.0" name="TRAC" identifier="qGSmPCCbyW"/>
-  <guideline x="489" y="0" angle="90.0" name="TRAC" identifier="5qEllbjs0a"/>
   <outline>
     <contour>
       <point x="150" y="0" type="line"/>

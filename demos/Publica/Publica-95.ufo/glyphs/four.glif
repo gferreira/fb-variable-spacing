@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="four" format="2">
   <advance width="564"/>
-  <guideline x="25" y="0" angle="90.0" name="TRAC" identifier="9IrEHUCfbB"/>
-  <guideline x="539" y="0" angle="90.0" name="TRAC" identifier="Tnr5Hu34aV"/>
   <outline>
     <contour>
       <point x="529" y="140" type="line"/>

@@ -1,8 +1,8 @@
-# menuTitle: VariableSpacing
+# menuTitle: Spacing States tool
 
 from importlib import reload
-import variableSpacing
-reload(variableSpacing)
+import variableSpacing.modules.variableSpacing
+reload(variableSpacing.modules.variableSpacing)
 
 import os, shutil
 from vanilla import *
@@ -10,8 +10,9 @@ from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView
 from mojo import drawingTools as ctx
-from extras.hTools3_dialogs import *
-from variableSpacing import *
+
+from variableSpacing.modules.variableSpacing import *
+from variableSpacing.extras.hTools3_dialogs import *
 
 # -------
 # objects

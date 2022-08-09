@@ -1,6 +1,6 @@
-from importlib import reload
-import spacingAreasLib
-reload(spacingAreasLib)
+# from importlib import reload
+# import variableSpacing.modules.spacingAreas
+# reload(variableSpacing.modules.spacingAreas)
 
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
@@ -10,10 +10,10 @@ from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView, NumberEditText
 from mojo.roboFont import RGlyph
 
-from extras.hTools3_dialogs import *
-from extras.hTools3_spinnerSlider import SpinnerSlider
-from extras.hTools3_color import rgb2nscolor, nscolor2rgb
-from spacingAreasLib import *
+from variableSpacing.modules.spacingAreas import *
+from variableSpacing.extras.hTools3_dialogs import *
+from variableSpacing.extras.hTools3_spinnerSlider import SpinnerSlider
+from variableSpacing.extras.hTools3_color import rgb2nscolor, nscolor2rgb
 
 # ----------------
 # global variables

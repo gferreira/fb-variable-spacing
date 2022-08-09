@@ -7950,30 +7950,6 @@
       <real>0.5</real>
       <real>0.7</real>
     </array>
-    <key>com.typemytype.robofont.guideline.magnetic.52KvgdMJJj</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.Lh2y55iRkr</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.WQWu5dzPD5</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.XLPEdzjcKS</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.YtM9kbpPZF</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.e6xYqdLo29</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.e85FBExrOg</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.knBePndeU4</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.voJSjIhTq5</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.magnetic.ywpmCn9O8h</key>
-    <real>5.0</real>
-    <key>com.typemytype.robofont.guideline.showMeasurements.e85FBExrOg</key>
-    <false/>
-    <key>com.typemytype.robofont.guideline.showMeasurements.knBePndeU4</key>
-    <false/>
     <key>com.typemytype.robofont.segmentType</key>
     <string>curve</string>
     <key>com.typemytype.robofont.smartSets.uniqueKey</key>

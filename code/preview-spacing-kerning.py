@@ -1,9 +1,9 @@
 # from importlib import reload
-# import spacingSetter
-# reload(spacingSetter)
+# import variableSpacing.modules.spacingSetter
+# reload(variableSpacing.modules.spacingSetter)
 
 import os
-from spacingSetter import *
+from variableSpacing.modules.spacingSetter import *
 
 # --------
 # settings

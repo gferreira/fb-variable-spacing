@@ -2,8 +2,6 @@
 <glyph name="exclam" format="2">
   <advance width="280"/>
   <unicode hex="0021"/>
-  <guideline x="40" y="0" angle="90.0" name="TRAC" identifier="FS5Zn7NDG4"/>
-  <guideline x="240" y="0" angle="90.0" name="TRAC" identifier="kDGUUXBctU"/>
   <outline>
     <contour>
       <point x="50" y="0" type="line"/>

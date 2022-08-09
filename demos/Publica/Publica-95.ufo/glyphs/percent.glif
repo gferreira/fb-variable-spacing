@@ -2,8 +2,6 @@
 <glyph name="percent" format="2">
   <advance width="817"/>
   <unicode hex="0025"/>
-  <guideline x="13" y="0" angle="90.0" name="TRAC"/>
-  <guideline x="803" y="0" angle="90.0" name="TRAC"/>
   <outline>
     <contour>
       <point x="243" y="426" type="curve" smooth="yes"/>

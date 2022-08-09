@@ -2,8 +2,6 @@
 <glyph name="q" format="2">
   <advance width="560"/>
   <unicode hex="0071"/>
-  <guideline x="20" y="0" angle="90.0" name="TRAC" identifier="TbHL7KL4qz"/>
-  <guideline x="520" y="0" angle="90.0" name="TRAC" identifier="I59IQGFsIg"/>
   <outline>
     <contour>
       <point x="202" y="-10" type="curve" smooth="yes"/>
