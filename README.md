@@ -8,27 +8,11 @@ Background
 - [discussion of the proposal](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/issues/11)
 - [discussion on TypeDrawers](https://typedrawers.com/discussion/2088/otvar-spacing-axis)
 
-- - -
+In this repository
+------------------
 
-in this repository:
+- data format and tools to work with variable fonts containing a spacing axis
+- demo fonts and build scripts
+- spacing visualization tools
 
-VariableSpacing tools
----------------------
-
-data format and tools to work with variable fonts containing a spacing axis
-
-- definition of **spacing state**: a snapshot of all glyph metrics (width and left margin) and kerning values
-- a set of functions to load, save, delete, generate spacing states in Python
-- a RoboFont dialog to preview and use spacing states
-
-Demo fonts and build scripts
-----------------------------
-
-- [x] Publica
-- [x] Escrow
-
-Spacing visualization tools
----------------------------
-
-- Internal and external areas
-- Glyph metrics and kerning
+for more info see the [documentation](http://hipertipo.gitlab.io/VariableSpacing/) 
