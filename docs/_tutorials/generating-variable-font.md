@@ -1,5 +1,5 @@
 ---
-title  : Generating variable font with spacing axis
+title  : Generating variable fonts with a spacing axis
 layout : default
 order  : 1
 ---

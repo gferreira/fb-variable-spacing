@@ -31,7 +31,7 @@ Tutorials
 ---------
 
 - [working with spacing states](tutorials/working-with-spacing-states)
-- [generating variable font with spacing axis](tutorials/generating-variable-font)
+- [generating variable fonts with a spacing axis](tutorials/generating-variable-font)
 - [visualize spacing and kerning](tutorials/visualize-spacing-kerning)
 - [visualize spacing areas](tutorials/visualize-spacing-areas)
 </div>
