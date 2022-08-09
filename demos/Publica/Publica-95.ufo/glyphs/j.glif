@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="j" format="2">
+  <advance width="270"/>
+  <unicode hex="006A"/>
+  <guideline x="40" y="0" angle="90.0" name="TRAC" identifier="tnzveigKmK"/>
+  <guideline x="231" y="0" angle="90.0" name="TRAC" identifier="F8rgUwXwZM"/>
+  <outline>
+    <contour>
+      <point x="71" y="-200" type="line" smooth="yes"/>
+      <point x="164" y="-200"/>
+      <point x="220" y="-147"/>
+      <point x="220" y="-58" type="curve" smooth="yes"/>
+      <point x="220" y="475" type="line"/>
+      <point x="50" y="475" type="line"/>
+      <point x="50" y="-34" type="line" smooth="yes"/>
+      <point x="50" y="-69"/>
+      <point x="39" y="-80"/>
+      <point x="8" y="-80" type="curve" smooth="yes"/>
+      <point x="-25" y="-80" type="line"/>
+      <point x="-25" y="-200" type="line"/>
+    </contour>
+    <contour>
+      <point x="49" y="529" type="line"/>
+      <point x="221" y="529" type="line"/>
+      <point x="221" y="675" type="line"/>
+      <point x="49" y="675" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

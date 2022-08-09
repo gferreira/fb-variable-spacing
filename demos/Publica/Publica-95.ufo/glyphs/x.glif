@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="x" format="2">
+  <advance width="538"/>
+  <unicode hex="0078"/>
+  <guideline x="8" y="0" angle="90.0" name="TRAC" identifier="G4AglEjP85"/>
+  <guideline x="515" y="0" angle="90.0" name="TRAC" identifier="44Xz2wxuwn"/>
+  <anchor x="220" y="537" name="top"/>
+  <outline>
+    <contour>
+      <point x="235" y="198" type="line"/>
+      <point x="353" y="0" type="line"/>
+      <point x="533" y="0" type="line"/>
+      <point x="364" y="279" type="line"/>
+      <point x="288" y="279" type="line"/>
+      <point x="186" y="475" type="line"/>
+      <point x="8" y="475" type="line"/>
+      <point x="176" y="198" type="line"/>
+    </contour>
+    <contour>
+      <point x="351" y="194" type="line"/>
+      <point x="515" y="475" type="line"/>
+      <point x="339" y="475" type="line"/>
+      <point x="237" y="277" type="line"/>
+      <point x="170" y="277" type="line"/>
+      <point x="5" y="0" type="line"/>
+      <point x="185" y="0" type="line"/>
+      <point x="287" y="194" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.robofab.postScriptHintData</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>

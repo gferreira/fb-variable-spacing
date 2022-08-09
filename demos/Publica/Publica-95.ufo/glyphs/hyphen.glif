@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hyphen" format="2">
+  <advance width="470"/>
+  <unicode hex="002D"/>
+  <outline>
+    <contour>
+      <point x="50" y="167" type="line"/>
+      <point x="420" y="167" type="line"/>
+      <point x="420" y="317" type="line"/>
+      <point x="50" y="317" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

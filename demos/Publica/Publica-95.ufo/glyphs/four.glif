@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four" format="2">
+  <advance width="564"/>
+  <guideline x="25" y="0" angle="90.0" name="TRAC" identifier="9IrEHUCfbB"/>
+  <guideline x="539" y="0" angle="90.0" name="TRAC" identifier="Tnr5Hu34aV"/>
+  <outline>
+    <contour>
+      <point x="529" y="140" type="line"/>
+      <point x="529" y="261" type="line"/>
+      <point x="116" y="261" type="line"/>
+      <point x="148" y="218" type="line"/>
+      <point x="327" y="486" type="line"/>
+      <point x="305" y="514" type="line"/>
+      <point x="305" y="0" type="line"/>
+      <point x="470" y="0" type="line"/>
+      <point x="470" y="615" type="line"/>
+      <point x="269" y="615" type="line"/>
+      <point x="35" y="263" type="line"/>
+      <point x="35" y="140" type="line"/>
+    </contour>
+  </outline>
+</glyph>

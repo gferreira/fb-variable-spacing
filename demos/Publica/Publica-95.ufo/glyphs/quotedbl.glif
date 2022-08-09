@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quotedbl" format="2">
+  <advance width="462"/>
+  <unicode hex="0022"/>
+  <guideline x="40.0" y="0" angle="90.0" name="TRAC"/>
+  <guideline x="422.0" y="0" angle="90.0" name="TRAC"/>
+  <outline>
+    <contour>
+      <point x="399" y="398" type="line"/>
+      <point x="412" y="675" type="line"/>
+      <point x="256" y="675" type="line"/>
+      <point x="267" y="398" type="line"/>
+    </contour>
+    <contour>
+      <point x="193" y="398" type="line"/>
+      <point x="206" y="675" type="line"/>
+      <point x="50" y="675" type="line"/>
+      <point x="61" y="398" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+      <key>org.robofab.postScriptHintData</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>

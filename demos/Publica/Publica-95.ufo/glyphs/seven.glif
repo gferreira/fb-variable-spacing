@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seven" format="2">
+  <advance width="501"/>
+  <guideline x="25.0" y="0" angle="90.0" name="TRAC"/>
+  <guideline x="476.0" y="0" angle="90.0" name="TRAC"/>
+  <outline>
+    <contour>
+      <point x="466" y="494" type="curve"/>
+      <point x="466" y="615" type="line"/>
+      <point x="35" y="615" type="line"/>
+      <point x="35" y="465" type="line"/>
+      <point x="381" y="465" type="line"/>
+      <point x="359" y="528" type="line"/>
+      <point x="206" y="395"/>
+      <point x="107" y="204"/>
+      <point x="108" y="0" type="curve"/>
+      <point x="275" y="0" type="line"/>
+      <point x="275" y="221"/>
+      <point x="332" y="333"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.robofab.postScriptHintData</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>

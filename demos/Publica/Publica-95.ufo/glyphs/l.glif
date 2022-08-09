@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l" format="2">
+  <advance width="270"/>
+  <unicode hex="006C"/>
+  <guideline x="40" y="0" angle="90.0" name="TRAC" identifier="gkTftEGLyJ"/>
+  <guideline x="230" y="0" angle="90.0" name="TRAC" identifier="xLOmDGUycv"/>
+  <anchor x="114" y="734" name="top"/>
+  <anchor x="201" y="305" name="right"/>
+  <anchor x="118" y="2" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="50" y="0" type="line"/>
+      <point x="220" y="0" type="line"/>
+      <point x="220" y="675" type="line"/>
+      <point x="50" y="675" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/_fonts/Publica/_ufos/955A.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

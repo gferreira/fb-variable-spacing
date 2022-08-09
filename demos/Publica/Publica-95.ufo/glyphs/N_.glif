@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="N" format="2">
+  <advance width="685"/>
+  <unicode hex="004E"/>
+  <guideline x="55" y="0" angle="90.0" name="TRAC" identifier="cNz3ChHUSt"/>
+  <guideline x="630" y="0" angle="90.0" name="TRAC" identifier="4Mvma39lky"/>
+  <anchor x="327" y="655" name="top"/>
+  <anchor x="303" y="-3" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="65" y="0" type="line"/>
+      <point x="223" y="0" type="line"/>
+      <point x="223" y="447" type="line"/>
+      <point x="178" y="447" type="line"/>
+      <point x="454" y="0" type="line"/>
+      <point x="620" y="0" type="line"/>
+      <point x="620" y="615" type="line"/>
+      <point x="462" y="615" type="line"/>
+      <point x="462" y="149" type="line"/>
+      <point x="518" y="149" type="line"/>
+      <point x="229" y="615" type="line"/>
+      <point x="65" y="615" type="line"/>
+    </contour>
+  </outline>
+</glyph>

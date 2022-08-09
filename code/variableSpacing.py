@@ -133,6 +133,8 @@ def loadSpacingFromLib(font, spacingKey, name):
 
     changedGlyphs = {}
     for glyphName in font.lib[spacingKey][name].keys():
+        if glyphName not in font:
+            continue
         glyph = font[glyphName]
         if 'leftMargin' in font.lib[spacingKey][name][glyphName]:
             changedGlyphs[glyphName] = glyph.leftMargin

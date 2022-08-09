@@ -1,5 +1,9 @@
 # menuTitle: VariableSpacing
 
+from importlib import reload
+import variableSpacing
+reload(variableSpacing)
+
 import os, shutil
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController

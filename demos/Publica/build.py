@@ -5,13 +5,13 @@ folder = os.getcwd()
 try:
     import variableSpacingLib
 except:
-    variableSpacingLibPath = os.path.join(os.path.dirname(os.path.dirname(folder)), 'code')
-    sys.path.append(variableSpacingLibPath)
-    import variableSpacingLib
+    variableSpacingPath = os.path.join(os.path.dirname(os.path.dirname(folder)), 'code')
+    sys.path.append(variableSpacingPath)
+    import variableSpacing
 
 import os 
 from fontmake.font_project import FontProject
-from variableSpacingLib import *
+from variableSpacing import *
 
 # build spacing sources
 newSources = buildSpacingSources(folder)
