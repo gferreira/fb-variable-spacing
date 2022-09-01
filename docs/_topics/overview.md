@@ -4,7 +4,7 @@ layout : default
 order  : 1
 ---
 
-A method to add a spacing axis to variable fonts.
+Methodology and tools to add a spacing axis to variable fonts.
 {: .lead }
 
 * Table of Contents
@@ -12,16 +12,24 @@ A method to add a spacing axis to variable fonts.
 
 ### The spacing axis
 
-Variable fonts make it possible to create a variation axis to change the spacing or ‘tracking’ of a font. This designer-made tracking included in the fonts is superior to the automatic tracking provided by applications or CSS.
+Variable fonts make it possible to create a variation axis to change the spacing or ‘tracking’ of a font. This designer-made tracking included in the font is superior to the automatic tracking provided by applications or CSS.
 
-Given a ‘pure’ spacing axis with no variation in the opaque shapes (contours), and ignoring obvious differences in font info values (style name), the difference between two spacing sources is restricted to:
+<div class="alert alert-warning" role="alert" markdown='1'>
+Add illustration comparing the results of automatic tracking and spacing axis.
+{: .card-text }
+</div>
 
-- different side-bearings (or rather: left margin, glyph width)
+Assuming that all glyph contours in a font remain the same when the spacing is changed\*, the visual difference between spacing sources is restricted to:
+
+- different side-bearings (or rather: *left margin* and *glyph width*)
 - different kerning values (but same pairs and kerning groups)
 
-**The contours are exactly the same in the two spacing sources.**
+<div class="alert alert-primary" role="alert" markdown='1'>
+\* This is a simplification: Frank Blokland’s original proposal mentions the possibility to use this axis to also make adjustments to the *shape* of some glyphs – for example retracting serifs as the margins get narrower. We can develop this method in the future to allow that.
+{: .card-text }
+</div>
 
-### Implementing the spacing axis
+### Practical considerations
 
 In the design stage, when the glyph shapes are still changing, it is important to have an easy way to keep contours synchronized between the two spacing sources.
 
@@ -43,5 +51,5 @@ When generating the variable font, the spacing states can be exported into separ
 - data format and tools to work with variable fonts containing a spacing axis
 - demo fonts and build scripts
 - DrawBot-based tools to visualize spacing and kerning
-
 {% endcomment %}
+

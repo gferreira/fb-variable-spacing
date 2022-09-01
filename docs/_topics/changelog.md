@@ -5,13 +5,13 @@ class  : changelog
 order  : 2
 ---
 
-All notable changes to VarTools are documented in this file.
+All notable changes to Variable Spacing are documented in this file.
 {: .lead }
+
+<!--
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 VarTools adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-<!--
 
 semantic versioning: MAJOR.MINOR.PATCH
 see http://keepachangelog.com/
@@ -34,7 +34,15 @@ types of changes:
 
 -->
 
-0.1
----
+0.1.1
+-----
+
+- <span class='badge'>Added</span> Added a new `components` lib to store component positions relative to glyph bounds.
+- <span class='badge'>Added</span> Added documentation of the `spacingStates` module API.
+- <span class='badge'>Changed</span> Improved overview, updated Spacing States format specification.
+- <span class='badge'>Fixed</span> Fixed bug which caused components to shift when loading spacing states.
+
+0.1.0
+-----
 
 Initial private release.

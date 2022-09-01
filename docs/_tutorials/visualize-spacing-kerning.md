@@ -4,7 +4,7 @@ layout : default
 order  : 1
 ---
 
-How to create a visualization of spacing and kerning in a UFO designspace using DrawBot.
+Creating a visualization of spacing and kerning in a UFO designspace using DrawBot.
 {: .lead }
 
 1. Open the DrawBot extension in RoboFont.

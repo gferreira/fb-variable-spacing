@@ -1,8 +1,8 @@
 # menuTitle: Spacing States tool
 
 from importlib import reload
-import variableSpacing.modules.variableSpacing
-reload(variableSpacing.modules.variableSpacing)
+import variableSpacing
+reload(variableSpacing)
 
 import os, shutil
 from vanilla import *
@@ -11,7 +11,7 @@ from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView
 from mojo import drawingTools as ctx
 
-from variableSpacing.modules.variableSpacing import *
+from variableSpacing import *
 from variableSpacing.extras.hTools3_dialogs import *
 
 # -------
@@ -23,8 +23,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
     A tool to enable multiple spacing states for the same set of glyph contours.
 
     '''
-    spacingKey = f'{KEY}.spacing'
-    kerningKey = f'{KEY}.kerning'
+    spacingKey = KEY_SPACING
+    kerningKey = KEY_KERNING
     font       = None
     verbose    = True
 
@@ -146,17 +146,14 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             newStateName = 'new state'
 
         if self.verbose:
-            print(f"creating new spacing state '{newStateName}'...", end=' ')
+            print(f"creating new spacing state '{newStateName}'...")
 
-        # add new empty state to font libs
-        saveSpacingToLib(self.font, self.spacingKey, newStateName)
-        saveKerningToLib(self.font, self.kerningKey, newStateName)
+        # add new state to font libs
+        saveSpacingToLib(self.font, newStateName)
+        saveKerningToLib(self.font, newStateName)
 
         # update list UI
         self.w.statesList.append(newStateName)
-
-        if self.verbose:
-            print('done.\n')
 
     def loadStateCallback(self, sender):
         '''
@@ -167,13 +164,10 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             return
 
         if self.verbose:
-            print(f"loading spacing state '{self.currentState}' from the lib...", end=' ')
+            print(f"loading spacing state '{self.currentState}' from the lib...")
 
-        loadSpacingFromLib(self.font, self.spacingKey, self.currentState)
-        loadKerningFromLib(self.font, self.kerningKey, self.currentState)
-
-        if self.verbose:
-            print('done.\n')
+        loadSpacingFromLib(self.font, self.currentState)
+        loadKerningFromLib(self.font, self.currentState)
 
         UpdateCurrentGlyphView()
 
@@ -186,13 +180,10 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             return
 
         if self.verbose:
-            print(f"saving spacing state '{self.currentState}' to the lib...", end=' ')
+            print(f"saving spacing state '{self.currentState}' to the lib...")
 
-        saveSpacingToLib(self.font, self.spacingKey, self.currentState)
-        saveKerningToLib(self.font, self.kerningKey, self.currentState)
-
-        if self.verbose:
-            print('done.\n')
+        saveSpacingToLib(self.font, self.currentState)
+        saveKerningToLib(self.font, self.currentState)
 
     def deleteStateCallback(self, sender):
         '''
@@ -203,14 +194,11 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             return
 
         if self.verbose:
-            print(f"deleting spacing state '{self.currentState}'...", end='')
+            print(f"deleting spacing state '{self.currentState}'...")
 
         deleteSpacingState(self.font, KEY, self.currentState)
 
         self.loadFontStates()
-
-        if self.verbose:
-            print('done.\n')
 
     def exportStateCallback(self, sender):
         '''
@@ -240,8 +228,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         dstFont.info.styleName += f' {self.currentState.capitalize()}'
 
         # load spacing state
-        loadSpacingFromLib(dstFont, self.spacingKey, self.currentState)
-        loadKerningFromLib(dstFont, self.kerningKey, self.currentState)
+        loadSpacingFromLib(dstFont, self.currentState)
+        loadKerningFromLib(dstFont, self.currentState)
 
         # clear spacing states
         deleteLib(dstFont, KEY) 
@@ -312,7 +300,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             glyphLeft = font.lib[self.spacingKey][self.currentState][glyph.name]['leftMargin']
             xLeft = xMin - glyphLeft
         else:
-            xLeft = 0 # (glyph.width - glyphWidth) / 2
+            xLeft = 0
 
         xRight = xLeft + glyphWidth
         

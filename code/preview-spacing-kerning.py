@@ -3,7 +3,7 @@
 # reload(variableSpacing.modules.spacingSetter)
 
 import os
-from variableSpacing.modules.spacingSetter import *
+from variableSpacing.spacingSetter import *
 
 # --------
 # settings

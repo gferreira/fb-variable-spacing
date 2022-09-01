@@ -23,6 +23,7 @@ Reference
 ---------
 
 - [SpacingStates format](reference/spacing-states-format)
+- [SpacingStates module](reference/spacing-states-module)
 - [SpacingStates tool](reference/spacing-states-tool)
 </div>
 

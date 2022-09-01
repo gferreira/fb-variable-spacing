@@ -4,7 +4,7 @@ layout : default
 order  : 1
 ---
 
-How to create a visualization of inner and outer transparent shapes in a UFO using DrawBot.
+Creating a visualization of inner and outer transparent shapes in a UFO using DrawBot.
 {: .lead }
 
 1. Open the DrawBot extension in RoboFont.

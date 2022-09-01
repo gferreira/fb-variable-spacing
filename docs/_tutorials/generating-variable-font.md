@@ -35,10 +35,6 @@ Designspace file
   </axes>
   <sources>
     <source filename="MyFont_default.ufo" name="normal" familyname="MyFont" stylename="normal">
-      <lib copy="1"/>
-      <groups copy="1"/>
-      <features copy="1"/>
-      <info copy="1"/>
       <location>
         <dimension name="spacing" xvalue="0"/>
       </location>
