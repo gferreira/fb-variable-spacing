@@ -48,15 +48,6 @@ Spacing state data is stored in 3 custom font-level libs under the prefix `com.h
   </tr>
 </table>
 
-<!-- We recommend `default`, `tight` and `loose` as standard primary names for spacing states.
-
-<div class="alert alert-warning" role="alert" markdown='1'>
-Note: The key can be changed to `com.fontbureau.spacingaxis` if this is to become an official FontBureau project.
-{: .card-text }
-</div>
-
--->
-
 
 Spacing lib
 -----------
