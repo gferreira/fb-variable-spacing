@@ -4,7 +4,7 @@ layout : default
 order  : 2
 ---
 
-A collection of functions to work with spacing states in UFO fonts.
+A Python module with tools to work with spacing states in UFO fonts.
 {: .lead}
 
 * Table of Contents
@@ -19,10 +19,10 @@ Reading
 Get the name of all spacing states available in the font.
 
 ```python
->>> from variableSpacing import getStatesNames
->>> spacingStates = getStatesNames(font)
->>> print(spacingStates)
-['default', 'loose', 'tight']
+from variableSpacing import getStatesNames
+spacingStates = getStatesNames(font)
+print(spacingStates)
+>>> ['default', 'loose', 'tight']
 ```
 
 ##### `getSpacingLib(font)`
@@ -30,12 +30,12 @@ Get the name of all spacing states available in the font.
 Get the spacing lib from a given font.
 
 ```python
->>> from variableSpacing import getSpacingLib
->>> spacingLib = getSpacingLib(font)
->>> print(spacingLib.keys())
-dict_keys(['default', 'tight'])
->>> print(spacingLib['default']['a'])
-{'leftMargin': 65, 'width': 524}
+from variableSpacing import getSpacingLib
+spacingLib = getSpacingLib(font)
+print(spacingLib.keys())
+>>> dict_keys(['default', 'tight'])
+print(spacingLib['default']['a'])
+>>> {'leftMargin': 65, 'width': 524}
 ```
 
 ##### `getKerningLib(font)`
@@ -43,12 +43,12 @@ dict_keys(['default', 'tight'])
 Get the kerning lib from a given font.
 
 ```python
->>> from variableSpacing import getKerningLib
->>> kerningLib = getKerningLib(font)
->>> print(kerningLib.keys())
-dict_keys(['default', 'tight'])
->>> print(kerningLib['default'][0])
-['B', 'J', -20]
+from variableSpacing import getKerningLib
+kerningLib = getKerningLib(font)
+print(kerningLib.keys())
+>>> dict_keys(['default', 'tight'])
+print(kerningLib['default'][0])
+>>> ['B', 'J', -20]
 ```
 
 
