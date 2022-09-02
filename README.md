@@ -1,9 +1,7 @@
 Variable Spacing
 ================
 
-*adding a spacing axis to variable fonts*
-
-![](VariableSpacingIcon.png)
+adding a spacing axis to variable fonts
 
 Background
 ----------
