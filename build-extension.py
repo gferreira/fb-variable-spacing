@@ -13,7 +13,7 @@ baseFolder       = os.path.dirname(__file__)
 libFolder        = os.path.join(baseFolder, 'code', 'Lib')
 licensePath      = None # os.path.join(baseFolder, 'license.txt')
 resourcesFolder  = None # os.path.join(baseFolder, 'Resources')
-imagePath        = None # os.path.join(resourcesFolder, 'punch.png')
+imagePath        = os.path.join(baseFolder, 'VariableSpacingIcon.png')
 
 outputFolder     = baseFolder 
 extensionPath    = os.path.join(outputFolder, 'VariableSpacing.roboFontExt')
