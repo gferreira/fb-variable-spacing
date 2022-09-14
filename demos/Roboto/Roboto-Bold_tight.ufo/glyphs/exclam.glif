@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="exclam" format="2">
+  <advance width="358"/>
+  <unicode hex="0021"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="38HEq3M3CD"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="ceBjpockDv"/>
+  <guideline x="112.0" y="0.0" angle="90.0" identifier="UeN7wpPlU2"/>
+  <outline>
+    <contour>
+      <point x="352" y="1456" type="line"/>
+      <point x="9" y="1456" type="line"/>
+      <point x="49" y="461" type="line"/>
+      <point x="312" y="461" type="line"/>
+    </contour>
+    <contour>
+      <point x="0" y="151" type="curve" smooth="yes"/>
+      <point x="0" y="55"/>
+      <point x="72" y="-18"/>
+      <point x="179" y="-18" type="curve" smooth="yes"/>
+      <point x="286" y="-18"/>
+      <point x="358" y="55"/>
+      <point x="358" y="151" type="curve" smooth="yes"/>
+      <point x="358" y="247"/>
+      <point x="286" y="320"/>
+      <point x="179" y="320" type="curve" smooth="yes"/>
+      <point x="72" y="320"/>
+      <point x="0" y="247"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.38HEq3M3CD</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.UeN7wpPlU2</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.ceBjpockDv</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

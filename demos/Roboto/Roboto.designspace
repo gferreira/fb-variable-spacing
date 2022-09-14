@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="weight"  minimum="100"  maximum="900" default="400"/>
+    <axis tag="SPAC" name="spacing" minimum="-100" maximum="100"   default="0"/>
+  </axes>
+  <sources>
+    <source filename="Roboto-Regular.ufo" name="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="spacing" xvalue="0"/>
+        <dimension name="weight"  xvalue="400"/>
+      </location>
+    </source>
+    <source filename="Roboto-Bold.ufo" name="Bold">
+      <location>
+        <dimension name="spacing" xvalue="0"/>
+        <dimension name="weight"  xvalue="900"/>
+      </location>
+    </source>
+    <source filename="Roboto-Thin.ufo" name="Thin">
+      <location>
+        <dimension name="spacing" xvalue="0"/>
+        <dimension name="weight"  xvalue="100"/>
+      </location>
+    </source>
+    <!-- spacing sources -->
+    <source filename="Roboto-Regular_tight.ufo" name="Regular Tight">
+      <location>
+        <dimension name="spacing" xvalue="-100"/>
+        <dimension name="weight"  xvalue="400"/>
+      </location>
+    </source>
+    <source filename="Roboto-Bold_tight.ufo" name="Bold Tight">
+      <location>
+        <dimension name="spacing" xvalue="-100"/>
+        <dimension name="weight"  xvalue="900"/>
+      </location>
+    </source>
+    <source filename="Roboto-Thin_tight.ufo" name="Thin Tight">
+      <location>
+        <dimension name="spacing" xvalue="-100"/>
+        <dimension name="weight"  xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Roboto-Regular_loose.ufo" name="Regular Loose">
+      <location>
+        <dimension name="spacing" xvalue="100"/>
+        <dimension name="weight"  xvalue="400"/>
+      </location>
+    </source>
+  </sources>
+</designspace>

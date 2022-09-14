@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="r" format="2">
+  <advance width="895"/>
+  <unicode hex="0072"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="e5Gh5ObvEA"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="urMIbMRfcV"/>
+  <outline>
+    <contour>
+      <point x="437" y="914" type="line"/>
+      <point x="431" y="1082" type="line"/>
+      <point x="237" y="1082" type="line"/>
+      <point x="237" y="0" type="line"/>
+      <point x="437" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="765" y="1088" type="line"/>
+      <point x="752" y="1094"/>
+      <point x="707" y="1102"/>
+      <point x="682" y="1102" type="curve" smooth="yes"/>
+      <point x="452" y="1102"/>
+      <point x="353" y="884"/>
+      <point x="353" y="628" type="curve"/>
+      <point x="407" y="660" type="line"/>
+      <point x="425" y="809"/>
+      <point x="508" y="913"/>
+      <point x="672" y="913" type="curve" smooth="yes"/>
+      <point x="708" y="913"/>
+      <point x="732" y="911"/>
+      <point x="765" y="905" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.e5Gh5ObvEA</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.urMIbMRfcV</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

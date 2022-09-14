@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="F" format="2">
+  <advance width="966"/>
+  <unicode hex="0046"/>
+  <guideline x="0.0" y="960.0" angle="0.0" identifier="gNHflKW6XY"/>
+  <outline>
+    <contour>
+      <point x="335" y="1456" type="line"/>
+      <point x="0" y="1456" type="line"/>
+      <point x="0" y="0" type="line"/>
+      <point x="335" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="904" y="850" type="line"/>
+      <point x="242" y="850" type="line"/>
+      <point x="242" y="580" type="line"/>
+      <point x="904" y="580" type="line"/>
+    </contour>
+    <contour>
+      <point x="966" y="1456" type="line"/>
+      <point x="242" y="1456" type="line"/>
+      <point x="242" y="1185" type="line"/>
+      <point x="966" y="1185" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.gNHflKW6XY</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

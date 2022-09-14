@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="s" format="2">
+  <advance width="1261"/>
+  <unicode hex="0073"/>
+  <guideline x="0.0" y="1658.0" angle="0.0" identifier="E5CzOIgQsL"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="PaNTbXcsxj"/>
+  <outline>
+    <contour>
+      <point x="863" y="289" type="curve" smooth="yes"/>
+      <point x="863" y="202"/>
+      <point x="785" y="140"/>
+      <point x="641" y="140" type="curve" smooth="yes"/>
+      <point x="530" y="140"/>
+      <point x="402" y="189"/>
+      <point x="394" y="339" type="curve"/>
+      <point x="194" y="339" type="line"/>
+      <point x="194" y="158"/>
+      <point x="351" y="-20"/>
+      <point x="641" y="-20" type="curve" smooth="yes"/>
+      <point x="895" y="-20"/>
+      <point x="1063" y="112"/>
+      <point x="1063" y="304" type="curve" smooth="yes"/>
+      <point x="1063" y="479"/>
+      <point x="938" y="567"/>
+      <point x="672" y="628" type="curve" smooth="yes"/>
+      <point x="476" y="672"/>
+      <point x="431" y="710"/>
+      <point x="431" y="788" type="curve" smooth="yes"/>
+      <point x="431" y="865"/>
+      <point x="489" y="942"/>
+      <point x="636" y="942" type="curve" smooth="yes"/>
+      <point x="774" y="942"/>
+      <point x="851" y="847"/>
+      <point x="851" y="762" type="curve"/>
+      <point x="1051" y="762" type="line"/>
+      <point x="1051" y="948"/>
+      <point x="897" y="1102"/>
+      <point x="636" y="1102" type="curve" smooth="yes"/>
+      <point x="391" y="1102"/>
+      <point x="231" y="955"/>
+      <point x="231" y="782" type="curve" smooth="yes"/>
+      <point x="231" y="604"/>
+      <point x="383" y="519"/>
+      <point x="623" y="469" type="curve" smooth="yes"/>
+      <point x="831" y="427"/>
+      <point x="863" y="367"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.E5CzOIgQsL</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.PaNTbXcsxj</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

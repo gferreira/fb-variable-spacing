@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="M" format="2">
+  <advance width="1795"/>
+  <unicode hex="004D"/>
+  <guideline x="0.0" y="887.0" angle="0.0" identifier="pKK5KYlyHu"/>
+  <guideline x="0.0" y="1552.0" angle="0.0" identifier="WAP4ivuPU6"/>
+  <outline>
+    <contour>
+      <point x="279" y="1456" type="line"/>
+      <point x="784" y="0" type="line"/>
+      <point x="1008" y="0" type="line"/>
+      <point x="1513" y="1456" type="line"/>
+      <point x="1236" y="1456" type="line"/>
+      <point x="896" y="443" type="line"/>
+      <point x="556" y="1456" type="line"/>
+    </contour>
+    <contour>
+      <point x="117" y="1456" type="line"/>
+      <point x="117" y="0" type="line"/>
+      <point x="452" y="0" type="line"/>
+      <point x="452" y="340" type="line"/>
+      <point x="400" y="1456" type="line"/>
+    </contour>
+    <contour>
+      <point x="1392" y="1456" type="line"/>
+      <point x="1340" y="340" type="line"/>
+      <point x="1340" y="0" type="line"/>
+      <point x="1676" y="0" type="line"/>
+      <point x="1676" y="1456" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.WAP4ivuPU6</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.pKK5KYlyHu</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

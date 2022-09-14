@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bar" format="2">
+  <advance width="510"/>
+  <unicode hex="007C"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="9g0k5mZgQx"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="hwYLtgO5pE"/>
+  <outline>
+    <contour>
+      <point x="335" y="1456" type="line"/>
+      <point x="175" y="1456" type="line"/>
+      <point x="175" y="-270" type="line"/>
+      <point x="335" y="-270" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.9g0k5mZgQx</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.hwYLtgO5pE</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

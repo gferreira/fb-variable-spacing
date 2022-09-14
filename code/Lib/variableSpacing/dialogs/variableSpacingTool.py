@@ -1,8 +1,8 @@
 # menuTitle: Spacing States tool
 
-from importlib import reload
-import variableSpacing
-reload(variableSpacing)
+# from importlib import reload
+# import variableSpacing
+# reload(variableSpacing)
 
 import os, shutil
 from vanilla import *

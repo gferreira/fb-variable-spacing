@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="v" format="2">
+  <advance width="1194"/>
+  <unicode hex="0076"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="uk9ykcSOOh"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="djpDvR3QGf"/>
+  <outline>
+    <contour>
+      <point x="569" y="176" type="line"/>
+      <point x="539" y="0" type="line"/>
+      <point x="672" y="0" type="line"/>
+      <point x="1057" y="1082" type="line"/>
+      <point x="853" y="1082" type="line"/>
+    </contour>
+    <contour>
+      <point x="336" y="1082" type="line"/>
+      <point x="132" y="1082" type="line"/>
+      <point x="521" y="0" type="line"/>
+      <point x="653" y="0" type="line"/>
+      <point x="631" y="171" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.djpDvR3QGf</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.uk9ykcSOOh</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

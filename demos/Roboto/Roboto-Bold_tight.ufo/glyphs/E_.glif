@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="E" format="2">
+  <advance width="995"/>
+  <unicode hex="0045"/>
+  <guideline x="0.0" y="988.0" angle="0.0" identifier="tghfcP3iEe"/>
+  <outline>
+    <contour>
+      <point x="994" y="270" type="line"/>
+      <point x="220" y="270" type="line"/>
+      <point x="220" y="0" type="line"/>
+      <point x="994" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="335" y="1456" type="line"/>
+      <point x="0" y="1456" type="line"/>
+      <point x="0" y="0" type="line"/>
+      <point x="335" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="894" y="878" type="line"/>
+      <point x="220" y="878" type="line"/>
+      <point x="220" y="617" type="line"/>
+      <point x="894" y="617" type="line"/>
+    </contour>
+    <contour>
+      <point x="995" y="1456" type="line"/>
+      <point x="220" y="1456" type="line"/>
+      <point x="220" y="1185" type="line"/>
+      <point x="995" y="1185" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.tghfcP3iEe</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

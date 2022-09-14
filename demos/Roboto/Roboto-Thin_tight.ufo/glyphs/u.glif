@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u" format="2">
+  <advance width="784"/>
+  <unicode hex="0075"/>
+  <guideline x="0.0" y="202.0" angle="0.0" identifier="nM2oWUXHN1"/>
+  <guideline x="0.0" y="547.0" angle="0.0" identifier="FITt2EZ21Z"/>
+  <outline>
+    <contour>
+      <point x="729" y="250" type="line"/>
+      <point x="729" y="0" type="line"/>
+      <point x="784" y="0" type="line"/>
+      <point x="784" y="1082" type="line"/>
+      <point x="729" y="1082" type="line"/>
+    </contour>
+    <contour>
+      <point x="738" y="423" type="line"/>
+      <point x="738" y="226"/>
+      <point x="646" y="34"/>
+      <point x="354" y="34" type="curve" smooth="yes"/>
+      <point x="181" y="34"/>
+      <point x="54" y="128"/>
+      <point x="54" y="393" type="curve" smooth="yes"/>
+      <point x="54" y="1082" type="line"/>
+      <point x="0" y="1082" type="line"/>
+      <point x="0" y="395" type="line" smooth="yes"/>
+      <point x="0" y="93"/>
+      <point x="144" y="-20"/>
+      <point x="356" y="-20" type="curve" smooth="yes"/>
+      <point x="654" y="-20"/>
+      <point x="784" y="169"/>
+      <point x="784" y="425" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

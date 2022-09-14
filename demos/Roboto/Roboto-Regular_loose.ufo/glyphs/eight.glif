@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eight" format="2">
+  <advance width="1354"/>
+  <unicode hex="0038"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="g1JHBtDKpL"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="ZvcwfADO43"/>
+  <outline>
+    <contour>
+      <point x="1140" y="395" type="curve" smooth="yes"/>
+      <point x="1140" y="626"/>
+      <point x="944" y="795"/>
+      <point x="675" y="795" type="curve" smooth="yes"/>
+      <point x="403" y="795"/>
+      <point x="214" y="626"/>
+      <point x="214" y="395" type="curve" smooth="yes"/>
+      <point x="214" y="129"/>
+      <point x="415" y="-20"/>
+      <point x="677" y="-20" type="curve" smooth="yes"/>
+      <point x="939" y="-20"/>
+      <point x="1140" y="129"/>
+    </contour>
+    <contour>
+      <point x="940" y="400" type="curve" smooth="yes"/>
+      <point x="940" y="237"/>
+      <point x="843" y="140"/>
+      <point x="677" y="140" type="curve" smooth="yes"/>
+      <point x="512" y="140"/>
+      <point x="414" y="237"/>
+      <point x="414" y="400" type="curve" smooth="yes"/>
+      <point x="414" y="558"/>
+      <point x="513" y="670"/>
+      <point x="675" y="670" type="curve" smooth="yes"/>
+      <point x="834" y="670"/>
+      <point x="940" y="558"/>
+    </contour>
+    <contour>
+      <point x="1107" y="1076" type="curve" smooth="yes"/>
+      <point x="1107" y="1330"/>
+      <point x="927" y="1476"/>
+      <point x="677" y="1476" type="curve" smooth="yes"/>
+      <point x="427" y="1476"/>
+      <point x="247" y="1330"/>
+      <point x="247" y="1076" type="curve" smooth="yes"/>
+      <point x="247" y="863"/>
+      <point x="425" y="701"/>
+      <point x="677" y="701" type="curve" smooth="yes"/>
+      <point x="924" y="701"/>
+      <point x="1107" y="863"/>
+    </contour>
+    <contour>
+      <point x="907" y="1072" type="curve" smooth="yes"/>
+      <point x="907" y="926"/>
+      <point x="816" y="830"/>
+      <point x="677" y="830" type="curve" smooth="yes"/>
+      <point x="538" y="830"/>
+      <point x="447" y="926"/>
+      <point x="447" y="1072" type="curve" smooth="yes"/>
+      <point x="447" y="1221"/>
+      <point x="539" y="1316"/>
+      <point x="677" y="1316" type="curve" smooth="yes"/>
+      <point x="815" y="1316"/>
+      <point x="907" y="1213"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.ZvcwfADO43</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.g1JHBtDKpL</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

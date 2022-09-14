@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one" format="2">
+  <advance width="1183"/>
+  <unicode hex="0031"/>
+  <guideline x="0.0" y="901.0" angle="0.0" identifier="se0OHtf2U9"/>
+  <guideline x="0.0" y="555.0" angle="0.0" identifier="brado8BHjt"/>
+  <outline>
+    <contour>
+      <point x="825" y="1456" type="line"/>
+      <point x="794" y="1456" type="line"/>
+      <point x="167" y="1235" type="line"/>
+      <point x="167" y="979" type="line"/>
+      <point x="503" y="1076" type="line"/>
+      <point x="503" y="0" type="line"/>
+      <point x="825" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guideline.magnetic.brado8BHjt</key>
+      <real>5.0</real>
+      <key>com.typemytype.robofont.guideline.magnetic.se0OHtf2U9</key>
+      <real>5.0</real>
+    </dict>
+  </lib>
+</glyph>

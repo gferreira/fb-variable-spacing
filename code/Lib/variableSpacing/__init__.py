@@ -6,7 +6,9 @@ __version__ = "0.1.1"
 KEY = 'com.hipertipo.spacingaxis'
 
 '''
-# data format
+SPACING STATES DATA FORMAT
+
+1. SPACING LIB
 
 font.lib[f'{KEY}.spacing'] = {
     'default' : {
@@ -30,6 +32,8 @@ font.lib[f'{KEY}.spacing'] = {
     'loose' : {},
 }
 
+2. KERNING LIB
+
 font.lib[f'{KEY}.kerning'] = {
     'default' : [
         ('public.kern1.A', 'public.kern2.V', -40),
@@ -39,15 +43,17 @@ font.lib[f'{KEY}.kerning'] = {
     'loose' : [],
 }
 
+3. COMPONENTS LIB
+
 font.lib[f'{KEY}.components'] = {
     'Aacute' : {
-        'A' : (35.0, 0.0),
-        'acutecmb' : (281.0, 726.0),
+        'A' : (35.0, 0.0),           # component
+        'acutecmb' : (281.0, 726.0), # component
     }
     'dollar' : {
-        'S' : (62.0, -10.0),
-        'VyKpf7rL3q' : (225, 588),
-        'ZpTeU9Jwwi' : (225, -115)
+        'S' : (62.0, -10.0),         # component
+        'VyKpf7rL3q' : (225, 588),   # contour
+        'ZpTeU9Jwwi' : (225, -115)   # contour
     },
 }
 '''
@@ -445,10 +451,10 @@ deleteLib = deleteSpacingStatesLib
 # generating
 # ----------
 
-def buildSpacingSources(folder):
+def buildSpacingSources(folder, prefix='_'):
 
     # get all ufo sources in folder
-    sources = [ufo for ufo in glob.glob(f'{folder}/*.ufo')]
+    sources = [ufo for ufo in glob.glob(f'{folder}/*.ufo') if prefix not in ufo]
 
     # keep a list of all new sources
     newSources = []
@@ -470,7 +476,7 @@ def buildSpacingSources(folder):
         # srcFont.save()
 
         for stateName in states:
-            dstPath = srcPath.replace('.ufo', f'_SPAC-{stateName}.ufo')
+            dstPath = srcPath.replace('.ufo', f'{prefix}{stateName}.ufo')
             # if duplicate already exists, delete it
             if os.path.exists(dstPath):
                 shutil.rmtree(dstPath)
@@ -494,5 +500,5 @@ def buildSpacingSources(folder):
 
         srcFont.close()
         newSources.append(dstPath)
-    
+
     return newSources
