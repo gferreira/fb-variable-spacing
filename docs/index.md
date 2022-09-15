@@ -15,6 +15,7 @@ Topics
 ------
 
 - [Overview](overview)
+- [Spacing vs. tracking](spacing-vs-tracking)
 - [Installation](install)
 </div>
 

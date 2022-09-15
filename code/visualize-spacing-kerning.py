@@ -14,7 +14,7 @@ designspacePath = '/hipertipo/tools/VariableSpacing/demos/Roboto/Roboto.designsp
 txt = 'AVATAR voxr.'
 
 steps = 5
-s = 0.045
+s = 0.04
 savePDF = False
 
 # -----
@@ -31,6 +31,7 @@ S = SpacingSetter(designspacePath)
 S.colorBox      = 1, 0, 1, 0.35
 S.colorKerning  = 0, 1, 1, 0.35
 S.colorTracking = 1, 1, 0, 0.35
+S.colorMargins  = 0,
 S.useKerning    = True
 S.drawKerning   = True
 S.drawWidths    = True
@@ -39,10 +40,10 @@ S.drawTracking  = True
 
 for i in range(steps):
     spac = i * -100 / (steps-1)
-    print(i, spac)
+    # print(i, spac)
     L = dict(width=0, weight=400, spacing=spac, contrast=0, slant=0)
     S.draw(txt, (x, y), s, L)
-    y -= S.fontInfo.unitsPerEm * s * 1.12
+    y -= S.fontInfo.unitsPerEm * s * 1.25
 
 if savePDF:
     dstFolder = '/hipertipo/tools/spacingTools/_imgs'

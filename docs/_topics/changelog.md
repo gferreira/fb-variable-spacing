@@ -2,7 +2,7 @@
 title  : Changelog
 layout : default
 class  : changelog
-order  : 2
+order  : 3
 ---
 
 All notable changes to Variable Spacing are documented in this file.

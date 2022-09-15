@@ -1,7 +1,7 @@
 ---
 title  : Installing Variable Spacing
 layout : default
-order  : 1
+order  : 2
 ---
 
 Variable Spacing is packaged and distributed as a [RoboFont extension].

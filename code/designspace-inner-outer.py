@@ -8,34 +8,36 @@ from variableSpacing.spacingAreas import *
 # settings
 # --------
 
+size('A4Landscape')
+W, H = width(), height()
+newDrawing()
+
 designspacePath = '/hipertipo/tools/VariableSpacing/demos/Roboto/Roboto.designspace'
 
-L = dict(weight=400, spacing=0)
+txt = 'AVATAR'
 
-x, y = 30, 440
-s    = 0.05
-lh   = 1.1
-upm  = 2048
+steps = 5
+s     = 0.04
+t     = -50
+lh    = 1.25
+upm   = 2048
 
-txt = '''\
-nhnmnuninjnln
-noncnbndnpnqn
-nanengnsnrnfntn
-nvnwnknynxnzn
-'''
+x, y = 50, 0.8 * H
+
+# L = dict(width=0, weight=400, spacing=0, contrast=0, slant=0)
 
 parameters = {
     'scale'    : s,
-    'location' : L,
+    # 'location' : L,
     'glyphParameters' : {
         'color1'  : (0, 1, 0), # inner
         'color2'  : (1, 0, 0), # outer
         'color3'  : (1,),      # glyph
         'ySteps'  : 50,
         'yMin'    : 0,
-        'yMax'    : 'xHeight',
+        'yMax'    : 'capHeight',
         'xFactor' : 0.3,
-        'dMax'    : 320, 
+        'dMax'    : 200, 
     }
 }
 
@@ -43,14 +45,22 @@ parameters = {
 # draw!
 # -----
 
-size('A4Landscape')
+S = SpacingAreasLine(designspacePath)
+S.setParameters(parameters)
+
+newPage(W, H)
 fill(1)
 rect(0, 0, width(), height())
 
-for txtLine in txt.split('\n'):
-    S = SpacingAreasLine(designspacePath)
-    S.setParameters(parameters)
-    S.draw(txtLine, (x, y))
-    translate(0, -upm*s*lh)
+_y = y
+for i in range(steps):
+    spac = (i-2) * t * 4 / (steps-1)
+    L = dict(weight=400, spacing=spac)
+    S.location = L
+    S.draw(txt, (x, _y))
+    text(str(int(spac)), (x-30, _y))
+    _y -= upm * s * lh
+
+
 
 # saveImage('acefgrstzj_2.png')

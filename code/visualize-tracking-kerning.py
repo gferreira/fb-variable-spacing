@@ -53,7 +53,7 @@ designspacePath = '/hipertipo/tools/VariableSpacing/demos/Roboto/Roboto.designsp
 txt = 'AVATAR voxr.'
 
 steps = 5
-s = 0.045
+s = 0.04
 savePDF = False
 t = -20
 
@@ -89,7 +89,7 @@ for i in range(steps):
     S.tracking = tracking
     S.draw(txt, (x, y), s, L)
     text(str(tracking), (x-30, y))
-    y -= S.fontInfo.unitsPerEm * s * 1.12
+    y -= S.fontInfo.unitsPerEm * s * 1.25
 
 # page 2: tracking & kerning
 
@@ -109,7 +109,7 @@ for i in range(steps):
     S.tracking = tracking
     S.draw(txt, (x, y), s, L)
     text(str(tracking), (x-30, y))
-    y -= S.fontInfo.unitsPerEm * s * 1.12
+    y -= S.fontInfo.unitsPerEm * s * 1.25
 
 # page 2: tracking & kerning (visible)
 
@@ -128,7 +128,7 @@ for i in range(steps):
     S.tracking = tracking
     S.draw(txt, (x, y), s, L)
     text(str(tracking), (x-30, y))
-    y -= S.fontInfo.unitsPerEm * s * 1.12
+    y -= S.fontInfo.unitsPerEm * s * 1.25
 
 # save document
 

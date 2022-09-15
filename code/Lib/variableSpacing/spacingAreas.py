@@ -93,8 +93,6 @@ class SpacingAreasGlyph:
     
     @yMax.setter
     def yMax(self, value):
-        # if type(value) is str:
-        #     value = getattr(self.glyph.font.info, value)
         self._yMax = value
     
     @property
@@ -108,7 +106,7 @@ class SpacingAreasGlyph:
     @property
     def rightSide(self):
         _rightSide = []
-        for y in range(self.yMin, self.yMax, self.yStep):
+        for y in range(int(self.yMin), int(self.yMax), int(self.yStep)):
             pen = MarginPen(dict(), y, isHorizontal=True)
             self.glyph.draw(pen)
             intersections = pen.getAll()
@@ -143,7 +141,7 @@ class SpacingAreasGlyph:
     @property
     def leftSide(self):
         _leftSide  = []
-        for y in range(self.yMin, self.yMax, self.yStep):
+        for y in range(int(self.yMin), int(self.yMax), int(self.yStep)):
             pen = MarginPen(dict(), y, isHorizontal=True)
             self.glyph.draw(pen)
             intersections = pen.getAll()
