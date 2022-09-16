@@ -1,5 +1,5 @@
 ---
-title  : Spaxing axis vs. tracking
+title  : Spacing axis vs. tracking
 layout : default
 order  : 1
 ---

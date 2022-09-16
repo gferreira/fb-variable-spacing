@@ -97,8 +97,8 @@ s     = 0.04
 t     = -50
 lh    = 1.25
 
-savePDF = False
-savePNG = True
+savePDF = True
+savePNG = False
 
 x, y = 50, 0.8 * H
 
