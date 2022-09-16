@@ -57,7 +57,7 @@ def drawTracking(x, y, t, s, L, steps, lh, mode=0):
         if mode == 0:
             tracking = i * t -(t*2)
         elif mode == 1:
-            tracking = i * -t // 2
+            tracking = 100 - (i * -t // 2)
         else:
             tracking = i * t // 2
 
@@ -72,7 +72,7 @@ def drawSpacing(x, y, t, s, L, steps, lh, mode=0):
         if mode == 0:
             spac = (i-2) * t * 4 / (steps-1)
         elif mode == 1:
-            spac = i * -t * 2 / (steps-1)
+            spac = 100 - (i * -t * 2 / (steps-1))
         else:
             spac = i * t * 2 / (steps-1)
         L = dict(width=0, weight=400, spacing=spac, contrast=0, slant=0)
@@ -119,7 +119,7 @@ S.colorKerning  = colorKerning
 S.colorTracking = colorTracking
 S.colorMargins  = colorMargins
 
-### set 1: glyph boxes, no kerning
+## set 1: glyph boxes, no kerning
 
 S.drawBoxes     = True
 S.drawTracking  = True

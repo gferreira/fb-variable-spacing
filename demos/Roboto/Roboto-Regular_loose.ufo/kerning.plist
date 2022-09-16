@@ -4,38 +4,50 @@
   <dict>
     <key>A</key>
     <dict>
+      <key>C</key>
+      <integer>-40</integer>
+      <key>G</key>
+      <integer>-40</integer>
       <key>G.smcp</key>
       <integer>-11</integer>
       <key>O</key>
-      <integer>-21</integer>
+      <integer>-40</integer>
       <key>O.smcp</key>
       <integer>-11</integer>
       <key>Phi</key>
       <integer>-27</integer>
       <key>Psi</key>
       <integer>-47</integer>
+      <key>Q</key>
+      <integer>-40</integer>
+      <key>S</key>
+      <integer>-30</integer>
       <key>T</key>
-      <integer>-120</integer>
+      <integer>-180</integer>
       <key>T.smcp</key>
       <integer>-57</integer>
       <key>U</key>
-      <integer>-17</integer>
+      <integer>-40</integer>
       <key>U.smcp</key>
       <integer>-15</integer>
       <key>Uhorn</key>
       <integer>-18</integer>
       <key>V</key>
-      <integer>-77</integer>
+      <integer>-180</integer>
       <key>V.smcp</key>
       <integer>-51</integer>
       <key>W</key>
-      <integer>-39</integer>
+      <integer>-130</integer>
       <key>W.smcp</key>
       <integer>-35</integer>
+      <key>X</key>
+      <integer>-70</integer>
       <key>Y</key>
-      <integer>-150</integer>
+      <integer>-180</integer>
       <key>Y.smcp</key>
       <integer>-60</integer>
+      <key>Z</key>
+      <integer>-30</integer>
       <key>lambda</key>
       <integer>17</integer>
       <key>n</key>
@@ -118,12 +130,28 @@
     </dict>
     <key>B</key>
     <dict>
+      <key>A</key>
+      <integer>-80</integer>
+      <key>C</key>
+      <integer>-40</integer>
+      <key>G</key>
+      <integer>-40</integer>
+      <key>J</key>
+      <integer>-20</integer>
+      <key>O</key>
+      <integer>-40</integer>
+      <key>Q</key>
+      <integer>-40</integer>
+      <key>S</key>
+      <integer>-30</integer>
       <key>T</key>
-      <integer>-27</integer>
+      <integer>-50</integer>
       <key>V</key>
-      <integer>-24</integer>
+      <integer>-50</integer>
+      <key>X</key>
+      <integer>-50</integer>
       <key>Y</key>
-      <integer>-55</integer>
+      <integer>-70</integer>
       <key>uni0423</key>
       <integer>-13</integer>
       <key>uni046A</key>
@@ -133,8 +161,24 @@
     </dict>
     <key>C</key>
     <dict>
+      <key>A</key>
+      <integer>-20</integer>
+      <key>B</key>
+      <integer>-10</integer>
+      <key>G</key>
+      <integer>-20</integer>
+      <key>O</key>
+      <integer>-20</integer>
+      <key>Q</key>
+      <integer>-20</integer>
+      <key>S</key>
+      <integer>-20</integer>
       <key>T</key>
       <integer>-29</integer>
+      <key>X</key>
+      <integer>-40</integer>
+      <key>Y</key>
+      <integer>10</integer>
       <key>braceright</key>
       <integer>-17</integer>
       <key>bracketright</key>
@@ -460,7 +504,7 @@
       <key>Q.smcp</key>
       <integer>-14</integer>
       <key>T</key>
-      <integer>-205</integer>
+      <integer>-235</integer>
       <key>T.smcp</key>
       <integer>-67</integer>
       <key>U</key>
@@ -672,7 +716,7 @@
     <key>T</key>
     <dict>
       <key>A</key>
-      <integer>-120</integer>
+      <integer>-180</integer>
       <key>A.smcp</key>
       <integer>-81</integer>
       <key>AE</key>
@@ -853,7 +897,7 @@
     <key>V</key>
     <dict>
       <key>A</key>
-      <integer>-75</integer>
+      <integer>-180</integer>
       <key>A.smcp</key>
       <integer>-76</integer>
       <key>C.smcp</key>
@@ -1184,8 +1228,16 @@
     <dict>
       <key>chi.alt</key>
       <integer>-24</integer>
+      <key>o</key>
+      <integer>-30</integer>
+      <key>q</key>
+      <integer>-30</integer>
       <key>quotesingle</key>
       <integer>-29</integer>
+      <key>s</key>
+      <integer>-30</integer>
+      <key>t</key>
+      <integer>-30</integer>
       <key>tau</key>
       <integer>-22</integer>
       <key>uni0434</key>
@@ -1201,11 +1253,15 @@
       <key>uni050F</key>
       <integer>-20</integer>
       <key>v</key>
-      <integer>-11</integer>
+      <integer>-31</integer>
+      <key>w</key>
+      <integer>-50</integer>
       <key>x</key>
-      <integer>-15</integer>
+      <integer>-65</integer>
+      <key>y</key>
+      <integer>-20</integer>
       <key>z</key>
-      <integer>-15</integer>
+      <integer>-25</integer>
     </dict>
     <key>braceleft</key>
     <dict>
@@ -1223,8 +1279,40 @@
     </dict>
     <key>c</key>
     <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-20</integer>
+      <key>d</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-20</integer>
+      <key>i</key>
+      <integer>-10</integer>
+      <key>o</key>
+      <integer>-20</integer>
+      <key>q</key>
+      <integer>-20</integer>
       <key>quotesingle</key>
       <integer>-11</integer>
+      <key>s</key>
+      <integer>-20</integer>
+      <key>t</key>
+      <integer>-10</integer>
+      <key>v</key>
+      <integer>-20</integer>
+      <key>w</key>
+      <integer>-20</integer>
+      <key>x</key>
+      <integer>-20</integer>
+      <key>y</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-10</integer>
     </dict>
     <key>chi.alt</key>
     <dict>
@@ -1247,6 +1335,21 @@
       <key>quotesingle</key>
       <integer>11</integer>
     </dict>
+    <key>d</key>
+    <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-40</integer>
+      <key>d</key>
+      <integer>-30</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>g</key>
+      <integer>-20</integer>
+      <key>s</key>
+      <integer>-10</integer>
+    </dict>
     <key>delta.alt</key>
     <dict>
       <key>chi.alt</key>
@@ -1258,32 +1361,138 @@
     </dict>
     <key>e</key>
     <dict>
+      <key>a</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-10</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-10</integer>
+      <key>o</key>
+      <integer>-10</integer>
+      <key>q</key>
+      <integer>-10</integer>
       <key>quoteright</key>
       <integer>-64</integer>
       <key>quotesingle</key>
       <integer>-14</integer>
+      <key>s</key>
+      <integer>-10</integer>
+      <key>t</key>
+      <integer>-10</integer>
       <key>uni0442</key>
       <integer>-11</integer>
       <key>v</key>
-      <integer>-13</integer>
+      <integer>-33</integer>
+      <key>w</key>
+      <integer>-20</integer>
+      <key>x</key>
+      <integer>-30</integer>
+      <key>y</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-10</integer>
     </dict>
     <key>f</key>
     <dict>
+      <key>a</key>
+      <integer>-50</integer>
+      <key>b</key>
+      <integer>-10</integer>
       <key>braceright</key>
       <integer>19</integer>
       <key>bracketright</key>
       <integer>18</integer>
       <key>c</key>
-      <integer>-24</integer>
+      <integer>-44</integer>
+      <key>d</key>
+      <integer>-40</integer>
+      <key>e</key>
+      <integer>-40</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-40</integer>
+      <key>i</key>
+      <integer>-20</integer>
+      <key>j</key>
+      <integer>-10</integer>
+      <key>o</key>
+      <integer>-30</integer>
       <key>parenright</key>
       <integer>20</integer>
+      <key>q</key>
+      <integer>-30</integer>
       <key>quotesingle</key>
       <integer>16</integer>
+      <key>s</key>
+      <integer>-40</integer>
+      <key>u</key>
+      <integer>-10</integer>
+      <key>z</key>
+      <integer>-10</integer>
+    </dict>
+    <key>g</key>
+    <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-10</integer>
+      <key>d</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-10</integer>
+      <key>o</key>
+      <integer>-10</integer>
+      <key>q</key>
+      <integer>-10</integer>
+      <key>s</key>
+      <integer>-10</integer>
+      <key>z</key>
+      <integer>-20</integer>
     </dict>
     <key>h</key>
     <dict>
+      <key>a</key>
+      <integer>-20</integer>
+      <key>c</key>
+      <integer>-20</integer>
+      <key>d</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-20</integer>
+      <key>i</key>
+      <integer>-20</integer>
+      <key>o</key>
+      <integer>-10</integer>
+      <key>q</key>
+      <integer>-20</integer>
       <key>quoteright</key>
       <integer>-104</integer>
+      <key>s</key>
+      <integer>-20</integer>
+      <key>v</key>
+      <integer>-20</integer>
+      <key>w</key>
+      <integer>-10</integer>
+      <key>y</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-10</integer>
+    </dict>
+    <key>i</key>
+    <dict>
+      <key>a</key>
+      <integer>-20</integer>
+      <key>s</key>
+      <integer>-10</integer>
     </dict>
     <key>iota</key>
     <dict>
@@ -1306,28 +1515,106 @@
       <key>v</key>
       <integer>-36</integer>
     </dict>
+    <key>j</key>
+    <dict>
+      <key>a</key>
+      <integer>-20</integer>
+    </dict>
     <key>k</key>
     <dict>
+      <key>a</key>
+      <integer>-30</integer>
       <key>c</key>
+      <integer>-30</integer>
+      <key>d</key>
+      <integer>-30</integer>
+      <key>e</key>
+      <integer>-30</integer>
+      <key>f</key>
+      <integer>-30</integer>
+      <key>g</key>
+      <integer>-30</integer>
+      <key>o</key>
+      <integer>-40</integer>
+      <key>q</key>
+      <integer>-40</integer>
+      <key>s</key>
+      <integer>-40</integer>
+      <key>v</key>
+      <integer>-30</integer>
+      <key>w</key>
+      <integer>-30</integer>
+      <key>x</key>
+      <integer>-20</integer>
+      <key>y</key>
+      <integer>-30</integer>
+      <key>z</key>
+      <integer>-10</integer>
+    </dict>
+    <key>m</key>
+    <dict>
+      <key>u</key>
+      <integer>-20</integer>
+      <key>v</key>
+      <integer>-30</integer>
+      <key>w</key>
+      <integer>-30</integer>
+      <key>x</key>
+      <integer>-10</integer>
+      <key>y</key>
+      <integer>-10</integer>
+      <key>z</key>
       <integer>-20</integer>
     </dict>
     <key>n</key>
     <dict>
+      <key>g</key>
+      <integer>-20</integer>
+      <key>q</key>
+      <integer>-10</integer>
       <key>quoteright</key>
       <integer>-120</integer>
       <key>quotesingle</key>
       <integer>-80</integer>
       <key>uni0442</key>
       <integer>-42</integer>
+      <key>v</key>
+      <integer>-10</integer>
+      <key>w</key>
+      <integer>-10</integer>
+      <key>x</key>
+      <integer>-10</integer>
+      <key>y</key>
+      <integer>-10</integer>
     </dict>
     <key>o</key>
     <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-30</integer>
       <key>chi.alt</key>
       <integer>-22</integer>
+      <key>d</key>
+      <integer>-30</integer>
+      <key>e</key>
+      <integer>-30</integer>
+      <key>f</key>
+      <integer>-20</integer>
+      <key>g</key>
+      <integer>-30</integer>
+      <key>o</key>
+      <integer>-30</integer>
+      <key>q</key>
+      <integer>-30</integer>
       <key>quoteright</key>
       <integer>-112</integer>
       <key>quotesingle</key>
       <integer>-88</integer>
+      <key>s</key>
+      <integer>-30</integer>
+      <key>t</key>
+      <integer>-20</integer>
       <key>tau</key>
       <integer>-22</integer>
       <key>uni0434</key>
@@ -1347,11 +1634,15 @@
       <key>uni050F</key>
       <integer>-20</integer>
       <key>v</key>
-      <integer>-15</integer>
+      <integer>-35</integer>
+      <key>w</key>
+      <integer>-30</integer>
       <key>x</key>
-      <integer>-21</integer>
+      <integer>-61</integer>
+      <key>y</key>
+      <integer>-40</integer>
       <key>z</key>
-      <integer>-16</integer>
+      <integer>-36</integer>
     </dict>
     <key>omega</key>
     <dict>
@@ -1361,6 +1652,41 @@
       <integer>-14</integer>
       <key>z</key>
       <integer>-13</integer>
+    </dict>
+    <key>p</key>
+    <dict>
+      <key>a</key>
+      <integer>-20</integer>
+      <key>c</key>
+      <integer>-30</integer>
+      <key>d</key>
+      <integer>-30</integer>
+      <key>e</key>
+      <integer>-30</integer>
+      <key>f</key>
+      <integer>-30</integer>
+      <key>g</key>
+      <integer>-10</integer>
+      <key>i</key>
+      <integer>-20</integer>
+      <key>o</key>
+      <integer>-30</integer>
+      <key>q</key>
+      <integer>-30</integer>
+      <key>s</key>
+      <integer>-30</integer>
+      <key>t</key>
+      <integer>-10</integer>
+      <key>v</key>
+      <integer>-30</integer>
+      <key>w</key>
+      <integer>-30</integer>
+      <key>x</key>
+      <integer>-30</integer>
+      <key>y</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-20</integer>
     </dict>
     <key>parenleft</key>
     <dict>
@@ -1393,6 +1719,11 @@
       <integer>-14</integer>
       <key>z</key>
       <integer>-14</integer>
+    </dict>
+    <key>q</key>
+    <dict>
+      <key>a</key>
+      <integer>-10</integer>
     </dict>
     <key>quoteright</key>
     <dict>
@@ -1428,27 +1759,62 @@
       <integer>-30</integer>
       <key>c</key>
       <integer>-19</integer>
+      <key>d</key>
+      <integer>-10</integer>
       <key>f</key>
-      <integer>20</integer>
+      <integer>10</integer>
+      <key>g</key>
+      <integer>-10</integer>
       <key>o</key>
-      <integer>-36</integer>
+      <integer>-26</integer>
       <key>period</key>
       <integer>-173</integer>
+      <key>q</key>
+      <integer>-20</integer>
       <key>quoteright</key>
       <integer>16</integer>
       <key>quotesingle</key>
       <integer>16</integer>
+      <key>s</key>
+      <integer>-10</integer>
       <key>t</key>
-      <integer>50</integer>
-      <key>v</key>
-      <integer>18</integer>
-      <key>w</key>
-      <integer>17</integer>
+      <integer>-10</integer>
     </dict>
     <key>rho</key>
     <dict>
       <key>uni0442</key>
       <integer>-43</integer>
+    </dict>
+    <key>s</key>
+    <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-20</integer>
+      <key>d</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>f</key>
+      <integer>-20</integer>
+      <key>g</key>
+      <integer>-20</integer>
+      <key>o</key>
+      <integer>-20</integer>
+      <key>q</key>
+      <integer>-20</integer>
+      <key>s</key>
+      <integer>-10</integer>
+      <key>v</key>
+      <integer>-20</integer>
+      <key>w</key>
+      <integer>-20</integer>
+      <key>x</key>
+      <integer>-10</integer>
+      <key>y</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-10</integer>
     </dict>
     <key>schwa</key>
     <dict>
@@ -1481,10 +1847,24 @@
     </dict>
     <key>t</key>
     <dict>
+      <key>c</key>
+      <integer>-10</integer>
+      <key>d</key>
+      <integer>-10</integer>
+      <key>e</key>
+      <integer>-10</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-10</integer>
       <key>o</key>
-      <integer>-30</integer>
+      <integer>-40</integer>
+      <key>q</key>
+      <integer>-10</integer>
       <key>quoteright</key>
       <integer>24</integer>
+      <key>s</key>
+      <integer>-20</integer>
     </dict>
     <key>tau</key>
     <dict>
@@ -1524,6 +1904,11 @@
       <integer>12</integer>
       <key>v</key>
       <integer>11</integer>
+    </dict>
+    <key>u</key>
+    <dict>
+      <key>a</key>
+      <integer>-10</integer>
     </dict>
     <key>uni0402</key>
     <dict>
@@ -2305,23 +2690,31 @@
     <key>v</key>
     <dict>
       <key>a</key>
-      <integer>-15</integer>
+      <integer>-25</integer>
       <key>c</key>
-      <integer>-13</integer>
+      <integer>-23</integer>
+      <key>d</key>
+      <integer>-20</integer>
       <key>delta.alt</key>
       <integer>-11</integer>
-      <key>f</key>
-      <integer>13</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>g</key>
+      <integer>-20</integer>
       <key>o</key>
-      <integer>-15</integer>
+      <integer>-30</integer>
       <key>period</key>
       <integer>-167</integer>
       <key>pi</key>
       <integer>11</integer>
+      <key>q</key>
+      <integer>-30</integer>
       <key>quotesingle</key>
       <integer>15</integer>
       <key>rho</key>
       <integer>-22</integer>
+      <key>s</key>
+      <integer>-30</integer>
       <key>tau</key>
       <integer>12</integer>
       <key>uni0434</key>
@@ -2330,20 +2723,60 @@
       <integer>-41</integer>
       <key>uni047B</key>
       <integer>-15</integer>
+      <key>x</key>
+      <integer>-20</integer>
     </dict>
     <key>w</key>
     <dict>
+      <key>a</key>
+      <integer>-45</integer>
+      <key>c</key>
+      <integer>-30</integer>
+      <key>d</key>
+      <integer>-30</integer>
+      <key>e</key>
+      <integer>-30</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-30</integer>
+      <key>o</key>
+      <integer>-30</integer>
       <key>period</key>
       <integer>-124</integer>
+      <key>q</key>
+      <integer>-30</integer>
+      <key>s</key>
+      <integer>-20</integer>
+      <key>z</key>
+      <integer>-10</integer>
     </dict>
     <key>x</key>
     <dict>
+      <key>a</key>
+      <integer>-30</integer>
       <key>c</key>
-      <integer>-20</integer>
+      <integer>-50</integer>
+      <key>d</key>
+      <integer>-50</integer>
+      <key>e</key>
+      <integer>-50</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-50</integer>
       <key>o</key>
+      <integer>-50</integer>
+      <key>q</key>
+      <integer>-50</integer>
+      <key>s</key>
       <integer>-40</integer>
+      <key>u</key>
+      <integer>-10</integer>
       <key>uni047B</key>
       <integer>-15</integer>
+      <key>z</key>
+      <integer>-10</integer>
     </dict>
     <key>xi</key>
     <dict>
@@ -2354,12 +2787,49 @@
       <key>period</key>
       <integer>12</integer>
     </dict>
+    <key>y</key>
+    <dict>
+      <key>a</key>
+      <integer>-30</integer>
+      <key>c</key>
+      <integer>-50</integer>
+      <key>d</key>
+      <integer>-50</integer>
+      <key>e</key>
+      <integer>-50</integer>
+      <key>f</key>
+      <integer>-10</integer>
+      <key>g</key>
+      <integer>-50</integer>
+      <key>j</key>
+      <integer>-10</integer>
+      <key>o</key>
+      <integer>-50</integer>
+      <key>q</key>
+      <integer>-50</integer>
+      <key>s</key>
+      <integer>-20</integer>
+      <key>u</key>
+      <integer>-10</integer>
+    </dict>
     <key>z</key>
     <dict>
+      <key>a</key>
+      <integer>-10</integer>
       <key>c</key>
-      <integer>-16</integer>
+      <integer>-26</integer>
+      <key>d</key>
+      <integer>-20</integer>
+      <key>e</key>
+      <integer>-20</integer>
+      <key>g</key>
+      <integer>-20</integer>
       <key>o</key>
-      <integer>-16</integer>
+      <integer>-26</integer>
+      <key>q</key>
+      <integer>-20</integer>
+      <key>s</key>
+      <integer>-20</integer>
     </dict>
     <key>zeta</key>
     <dict>
