@@ -1,15 +1,16 @@
 import sys, os
+from importlib import reload
 
 folder = os.getcwd()
 
 try:
-    import variableSpacingLib
+    import variableSpacing
 except:
-    variableSpacingPath = os.path.join(os.path.dirname(os.path.dirname(folder)), 'code')
+    variableSpacingPath = os.path.join(os.path.dirname(os.path.dirname(folder)), 'code', 'Lib')
     sys.path.append(variableSpacingPath)
     import variableSpacing
 
-import os 
+reload(variableSpacing)
 from fontmake.font_project import FontProject
 from variableSpacing import *
 

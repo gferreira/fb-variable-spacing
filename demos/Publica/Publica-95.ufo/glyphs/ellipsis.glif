@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ellipsis" format="2">
+  <advance width="810"/>
+  <unicode hex="2026"/>
+  <guideline x="40.0" y="0" angle="90.0" name="TRAC" identifier="g6uoNAicw7"/>
+  <guideline x="770.0" y="0" angle="90.0" name="TRAC" identifier="0bojKEKeoR"/>
+  <outline>
+    <component base="period"/>
+    <component base="period" xOffset="265"/>
+    <component base="period" xOffset="530"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

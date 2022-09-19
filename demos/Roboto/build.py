@@ -1,4 +1,5 @@
 import sys, os
+from importlib import reload
 
 folder = os.getcwd()
 
@@ -9,6 +10,7 @@ except:
     sys.path.append(variableSpacingPath)
     import variableSpacing
 
+reload(variableSpacing)
 from fontmake.font_project import FontProject
 from variableSpacing import *
 
@@ -18,9 +20,12 @@ newSources = buildSpacingSources(folder)
 # generate variable font
 designspacePath = os.path.join(folder, 'Roboto.designspace')
 varFontPath = designspacePath.replace('.designspace', '.ttf')
+if os.path.exists(varFontPath):
+    os.remove(varFontPath)
+
 P = FontProject()
 P.build_variable_font(designspacePath, output_path=varFontPath, verbose=True)
 
 # clear spacing sources
-# for ufoPath in newSources:
-#     shutil.rmtree(ufoPath)
+for ufoPath in newSources:
+    shutil.rmtree(ufoPath)

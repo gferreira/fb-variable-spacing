@@ -13,6 +13,101 @@
         <string>characterSet</string>
       </dict>
     </array>
+    <key>com.hipertipo.spacingaxis.components</key>
+    <dict>
+      <key>Q</key>
+      <array>
+        <array>
+          <string>O</string>
+          <array>
+            <real>58.0</real>
+            <real>-10.0</real>
+          </array>
+        </array>
+        <array>
+          <array>
+            <integer>315</integer>
+            <integer>-163</integer>
+          </array>
+          <string>rOFeMkZ3US</string>
+        </array>
+      </array>
+      <key>R</key>
+      <array>
+        <array>
+          <string>P</string>
+          <array>
+            <real>102.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <array>
+            <integer>287</integer>
+            <integer>0</integer>
+          </array>
+          <string>I7KTRDZ1kO</string>
+        </array>
+      </array>
+      <key>colon</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>96.0</real>
+            <real>373.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>96.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+      </array>
+      <key>ellipsis</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>99.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>360.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>622.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+      </array>
+      <key>semicolon</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>103.0</real>
+            <real>373.0</real>
+          </array>
+        </array>
+        <array>
+          <string>comma</string>
+          <array>
+            <real>92.0</real>
+            <real>-116.0</real>
+          </array>
+        </array>
+      </array>
+    </dict>
     <key>com.hipertipo.spacingaxis.kerning</key>
     <dict>
       <key>default</key>
@@ -7298,6 +7393,13 @@
           <key>width</key>
           <integer>572</integer>
         </dict>
+        <key>ellipsis</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>99</integer>
+          <key>width</key>
+          <integer>810</integer>
+        </dict>
         <key>equal</key>
         <dict>
           <key>leftMargin</key>
@@ -7964,6 +8066,13 @@
           <key>width</key>
           <integer>435</integer>
         </dict>
+        <key>ellipsis</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>10</integer>
+          <key>width</key>
+          <integer>632</integer>
+        </dict>
         <key>equal</key>
         <dict>
           <key>leftMargin</key>
@@ -8426,6 +8535,7 @@
       <string>bar</string>
       <string>braceright</string>
       <string>asciitilde</string>
+      <string>ellipsis</string>
     </array>
     <key>public.postscriptNames</key>
     <dict/>

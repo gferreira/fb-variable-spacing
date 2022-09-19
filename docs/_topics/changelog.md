@@ -34,6 +34,14 @@ types of changes:
 
 -->
 
+0.1.2
+-----
+
+- <span class='badge'>Changed</span> Modified the [components lib specification] to allow multiple copies of the same component.
+- <span class='badge'>Changed</span> Updated code, tools and demo fonts to the new data format.
+
+[components lib specification]: ../reference/spacing-states-format/#components-lib
+
 0.1.1
 -----
 

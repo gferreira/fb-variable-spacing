@@ -1,5 +1,17 @@
+import sys
+
+# ufoProcessor is not embedded in DrawBot
+try:
+    import ufoProcessor
+except:
+    # http://github.com/LettError/ufoProcessor
+    ufoProcessorPath = '/_code/ufoProcessor/Lib'
+    sys.path.append(ufoProcessorPath)
+    import ufoProcessor
+
 import drawBot as DB
 from drawBot import BezierPath
+from ufoProcessor import DesignSpaceProcessor, Location
 from fontTools.agl import UV2AGL
 from fontParts.world import OpenFont, RGlyph
 from fontPens.marginPen import MarginPen
@@ -7,6 +19,35 @@ from fontPens.marginPen import MarginPen
 from variableSpacing.extras.progvis_vector import getVector, vector
 from variableSpacing.extras.progvis_toolsDB import drawGlyph, glyph2bezier
 from variableSpacing.extras.hTools3_primitives import polygon as Polygon, rect as Rect
+
+def drawGlyph(g):
+    bez = DB.BezierPath()
+    g.draw(bez)
+    DB.drawPath(bez)
+
+
+class DecomposePointPen(object):
+
+    # copied from ufoProcessor
+    # added support for *args and **kwargs
+
+    def __init__(self, glyphSet, outPointPen):
+        self._glyphSet = glyphSet
+        self._outPointPen = outPointPen
+        self.beginPath = outPointPen.beginPath
+        self.endPath = outPointPen.endPath
+        self.addPoint = outPointPen.addPoint
+
+    def addComponent(self, baseGlyphName, transformation, *args, **kwargs):
+        if baseGlyphName in self._glyphSet:
+            baseGlyph = self._glyphSet[baseGlyphName]
+            if transformation == _defaultTransformation:
+                baseGlyph.drawPoints(self)
+            else:
+                transformPointPen = TransformPointPen(self, transformation)
+                baseGlyph.drawPoints(transformPointPen)
+
+
 
 
 class SpacingAreasGlyph:
@@ -65,7 +106,7 @@ class SpacingAreasGlyph:
     @property
     def rightSide(self):
         _rightSide = []
-        for y in range(self.yMin, self.yMax, self.yStep):
+        for y in range(int(self.yMin), int(self.yMax), int(self.yStep)):
             pen = MarginPen(dict(), y, isHorizontal=True)
             self.glyph.draw(pen)
             intersections = pen.getAll()
@@ -100,7 +141,7 @@ class SpacingAreasGlyph:
     @property
     def leftSide(self):
         _leftSide  = []
-        for y in range(self.yMin, self.yMax, self.yStep):
+        for y in range(int(self.yMin), int(self.yMax), int(self.yStep)):
             pen = MarginPen(dict(), y, isHorizontal=True)
             self.glyph.draw(pen)
             intersections = pen.getAll()
@@ -178,41 +219,105 @@ class SpacingAreasLine:
 
     '''
 
-    text            = 'SPACE'
+    fontInfo        = {}
+    kerning         = {}
+    glyphs          = {}
+    glyphNames      = []
+
     scale           = 1.0
+    location        = {}
     glyphParameters = {}
+
+    tracking        = 0          # as a percentage % of em
+    useKerning      = True
+
     innerDraw       = True
     outerDraw       = True
     glyphsDraw      = True
 
-    def __init__(self, font, ctx=DB):
-        self.font = font
+    def __init__(self, designspacePath, ctx=DB):
+        self.designspacePath = designspacePath
         self.ctx = ctx
 
     def setParameters(self, parameters):
         for k, v in parameters.items():
             setattr(self, k, v)
             
-    def draw(self, pos):
+    def draw(self, text, pos):
+
+        # ------------------
+        # instantiate glyphs
+        # ------------------
+
+        doc = DesignSpaceProcessor()
+        doc.read(self.designspacePath)
+        doc.loadFonts()
+
+        location = Location(**self.location)
+
+        # convert unicode to psnames
+        self.glyphNames = [UV2AGL.get(ord(char)) for char in text] 
+
+        # interpolate font info
+        fontInfoMutator = doc.getInfoMutator()
+        self.fontInfo = fontInfoMutator.makeInstance(location)
+
+        tracking = self.fontInfo.unitsPerEm / 1000 * self.tracking
+
+        # interpolate kerning
+        if self.useKerning:
+            pairs = []
+            for i, glyphName in enumerate(self.glyphNames):
+                if i == 0:
+                    continue
+                pairs.append((self.glyphNames[i-1], glyphName))
+            kerningMutator = doc.getKerningMutator(pairs)
+            self.kerning = kerningMutator.makeInstance(location)
+
+        # interpolate glyphs
+        self.glyphs = {}
+        for glyphName in self.glyphNames:
+            if glyphName in self.glyphs:
+                continue
+            glyphMutator = doc.getGlyphMutator(glyphName)
+            instanceGlyph = glyphMutator.makeInstance(location)
+            for comp in instanceGlyph.components:
+                compName = comp['baseGlyph']
+                if compName not in self.glyphs:
+                    compGlyphMutator = doc.getGlyphMutator(compName)
+                    compGlyph = compGlyphMutator.makeInstance(location)
+                    self.glyphs[compName] = compGlyph
+            g = RGlyph()
+            pointPen = g.getPointPen()
+            decomposePen = DecomposePointPen(self.glyphs, pointPen)
+            instanceGlyph.drawPoints(decomposePen)
+            g.width = instanceGlyph.width
+            self.glyphs[glyphName] = g
+
+        # -----
+        # draw!
+        # -----
+
         self.ctx.save()
         self.ctx.translate(*pos)
         self.ctx.scale(self.scale)
 
         if self.innerDraw or self.outerDraw:
             with self.ctx.savedState():
-                for char in self.text:
-                    glyphName = UV2AGL.get(ord(char)) # char
-                    g = self.font[glyphName]
+                for i, glyphName in enumerate(self.glyphNames):
+                    g = self.glyphs[glyphName]
                     G = SpacingAreasGlyph(g, self.ctx)
                     G.setParameters(self.glyphParameters)
+                    if type(G.yMax) is str:
+                        G.yMax = getattr(self.fontInfo, G.yMax)
+
                     G.draw((0, 0), inner=self.innerDraw, outer=self.outerDraw, glyph=False)
                     self.ctx.translate(g.width, 0)
 
         if self.glyphsDraw:
             with self.ctx.savedState():
-                for char in self.text:
-                    glyphName = UV2AGL.get(ord(char)) # char
-                    g = self.font[glyphName]
+                for i, glyphName in enumerate(self.glyphNames):
+                    g = self.glyphs[glyphName]
                     G = SpacingAreasGlyph(g)
                     G.setParameters(self.glyphParameters)
                     G.draw((0, 0), inner=False, outer=False, glyph=True)

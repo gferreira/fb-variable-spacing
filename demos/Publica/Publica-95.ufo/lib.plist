@@ -13,6 +13,101 @@
         <string>characterSet</string>
       </dict>
     </array>
+    <key>com.hipertipo.spacingaxis.components</key>
+    <dict>
+      <key>Q</key>
+      <array>
+        <array>
+          <string>O</string>
+          <array>
+            <real>45.0</real>
+            <real>-10.0</real>
+          </array>
+        </array>
+        <array>
+          <array>
+            <integer>274</integer>
+            <integer>-180</integer>
+          </array>
+          <string>RHE9ok0aha</string>
+        </array>
+      </array>
+      <key>R</key>
+      <array>
+        <array>
+          <string>P</string>
+          <array>
+            <real>65.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <array>
+            <integer>261</integer>
+            <integer>1</integer>
+          </array>
+          <string>OLTooyHxDz</string>
+        </array>
+      </array>
+      <key>colon</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>50.0</real>
+            <real>315.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>50.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+      </array>
+      <key>ellipsis</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>50.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>315.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>580.0</real>
+            <real>0.0</real>
+          </array>
+        </array>
+      </array>
+      <key>semicolon</key>
+      <array>
+        <array>
+          <string>period</string>
+          <array>
+            <real>65.0</real>
+            <real>315.0</real>
+          </array>
+        </array>
+        <array>
+          <string>comma</string>
+          <array>
+            <real>33.0</real>
+            <real>-140.0</real>
+          </array>
+        </array>
+      </array>
+    </dict>
     <key>com.hipertipo.spacingaxis.kerning</key>
     <dict>
       <key>default</key>
@@ -6865,7 +6960,7 @@
         <key>bracketright</key>
         <dict>
           <key>leftMargin</key>
-          <real>40.0</real>
+          <integer>40</integer>
           <key>width</key>
           <integer>370</integer>
         </dict>
@@ -6918,6 +7013,13 @@
           <key>width</key>
           <integer>572</integer>
         </dict>
+        <key>ellipsis</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>50</integer>
+          <key>width</key>
+          <integer>810</integer>
+        </dict>
         <key>equal</key>
         <dict>
           <key>leftMargin</key>
@@ -6966,13 +7068,6 @@
           <integer>50</integer>
           <key>width</key>
           <integer>404</integer>
-        </dict>
-        <key>gravecmb</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>-203</integer>
-          <key>width</key>
-          <integer>500</integer>
         </dict>
         <key>greater</key>
         <dict>
@@ -7040,7 +7135,7 @@
         <key>n</key>
         <dict>
           <key>leftMargin</key>
-          <real>50.0</real>
+          <integer>50</integer>
           <key>width</key>
           <integer>560</integer>
         </dict>
@@ -7131,7 +7226,7 @@
         <key>quotedbl</key>
         <dict>
           <key>leftMargin</key>
-          <real>50.0</real>
+          <integer>50</integer>
           <key>width</key>
           <integer>462</integer>
         </dict>
@@ -7166,14 +7261,14 @@
         <key>seven</key>
         <dict>
           <key>leftMargin</key>
-          <real>35.0</real>
+          <integer>35</integer>
           <key>width</key>
           <integer>501</integer>
         </dict>
         <key>six</key>
         <dict>
           <key>leftMargin</key>
-          <real>35.0</real>
+          <integer>35</integer>
           <key>width</key>
           <integer>546</integer>
         </dict>
@@ -7590,6 +7685,13 @@
           <integer>10</integer>
           <key>width</key>
           <integer>502</integer>
+        </dict>
+        <key>ellipsis</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>10</integer>
+          <key>width</key>
+          <integer>730</integer>
         </dict>
         <key>equal</key>
         <dict>
@@ -10091,6 +10193,7 @@
       <string>bar</string>
       <string>braceright</string>
       <string>asciitilde</string>
+      <string>ellipsis</string>
     </array>
     <key>public.skipExportGlyphs</key>
     <array/>

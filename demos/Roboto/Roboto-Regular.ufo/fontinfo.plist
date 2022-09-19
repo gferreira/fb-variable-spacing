@@ -13,7 +13,18 @@
     <key>familyName</key>
     <string>Roboto</string>
     <key>guidelines</key>
-    <array/>
+    <array>
+      <dict>
+        <key>angle</key>
+        <integer>0</integer>
+        <key>identifier</key>
+        <string>6CfRXx0KlY</string>
+        <key>x</key>
+        <integer>356</integer>
+        <key>y</key>
+        <integer>161</integer>
+      </dict>
+    </array>
     <key>italicAngle</key>
     <integer>0</integer>
     <key>openTypeHeadCreated</key>

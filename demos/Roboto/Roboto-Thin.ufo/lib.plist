@@ -55,26 +55,39 @@
     <key>com.hipertipo.spacingaxis.components</key>
     <dict>
       <key>colon</key>
-      <dict>
-        <key>period</key>
+      <array>
         <array>
-          <real>5.0</real>
-          <real>956.0</real>
+          <string>period</string>
+          <array>
+            <real>0.0</real>
+            <real>-6.0</real>
+          </array>
         </array>
-      </dict>
+        <array>
+          <string>period</string>
+          <array>
+            <real>0.0</real>
+            <real>956.0</real>
+          </array>
+        </array>
+      </array>
       <key>semicolon</key>
-      <dict>
-        <key>comma</key>
+      <array>
         <array>
-          <real>-89.0</real>
-          <real>-255.0</real>
+          <string>period</string>
+          <array>
+            <real>-44.0</real>
+            <real>956.0</real>
+          </array>
         </array>
-        <key>period</key>
         <array>
-          <real>-45.0</real>
-          <real>956.0</real>
+          <string>comma</string>
+          <array>
+            <real>-89.0</real>
+            <real>-255.0</real>
+          </array>
         </array>
-      </dict>
+      </array>
     </dict>
     <key>com.hipertipo.spacingaxis.kerning</key>
     <dict>
@@ -10640,7 +10653,7 @@
           <key>leftMargin</key>
           <integer>0</integer>
           <key>width</key>
-          <integer>116</integer>
+          <integer>111</integer>
         </dict>
         <key>comma</key>
         <dict>

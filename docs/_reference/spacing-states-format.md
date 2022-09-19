@@ -22,12 +22,14 @@ Each spacing state is described by:
 
 - the *advance width* and *left margin* of all glyphs
 - all *kerning values* in the font
-- the *positional relationship* between components
 
+{% comment %}
+- the *positional relationship* between components
+{% endcomment %}
 
 ### Libs overview
 
-Spacing state data is stored in 3 custom font-level libs under the prefix `com.hipertipo.spacingaxis`:
+Data to enable spacing states is stored in 3 custom font-level libs under the prefix `com.hipertipo.spacingaxis`:
 
 <table class='table'>
   <tr>
@@ -55,6 +57,27 @@ Spacing lib
 The spacing lib contains a record of the **advance width** and **left margin** of all glyphs in a font, for each spacing state.
 
 Empty glyphs have no margins and are described only by their advance width.
+
+##### Python example 
+
+```python
+font.lib[f'com.hipertipo.spacingaxis.spacing'] = {
+    'default' : {
+        'a': {'width': 543, 'leftMargin': 75},
+        'space': {'width': 270},
+    }
+    'tight' : {
+        'a': {
+            # etc.
+        },
+    },
+    'loose' : {
+        'a': {
+            # etc.
+        },
+    },
+}
+```
 
 ##### XML example
 
@@ -90,29 +113,7 @@ Empty glyphs have no margins and are described only by their advance width.
       <!-- etc. -->
     </dict>
   </dict>
-
 </dict>
-```
-
-##### Python example 
-
-```python
-font.lib[f'com.hipertipo.spacingaxis.spacing'] = {
-    'default' : {
-        'a': {'width': 543, 'leftMargin': 75},
-        'space': {'width': 270},
-    }
-    'tight' : {
-        'a': {
-            # etc.
-        },
-    },
-    'loose' : {
-        'a': {
-            # etc.
-        },
-    },
-}
 ```
 
 
@@ -124,6 +125,23 @@ The kerning lib contains a record of all **kerning values** in a font, for each 
 Each kerning pair is stored as a tuple of *first glyph*, *second glyph*, and *kern value*.
 
 Glyphs in kerning pairs are defined as *glyph names* or *kerning groups*.
+
+##### Python example 
+
+```python
+font.lib['com.hipertipo.spacingaxis.kerning'] = {
+    'default' : [
+        ('public.kern1.A', 'public.kern2.V', -40),
+        ('B', 'J', -20),
+    ],
+    'tight' : [
+        # etc.
+    ],
+    'loose' : [
+        # etc.
+    ],
+}
+```
 
 ##### XML example
 
@@ -154,34 +172,88 @@ Glyphs in kerning pairs are defined as *glyph names* or *kerning groups*.
 </dict>
 ```
 
-##### Python example 
-
-```python
-font.lib['com.hipertipo.spacingaxis.kerning'] = {
-    'default' : [
-        ('public.kern1.A', 'public.kern2.V', -40),
-        ('B', 'J', -20),
-    ],
-    'tight' : [
-        # etc.
-    ],
-    'loose' : [
-        # etc.
-    ],
-}
-```
-
 
 Components lib
 --------------
 
 The components lib contains a record of all **component positions** in a font, expressed in relation to the glyph bounds.
 
-This data is needed to preserve the relative positions between components when switching spacing states.
+This data is used to preserve the relative positions between components when switching spacing states.
 
 All and only glyphs containing components are included.
 
-Components are identified by their *base glyph name*, contours are identified by their *unique identifiers*.
+- Components are defined by their *base glyph name* and *relative offset*.
+- Contours are defined by their *position* and *unique identifiers*.
+
+##### Python example 
+
+```python
+font.lib['com.hipertipo.spacingaxis.components'] = {
+    'aacute' : [
+        ('a', (65.0, -10.0)),
+        ('acutecmb', (212.0, 581.0)),
+    ]
+    'dollar' : [
+        ('S', (62.0, -10.0)),         # component
+        ((225, 588), 'VyKpf7rL3q'),   # contour
+        ((225, -115), 'ZpTeU9Jwwi'),
+    ],
+    # etc.
+}
+```
+
+##### XML example
+
+```xml
+<key>com.hipertipo.spacingaxis.components</key>
+<dict>
+  <key>aacute</key>
+  <array>
+    <array>
+      <string>a</string>
+      <array>
+        <real>65.0</real>
+        <real>-10.0</real>
+      </array>
+    </array>
+    <array>
+      <string>acutecmb</string>
+      <array>
+        <real>212.0</real>
+        <real>581.0</real>
+      </array>
+    </array>
+  </array>
+  <key>dollar</key>
+  <array>
+    <array>
+      <string>S</string>
+      <array>
+        <real>62.0</real>
+        <real>-10.0</real>
+      </array>
+    </array>
+    <array>
+      <array>
+        <real>225</real>
+        <real>588</real>
+      </array>
+      <string>VyKpf7rL3q</string>
+    </array>
+    <array>
+      <array>
+        <real>225</real>
+        <real>-115</real>
+      </array>
+      <string>ZpTeU9Jwwi</string>
+    </array>
+  </array>
+</dict>
+```
+
+
+{% comment %}
+### Old format (deprecated)
 
 ##### XML example
 
@@ -230,7 +302,7 @@ font.lib['com.hipertipo.spacingaxis.components'] = {
     'aacute' : {
         'a' : (65.0, -10.0),
         'acutecmb' : (212.0, 581.0),
-    }
+    },
     'dollar' : {
         'S' : (62.0, -10.0),
         'VyKpf7rL3q' : (225, 588),
@@ -239,3 +311,4 @@ font.lib['com.hipertipo.spacingaxis.components'] = {
     # etc.
 }
 ```
+{% endcomment %}
