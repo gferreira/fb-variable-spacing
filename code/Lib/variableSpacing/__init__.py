@@ -145,8 +145,6 @@ def getKerningLib(font, kerningKey=KEY_KERNING):
     else:
         return {}
 
-getStatesNames = getSpacingStates
-
 def getComponentsLib(font, spacingKey=KEY_COMPONENTS):
     '''
     Get the components lib from a given font.
@@ -530,8 +528,6 @@ def deleteSpacingStatesLib(font, key=KEY):
     if key in font.lib:
         del font.lib[key]
 
-deleteLib = deleteSpacingStatesLib
-
 # ----------
 # generating
 # ----------
@@ -828,3 +824,6 @@ def loadSpacingFromLib_old(font, spacingState, spacingKey=KEY_SPACING, component
         glyphWidth = spacingDict[glyph.name].get('width')
         glyph.width = glyphWidth
         glyph.changed()
+
+getStatesNames = getSpacingStates
+deleteLib = deleteSpacingStatesLib
