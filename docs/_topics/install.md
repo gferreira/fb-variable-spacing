@@ -35,7 +35,7 @@ Simply double-click the file `VariableSpacing.roboFontExt` to have it installed 
 <div class="card text-dark bg-light my-3">
 <div class="card-header">note</div>
 <div class="card-body" markdown='1'>
-If you install Variable Spacing manually, you will *not* be notified automatically about updates.
+If you install the extension manually, you will *not* be notified automatically about updates.
 {: .card-text }
 </div>
 </div>

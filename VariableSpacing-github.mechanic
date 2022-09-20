@@ -1,0 +1,8 @@
+extensionName: Variable Spacing
+repository: https://github.com/gferreira/VariableSpacing
+extensionPath: VariableSpacing.roboFontExt
+description: Tools to add a spacing axis to variable fonts.
+developer: Gustavo Ferreira
+developerURL: https://github.com/gferreira
+tags: [variable fonts, spacing, designspace, workflow]
+icon: https://github.com/gferreira/VariableSpacing/raw/master/VariableSpacingIcon.png
