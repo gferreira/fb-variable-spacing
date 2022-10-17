@@ -145,8 +145,6 @@ def getKerningLib(font, kerningKey=KEY_KERNING):
     else:
         return {}
 
-getStatesNames = getSpacingStates
-
 def getComponentsLib(font, spacingKey=KEY_COMPONENTS):
     '''
     Get the components lib from a given font.
@@ -172,54 +170,18 @@ def getComponentsLib(font, spacingKey=KEY_COMPONENTS):
 # writing
 # -------
 
-def saveSpacingToLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey=KEY_COMPONENTS, verbose=False):
+def saveComponentsToLib(font, componentsKey=KEY_COMPONENTS, verbose=False):
     '''
-    Save the font’s current spacing values (width, left margin) to the font lib.
+    Save relative positions between components in the font lib.
 
     ::
 
-        from variableSpacing import saveSpacingToLib
+        from variableSpacing import saveComponentsToLib
         font = CurrentFont()
-        saveSpacingToLib(font, 'tight')
+        saveComponentsToLib(font)
 
     '''
-    # ------------
-    # spacing dict
-    # ------------
-
-    # make spacing dict
-
-    D = {}
-    for glyphName in font.glyphOrder:
-        if verbose:
-            print(f'saving spacing data for {glyphName}...')
-
-        glyph = font[glyphName]
-        D[glyphName] = {}
-
-        # store the advance widths of all glyphs
-        D[glyphName]['width'] = glyph.width
-        if verbose:
-            print(f'\twidth: {glyph.width}')
-
-        # store left margin of non-empty glyphs
-        if glyph.leftMargin is not None:
-            D[glyphName]['leftMargin'] = glyph.leftMargin
-            if verbose:
-                print(f'\tleft margin: {glyph.leftMargin}')
-
-        if verbose:
-            print()
-
-    # store spacing dict in lib
-    if spacingKey not in font.lib:
-        font.lib[spacingKey] = {}
-    font.lib[spacingKey][spacingState] = D
-
-    # ---------------
-    # components dict
-    # ---------------
-    
+    # make components dict
     D = {}
     for glyphName in font.glyphOrder:
         glyph = font[glyphName]
@@ -227,12 +189,10 @@ def saveSpacingToLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey=K
             continue
 
         # store offsets to shape origin (bounds)
-        
         if verbose:
             print(f'saving component data for {glyphName} ...')
 
         glyphParts = []
-
         for component in glyph.components:
             cx, cy = component.offset
             if font[component.baseGlyph].bounds is None:
@@ -262,10 +222,44 @@ def saveSpacingToLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey=K
         if verbose:
             print()
 
-    # store component dict in lib (same for all states)
+    # store component dict in lib (independent of any states)
     if componentsKey not in font.lib:
         font.lib[componentsKey] = {}
     font.lib[componentsKey] = D
+
+def saveSpacingToLib(font, spacingState, spacingKey=KEY_SPACING, verbose=False):
+    '''
+    Save the font’s current spacing values (width, left margin) to the font lib.
+
+    ::
+
+        from variableSpacing import saveSpacingToLib
+        font = CurrentFont()
+        saveSpacingToLib(font, 'tight')
+
+    '''
+    # make spacing dict
+    D = {}
+    for glyphName in font.glyphOrder:
+        if verbose:
+            print(f'saving spacing data for {glyphName}...')
+        glyph = font[glyphName]
+        D[glyphName] = {}
+        # store the advance widths of all glyphs
+        D[glyphName]['width'] = glyph.width
+        if verbose:
+            print(f'\twidth: {glyph.width}')
+        # store left margin of non-empty glyphs
+        if glyph.leftMargin is not None:
+            D[glyphName]['leftMargin'] = glyph.leftMargin
+            if verbose:
+                print(f'\tleft margin: {glyph.leftMargin}')
+        if verbose:
+            print()
+    # store spacing dict in lib
+    if spacingKey not in font.lib:
+        font.lib[spacingKey] = {}
+    font.lib[spacingKey][spacingState] = D
 
 def saveKerningToLib(font, spacingState, kerningKey=KEY_KERNING):
     '''
@@ -294,6 +288,9 @@ def saveKerningToLib(font, spacingState, kerningKey=KEY_KERNING):
 # loading
 # -------
 
+# def smartSetMargins(font, lefMargin=None, rightMargin=None, beam=None, componentsKey=KEY_COMPONENTS, verbose=True):
+#     componentsDict = font.lib[componentsKey] if componentsKey in font.lib else {}
+
 def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey=KEY_COMPONENTS, verbose=True):
     '''
     Load spacing data for a given state from the lib into the font.
@@ -313,6 +310,8 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey
     # ----------------------------
 
     for glyphName in font.glyphOrder:
+        if glyphName not in font:
+            continue
         glyph = font[glyphName]
         if len(glyph.components):
             continue
@@ -328,6 +327,8 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey
     # ---------------------------
 
     for glyphName in font.glyphOrder:
+        if glyphName not in font:
+            continue
         glyph = font[glyphName]
         # skip glyphs without components
         if not len(glyph.components):
@@ -339,6 +340,8 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey
         if not len(glyph.contours):
             continue
 
+        if glyphName not in componentsDict:
+            continue
         glyphParts = componentsDict[glyphName]
         assert type(glyphParts) is list
 
@@ -415,6 +418,8 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, componentsKey
     # ---------------
 
     for glyphName in font.glyphOrder:
+        if glyphName not in font:
+            continue
         glyph = font[glyphName]
         # skip glyphs without components
         if not len(glyph.components):
@@ -527,22 +532,24 @@ def deleteSpacingStatesLib(font, key=KEY):
     Delete top-level font lib with the given key from the font.
 
     '''
-    if key in font.lib:
-        del font.lib[key]
-
-deleteLib = deleteSpacingStatesLib
+    for k in font.lib.keys():
+        if k.startswith(key):
+            del font.lib[k]
 
 # ----------
 # generating
 # ----------
 
-def buildSpacingSources(folder, prefix='_'):
+def buildSpacingSources(folder, prefix='_', verbose=True):
 
     # get all ufo sources in folder
-    sources = [ufo for ufo in glob.glob(f'{folder}/*.ufo') if prefix not in ufo]
+    sources = [ufo for ufo in glob.glob(f'{folder}/*.ufo') if prefix not in os.path.split(ufo)[-1]]
 
     # keep a list of all new sources
     newSources = []
+
+    if verbose:
+        print('building spacing sources...\n')
 
     for src in sources:
         srcPath = os.path.join(folder, src)
@@ -566,6 +573,8 @@ def buildSpacingSources(folder, prefix='_'):
             if os.path.exists(dstPath):
                 shutil.rmtree(dstPath)
             # duplicate UFO source
+            if verbose:
+                print(f'\tsaving {stateName} as {dstPath}...')
             shutil.copytree(srcPath, dstPath)
 
             # set font info in duplicate
@@ -585,6 +594,9 @@ def buildSpacingSources(folder, prefix='_'):
             newSources.append(dstPath)
 
         srcFont.close()
+
+    if verbose:
+        print('...done.\n')
 
     return newSources
 
@@ -828,3 +840,6 @@ def loadSpacingFromLib_old(font, spacingState, spacingKey=KEY_SPACING, component
         glyphWidth = spacingDict[glyph.name].get('width')
         glyph.width = glyphWidth
         glyph.changed()
+
+getStatesNames = getSpacingStates
+deleteLib = deleteSpacingStatesLib

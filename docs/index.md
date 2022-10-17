@@ -26,6 +26,8 @@ Reference
 - [SpacingStates format](reference/spacing-states-format)
 - [SpacingStates module](reference/spacing-states-module)
 - [SpacingStates tool](reference/spacing-states-tool)
+- [SmartMargins tool](reference/smart-margins-tool)
+
 </div>
 
 <div class='col-12 col-md-6 mb-1' markdown='1'>

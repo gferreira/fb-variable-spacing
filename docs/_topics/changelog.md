@@ -34,6 +34,14 @@ types of changes:
 
 -->
 
+0.1.3
+-----
+
+- <span class='badge'>Added</span> Adding a new tool [Smart Margins] to change glyph margins without breaking component positioning.
+- <span class='badge'>Changed</span> Moving code to save/load components lib to standalone functions.
+
+[Smart Margins]: ../reference/smart-margins-tool/
+
 0.1.2
 -----
 

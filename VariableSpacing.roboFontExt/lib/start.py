@@ -1,4 +1,5 @@
 import os, sys
+from importlib import reload
 
 modulePath = os.getcwd()
 
@@ -8,4 +9,5 @@ if modulePath not in sys.path:
 
 print('initializing variableSpacing module…')
 import variableSpacing
+reload(variableSpacing)
 print(variableSpacing)
