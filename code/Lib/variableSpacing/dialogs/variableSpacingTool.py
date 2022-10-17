@@ -1,8 +1,8 @@
 # menuTitle: Spacing States tool
 
-from importlib import reload
-import variableSpacing
-reload(variableSpacing)
+# from importlib import reload
+# import variableSpacing
+# reload(variableSpacing)
 
 import os, shutil
 from vanilla import *
@@ -149,6 +149,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             print(f"creating new spacing state '{newStateName}'...")
 
         # add new state to font libs
+        saveComponentsToLib(self.font)
         saveSpacingToLib(self.font, newStateName)
         saveKerningToLib(self.font, newStateName)
 
@@ -182,6 +183,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if self.verbose:
             print(f"saving spacing state '{self.currentState}' to the lib...")
 
+        saveComponentsToLib(self.font)
         saveSpacingToLib(self.font, self.currentState)
         saveKerningToLib(self.font, self.currentState)
 
@@ -196,7 +198,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if self.verbose:
             print(f"deleting spacing state '{self.currentState}'...")
 
-        deleteSpacingState(self.font, KEY, self.currentState)
+        deleteSpacingState(self.font, self.currentState)
 
         self.loadFontStates()
 
