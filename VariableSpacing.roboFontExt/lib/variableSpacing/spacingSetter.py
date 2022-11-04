@@ -10,6 +10,7 @@ except:
     import ufoProcessor
 
 import drawBot
+from defcon.pens.transformPointPen import TransformPointPen
 from defcon.objects.component import _defaultTransformation
 from ufoProcessor import DesignSpaceProcessor, Location
 from fontTools.agl import UV2AGL

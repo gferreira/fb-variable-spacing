@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="Gradient">
+      <stop class="stop1" offset="0%" />
+      <stop class="stop2" offset="50%" />
+      <stop class="stop3" offset="100%" />
+    </linearGradient>
+    <style>
+      <![CDATA[
+              #rect1 { fill: url(#Gradient); }
+              .stop1 { stop-color: rgb(0, 204, 255); }
+              .stop2 { stop-color: rgb(255, 255, 128); }
+              .stop3 { stop-color: rgb(0, 204, 255); }
+            ]]>
+    </style>
+  </defs>
+  <path id="rect1" d="M0,0 l1000,0 l0,1000 l-1000,0 Z M0,0" fill="rgb(255,255,127)" transform="matrix(1,0,0,-1,0,1000)"/>
+  <path d="M450,0 l0,313 c0,106,-62,162,-180,162 c-110,0,-174,-50,-174,-134 l70,0 c0,53,37,82,104,82 c74,0,110,-34,110,-106 l0,-117 c0,-97,-55,-158,-140,-158 c-59,0,-97,32,-97,81 c0,63,46,92,144,92 l110,0 l0,49 l-110,0 c-147,0,-213,-46,-212,-145 c1,-78,60,-129,148,-129 c98,0,155,47,168,137 l-11,0 l0,-127 Z M450,0" fill="rgb(0,0,0)" transform="matrix(1.5,0.0,0.0,-1.5,100.63322334031108,848.75)"/>
+  <path d="M40,500 l90,85 l0,-170 Z M40,500" fill="rgb(255,38,0)" transform="matrix(1,0,0,-1,0,1000)"/>
+  <path d="M960,500 l-90,85 l0,-170 Z M960,500" fill="rgb(255,38,0)" transform="matrix(1,0,0,-1,0,1000)"/>
+</svg>

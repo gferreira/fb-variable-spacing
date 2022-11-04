@@ -1,14 +1,14 @@
 # menuTitle: Spacing States tool
 
-# from importlib import reload
-# import variableSpacing
-# reload(variableSpacing)
+from importlib import reload
+import variableSpacing
+reload(variableSpacing)
 
 import os, shutil
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
-from mojo.UI import UpdateCurrentGlyphView
+from mojo.UI import UpdateCurrentGlyphView, PutFile, GetFile
 from mojo import drawingTools as ctx
 
 from variableSpacing import *
@@ -29,8 +29,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
     verbose    = True
 
     def __init__(self):
-        self.height  = self.textHeight*10
-        self.height += self.padding*8
+        self.height  = self.textHeight*12
+        self.height += self.padding*10
         self.w = FloatingWindow((self.width, self.height), "spacing")
 
         x = y = p = self.padding
@@ -50,17 +50,9 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             selectionCallback=self.updatePreviewCallback)
 
         y += self.textHeight*3 + p
-        self.w.preview = CheckBox(
-            (x,  y, -p, self.textHeight),
-            "preview",
-            value=True,
-            sizeStyle='small',
-            callback=self.updatePreviewCallback)
-
-        y += self.textHeight + p
         self.w.newState = Button(
             (x, y, -p, self.textHeight),
-            'new',
+            'create',
             callback=self.newStateCallback,
             sizeStyle='small')
 
@@ -86,11 +78,33 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             sizeStyle='small')
 
         y += self.textHeight + p
-        self.w.exportState = Button(
+        self.w.exportStates = Button(
             (x, y, -p, self.textHeight),
             'export',
-            callback=self.exportStateCallback,
+            callback=self.exportStatesCallback,
             sizeStyle='small')
+        
+        y += self.textHeight + p
+        self.w.importStates = Button(
+            (x, y, -p, self.textHeight),
+            'import',
+            callback=self.importStatesCallback,
+            sizeStyle='small')
+
+        y += self.textHeight + p
+        self.w.generateState = Button(
+            (x, y, -p, self.textHeight),
+            'generate',
+            callback=self.generateStateCallback,
+            sizeStyle='small')
+
+        y += self.textHeight + p
+        self.w.preview = CheckBox(
+            (x,  y, -p, self.textHeight),
+            "show preview",
+            value=True,
+            sizeStyle='small',
+            callback=self.updatePreviewCallback)
 
         self.setUpBaseWindowBehavior()
 
@@ -202,16 +216,68 @@ class VariableSpacingTool(hDialog, BaseWindowController):
 
         self.loadFontStates()
 
-    def exportStateCallback(self, sender):
+    def exportStatesCallback(self, sender):
         '''
-        Export the selected state as a separate font.
+        Export spacing states as an external JSON file.
 
         '''
         if self.font is None:
             return
 
         if self.verbose:
-            print(f"exporting spacing state '{self.currentState}' as a separate UFO...")
+            print("exporting spacing states...")
+
+        jsonFileName = 'spacingStates.json'
+        jsonPath = PutFile(message='Save spacing states into JSON file:', fileName=jsonFileName)
+
+        if jsonPath is None:
+            if self.verbose:
+                print('[cancelled]\n')
+            return
+
+        if os.path.exists(jsonPath):
+            os.remove(jsonPath)
+
+        if self.verbose:
+            print(f'\tsaving {jsonPath}...')
+
+        exportSpacingStates(self.font, jsonPath)
+
+        if self.verbose:
+            print('...done.\n')
+
+    def importStatesCallback(self, sender):
+        '''
+        Import spacing states from external JSON file.
+
+        '''
+        if self.font is None:
+            return
+
+        if self.verbose:
+            print("importing spacing states...")
+
+        jsonPath = GetFile(message='Select JSON file with spacing states:')
+
+        if self.verbose:
+            print(f'\timporting data from {jsonPath}...')
+
+        importSpacingStates(self.font, jsonPath)
+        self.loadFontStates()
+
+        if self.verbose:
+            print('...done.\n')
+
+    def generateStateCallback(self, sender):
+        '''
+        Generate the selected state as a separate font.
+
+        '''
+        if self.font is None:
+            return
+
+        if self.verbose:
+            print(f"generating spacing state '{self.currentState}' as a separate UFO...")
 
         ufoPathSrc = self.font.path
         ufoPathDst = ufoPathSrc.replace('.ufo', f'_{self.currentState}.ufo')
@@ -223,7 +289,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         # duplicate UFO
         shutil.copytree(ufoPathSrc, ufoPathDst)
         if self.verbose:
-            print(f"\tsaving '{ufoPathDst}'...")
+            print(f"\tgenerating {ufoPathDst}...")
 
         # set font info in duplicate
         dstFont = OpenFont(ufoPathDst, showInterface=False)
@@ -234,7 +300,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         loadKerningFromLib(dstFont, self.currentState)
 
         # clear spacing states
-        deleteLib(dstFont, KEY) 
+        deleteSpacingStatesLib(dstFont)
 
         # done!
         dstFont.openInterface()
@@ -328,7 +394,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             self.w.statesList.set([])
             return
         # get states names from font lib
-        self.w.statesList.set(sorted(getStatesNames(self.font, KEY)))
+        self.w.statesList.set(sorted(getSpacingStates(self.font)))
 
 # -------
 # testing

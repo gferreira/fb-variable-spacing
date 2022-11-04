@@ -15,10 +15,7 @@ A tool to enable multiple spacing states for a single set of glyph contours.
 states
 : A list of all spacing states stored in the font lib.
 
-preview
-: Show edges of selected spacing state in the Glyph Window.
-
-new
+create
 : Create a new empty spacing state in the font lib.
 
 load
@@ -31,7 +28,16 @@ delete
 : Delete the selected spacing state from the lib.
 
 export
-: Save the selected spacing state as a separate UFO source.
+: Export spacing states as an external JSON file.
+
+import
+: Import spacing states from an external JSON file.
+
+generate
+: Generate the selected spacing state as a separate UFO source.
+
+preview
+: Show edges of selected spacing state in the Glyph Window.
 </div>
 </div>
 

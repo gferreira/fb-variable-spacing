@@ -8,9 +8,9 @@ import math
 from vanilla import RadioGroup, Button, CheckBox, EditText, TextBox
 from mojo import drawingTools as ctx
 from mojo.UI import NumberEditText
-from mojo.tools import IntersectGlyphWithLine
+# from mojo.tools import IntersectGlyphWithLine
 from hTools3.dialogs.glyphs.base import GlyphsDialogBase
-from variableSpacing import saveComponentsToLib, getComponentsLib
+from variableSpacing import saveComponentsToLib, getComponentsLib, smartSetMargins
 
 
 class SmartSetMarginsDialog(GlyphsDialogBase):
@@ -192,7 +192,6 @@ class SmartSetMarginsDialog(GlyphsDialogBase):
 
         # create components lib if it doesn't exist yet?
         saveComponentsToLib(font)
-        componentsDict = getComponentsLib(font)
 
         # print info
         if self.verbose:
@@ -203,214 +202,13 @@ class SmartSetMarginsDialog(GlyphsDialogBase):
             print(f'\tglyphs: {", ".join(glyphNames)}')
             print()
 
-        # --------------------------
-        # contours only / skip empty
-        # --------------------------
+        leftMargin  = self.leftValue  if self.left  else None
+        rightMargin = self.rightValue if self.right else None
 
-        print('\tglyphs with contours only:\n')
-        print('\t\t', end='')
-        for glyphName in glyphNames:
-            glyph = font[glyphName]
-            # skip glyphs with components
-            if len(glyph.components):
-                continue
-            # skip empty glyphs
-            if not glyph.bounds:
-                continue
-            # skip zero-width glyphs
-            if glyph.width == 0:
-                continue
-            print(glyphName, end=', ')
-            glyph.prepareUndo('smart set margins')
-            oldLeft,  oldRight  = glyph.leftMargin, glyph.rightMargin
-            beamLeft, beamRight = self.getMargins(glyph)
-            if self.left:
-                leftValue = self.leftValue
-                if self.beam:
-                    leftValue -= beamLeft - oldLeft
-                glyph.leftMargin = leftValue
-            if self.right:
-                rightValue = self.rightValue
-                if self.beam:
-                    rightValue -= beamRight - oldRight
-                glyph.rightMargin = rightValue
-            glyph.changed()
-            glyph.performUndo()
-        print('\n')
+        smartSetMargins(font, glyphNames, leftMargin=leftMargin, rightMargin=rightMargin, useBeam=self.beam, beamY=self.beamY, verbose=self.verbose)
 
-        # ---------------------------
-        # mixed contours & components
-        # ---------------------------
-
-        print('\tglyphs with contours and components:\n')
-        print('\t\t', end='')
-        for glyphName in glyphNames:
-            glyph = font[glyphName]
-            # skip glyphs with no components
-            if not len(glyph.components):
-                continue
-            # skip empty glyphs
-            if not glyph.bounds:
-                continue
-            # skip zero-width glyphs
-            if glyph.width == 0:
-                continue
-            # skip glyphs with no contours
-            if not len(glyph.contours):
-                continue
-            print(glyphName, end=', ')
-            glyph.prepareUndo('smart set margins')
-            # set left margin
-            if self.left:
-                glyph.leftMargin = self.leftValue
-            # no glyphparts for glyph
-            if glyphName not in componentsDict:
-                # set right margin with no adjustments
-                if self.right:
-                    glyph.rightMargin = self.rightValue
-                continue
-
-            glyphParts = componentsDict[glyphName]
-            assert type(glyphParts) is list
-            # adjust component positions
-            componentsUsed = []
-            for comp in glyph.components:
-                # find data for component
-                for i, item in enumerate(glyphParts):
-                    # if the item does not start with a string, it’s not a component (but a contour)
-                    if type(item[0]) is not str:
-                        continue
-                    # match item to component
-                    if comp.baseGlyph != item[0]:
-                        continue
-                    # it’s possible to have multiple components of the same base glyph
-                    # each instance has its own entry
-                    # this makes sure that we only use each item once
-                    if i in componentsUsed:
-                        continue
-                    cx, cy = comp.offset
-                    if comp.baseGlyph not in font:
-                        continue
-                    baseGlyph = font[comp.baseGlyph]
-                    xMin, yMin, _, _ = baseGlyph.bounds
-                    dx = xMin + cx
-                    dy = yMin + cy
-                    sx, sy = item[1]
-                    diffx = sx - dx
-                    diffy = sy - dy
-                    componentsUsed.append(i)
-                    if diffx == 0 and diffy == 0:
-                        continue
-                    comp.moveBy((diffx, diffy))
-                    break
-            # adjust contour positions
-            for contour in glyph.contours:
-                contourID = contour.getIdentifier()
-                for i, item in enumerate(glyphParts):
-                    # if the item does not start with a tuple, it’s not a contour (but a component)
-                    if type(item[0]) is not tuple:
-                        continue
-                    # match item to contour
-                    if contourID != item[1]:
-                        continue
-                    dx, dy, _, _ = contour.bounds
-                    sx, sy = item[0]
-                    diffx = sx - dx
-                    diffy = sy - dy
-                    contour.moveBy((diffx, diffy))
-            glyph.changed()
-
-            # set left margin
-            if self.left:
-                glyph.leftMargin = self.leftValue
-            # set right margin
-            if self.right:
-                glyph.rightMargin = self.rightValue
-            glyph.changed()
-            glyph.performUndo()
-        print('\n')
-
-        # ----------------
-        # components only
-        # ----------------
-        print('\tglyphs with components only:\n')
-        print('\t\t', end='')
-        for glyphName in glyphNames:
-            glyph = font[glyphName]
-            # skip glyphs without components
-            if not len(glyph.components):
-                continue
-            # skip empty glyphs
-            if not glyph.bounds:
-                continue
-            # skip zero-width glyphs
-            if glyph.width == 0:
-                continue
-            # skip glyphs with contours
-            if len(glyph.contours):
-                continue
-            print(glyphName, end=', ')
-            glyph.prepareUndo('smart set margins')
-
-            glyphParts = componentsDict[glyphName] if glyphName in componentsDict else []
-            assert type(glyphParts) is list
-
-            glyph.leftMargin = 0
-            glyph.changed()
-
-            componentsUsed = []
-            for comp in glyph.components:
-                # find data for component
-                for i, item in enumerate(glyphParts):
-                    # if the item does not start with a string, it’s not a component (but a contour)
-                    if type(item[0]) is not str:
-                        continue
-                    # match item to component
-                    if comp.baseGlyph != item[0]:
-                        continue
-                    # it’s possible to have multiple components of the same base glyph
-                    # each instance has its own entry
-                    # this makes sure that we only use each item once
-                    if i in componentsUsed:
-                        continue
-                    cx, cy = comp.offset
-                    if comp.baseGlyph not in font:
-                        continue
-                    baseGlyph = font[comp.baseGlyph]
-                    xMin, yMin, _, _ = baseGlyph.bounds
-                    # current position
-                    dx = xMin + cx
-                    dy = yMin + cy
-                    # saved position
-                    sx, sy = item[1]
-                    diffx = sx - dx
-                    diffy = sy - dy
-                    componentsUsed.append(i)
-                    if diffx == 0 and diffy == 0:
-                        continue
-                    comp.moveBy((diffx, diffy))
-                    glyph.changed()
-                    break
-
-            if self.left:
-                leftValue = self.leftValue
-                if self.beam:
-                    leftValue -= beamLeft - oldLeft
-                glyph.leftMargin = leftValue
-                glyph.changed()
-            if self.right:
-                rightValue = self.rightValue
-                if self.beam:
-                    rightValue -= beamRight - oldRight
-                glyph.rightMargin = rightValue
-                glyph.changed()
-
-            glyph.performUndo()
-
-        # done
-        font.changed()
         if self.verbose:
-            print('\n\n...done.\n')
+            print('...done.\n')
 
 # -------
 # testing

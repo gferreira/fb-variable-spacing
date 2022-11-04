@@ -4,7 +4,7 @@ layout : default
 order  : 2
 ---
 
-A Python module with tools to work with spacing states in UFO fonts.
+A Python module to work with spacing states in UFO fonts.
 {: .lead}
 
 * Table of Contents
@@ -51,9 +51,32 @@ print(kerningLib['default'][0])
 >>> ['B', 'J', -20]
 ```
 
+##### `getComponentsLib(font)`
+
+Get the components lib from a given font.
+
+```python
+from variableSpacing import getComponentsLib
+componentsLib = getComponentsLib(font)
+print(componentsLib.keys())
+>>> dict_keys(['default', 'tight'])
+print(componentsLib['default']['a'])
+>>> {'leftMargin': 65, 'width': 524}
+```
+
 
 Writing
 -------
+
+##### `saveComponentsToLib(font)`
+
+Save relative positions between components in the font lib.
+
+```python
+from variableSpacing import saveComponentsToLib
+font = CurrentFont()
+saveComponentsToLib(font)
+```
 
 ##### `saveSpacingToLib(font, spacingState)`
 
@@ -130,3 +153,15 @@ Generating
 ##### `buildSpacingSources(folder)`
 
 Generate spacing states as separate UFO sources for all fonts in a given folder.
+
+
+Exporting & importing
+---------------------
+
+##### `exportSpacingStates(font, jsonPath)`
+
+Export a font’s spacing states as an external JSON file.
+
+##### `importSpacingStates(font, jsonPath)`
+
+Import spacing states from an external JSON file into a font.
