@@ -3,63 +3,26 @@
   <advance width="508"/>
   <unicode hex="0024"/>
   <outline>
-    <contour>
-      <point x="186" y="93" type="line"/>
+    <contour identifier="CdgTjSZLiT">
+      <point x="186" y="120" type="line"/>
       <point x="186" y="-70" type="line"/>
       <point x="356" y="-70" type="line"/>
-      <point x="356" y="90" type="line"/>
+      <point x="356" y="120" type="line"/>
     </contour>
-    <contour>
+    <contour identifier="pl1e12YaQm">
       <point x="356" y="520" type="line"/>
       <point x="356" y="664" type="line"/>
       <point x="186" y="664" type="line"/>
       <point x="186" y="520" type="line"/>
     </contour>
-    <contour>
-      <point x="478" y="222" type="curve" smooth="yes"/>
-      <point x="478" y="303"/>
-      <point x="430" y="344"/>
-      <point x="315" y="362" type="curve" smooth="yes"/>
-      <point x="227" y="376"/>
-      <point x="196" y="391"/>
-      <point x="196" y="421" type="curve" smooth="yes"/>
-      <point x="196" y="445"/>
-      <point x="215" y="460"/>
-      <point x="247" y="460" type="curve" smooth="yes"/>
-      <point x="287" y="460"/>
-      <point x="314" y="438"/>
-      <point x="314" y="405" type="curve"/>
-      <point x="463" y="405" type="line"/>
-      <point x="463" y="496"/>
-      <point x="378" y="556"/>
-      <point x="250" y="556" type="curve" smooth="yes"/>
-      <point x="123" y="556"/>
-      <point x="41" y="498"/>
-      <point x="41" y="409" type="curve" smooth="yes"/>
-      <point x="41" y="325"/>
-      <point x="88" y="282"/>
-      <point x="201" y="262" type="curve" smooth="yes"/>
-      <point x="289" y="246"/>
-      <point x="312" y="234"/>
-      <point x="312" y="203" type="curve" smooth="yes"/>
-      <point x="312" y="173"/>
-      <point x="291" y="158"/>
-      <point x="252" y="158" type="curve" smooth="yes"/>
-      <point x="208" y="158"/>
-      <point x="184" y="181"/>
-      <point x="184" y="223" type="curve"/>
-      <point x="35" y="223" type="line"/>
-      <point x="35" y="116"/>
-      <point x="108" y="61"/>
-      <point x="248" y="61" type="curve" smooth="yes"/>
-      <point x="393" y="61"/>
-      <point x="478" y="121"/>
-    </contour>
+    <component base="s" xOffset="8" yOffset="71"/>
   </outline>
   <lib>
     <dict>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>1,0,0,0.5</string>
     </dict>
   </lib>
 </glyph>

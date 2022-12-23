@@ -53,6 +53,8 @@
       </array>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/hipertipo/fonts/Publica/_ufos/955A.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>

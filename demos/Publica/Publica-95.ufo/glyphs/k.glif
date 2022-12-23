@@ -32,6 +32,8 @@
       <string>/_fonts/Publica/_ufos/955A.ufo/glyphs</string>
       <key>org.robofab.postScriptHintData</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>

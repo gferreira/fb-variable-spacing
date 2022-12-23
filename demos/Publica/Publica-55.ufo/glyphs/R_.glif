@@ -4,8 +4,8 @@
   <unicode hex="0052"/>
   <guideline x="92" y="0" angle="90.0" name="TRAC" identifier="uM5FteKDnK"/>
   <guideline x="554" y="0" angle="90.0" name="TRAC" identifier="f63LRRdMKD"/>
-  <anchor x="135" y="523" name="top"/>
-  <anchor x="135" y="-38" name="bottom"/>
+  <anchor x="733.0" y="523" name="top"/>
+  <anchor x="733.0" y="-38" name="bottom"/>
   <outline>
     <contour identifier="I7KTRDZ1kO">
       <point x="287" y="276" type="line"/>

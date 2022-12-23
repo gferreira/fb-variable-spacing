@@ -39,13 +39,14 @@ c2 = 1, 1, 0.5
 c3 = 1, 0.15, 0
 
 print(c1[0]*255, c1[1]*255, c1[2]*255)
+print(c2[0]*255, c2[1]*255, c2[2]*255)
 
-# linearGradient(
-#     (0, 0), (w, 0),
-#     [c1, c2, c1],
-#     (0, 0.5, 1)
-# )
-fill(*c2)
+linearGradient(
+    (0, 0), (w, 0),
+    [c1, c2, c1],
+    (0, 0.5, 1)
+)
+# fill(*c2)
 rect(0, 0, w, h)
 
 # color stripes

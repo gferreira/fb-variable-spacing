@@ -20,13 +20,13 @@
         <array>
           <string>O</string>
           <array>
-            <real>45.0</real>
+            <real>10.0</real>
             <real>-10.0</real>
           </array>
         </array>
         <array>
           <array>
-            <integer>274</integer>
+            <integer>239</integer>
             <integer>-180</integer>
           </array>
           <string>RHE9ok0aha</string>
@@ -37,13 +37,13 @@
         <array>
           <string>P</string>
           <array>
-            <real>65.0</real>
+            <real>10.0</real>
             <real>0.0</real>
           </array>
         </array>
         <array>
           <array>
-            <integer>261</integer>
+            <integer>206</integer>
             <integer>1</integer>
           </array>
           <string>OLTooyHxDz</string>
@@ -54,16 +54,40 @@
         <array>
           <string>period</string>
           <array>
-            <real>50.0</real>
+            <real>10.0</real>
             <real>315.0</real>
           </array>
         </array>
         <array>
           <string>period</string>
           <array>
-            <real>50.0</real>
+            <real>10.0</real>
             <real>0.0</real>
           </array>
+        </array>
+      </array>
+      <key>dollar</key>
+      <array>
+        <array>
+          <string>s</string>
+          <array>
+            <real>35.0</real>
+            <real>61.0</real>
+          </array>
+        </array>
+        <array>
+          <array>
+            <integer>186</integer>
+            <integer>-70</integer>
+          </array>
+          <string>CdgTjSZLiT</string>
+        </array>
+        <array>
+          <array>
+            <integer>186</integer>
+            <integer>520</integer>
+          </array>
+          <string>pl1e12YaQm</string>
         </array>
       </array>
       <key>ellipsis</key>
@@ -71,21 +95,21 @@
         <array>
           <string>period</string>
           <array>
-            <real>50.0</real>
+            <real>10.0</real>
             <real>0.0</real>
           </array>
         </array>
         <array>
           <string>period</string>
           <array>
-            <real>315.0</real>
+            <real>275.0</real>
             <real>0.0</real>
           </array>
         </array>
         <array>
           <string>period</string>
           <array>
-            <real>580.0</real>
+            <real>540.0</real>
             <real>0.0</real>
           </array>
         </array>
@@ -95,14 +119,14 @@
         <array>
           <string>period</string>
           <array>
-            <real>65.0</real>
+            <real>25.0</real>
             <real>315.0</real>
           </array>
         </array>
         <array>
           <string>comma</string>
           <array>
-            <real>33.0</real>
+            <real>-7.0</real>
             <real>-140.0</real>
           </array>
         </array>
