@@ -65,7 +65,7 @@ Automatic tracking employs **static kerning**: the same set of kerning values is
 
 ![]({{ site.url }}/images/spacing-axis-vs-tracking_3.png){: .img-fluid}
 
-In tight and loose settings, kerning values loose their reference as the whitespace between glyphs changes. Furthermore, kerning interacts with tracking in a way which is hard to predict and control.
+In tight and loose settings, kerning values loose their reference as the whitespace between glyphs changes. Kerning interacts with tracking in a way that is hard to predict and control.
 
 ### Spacing axis
 
@@ -97,8 +97,9 @@ The animations below allow us to compare the different results of tracking and t
 </div>
 
 <div class="alert alert-warning" role="alert" markdown='1'>
-- The tight spacing produced by the spacing axis is currently considerably tighter (denser) than tracking by the same value. It is probably preferrable if they match in terms of overall grey value. We can try matching the fully collapsed margins to `-150` instead of `100`, for example.
-- The current ‘tight’ minimum value for the spacing axis is when margins are `0` and glyph edges start to touch. We can try going one step beyond that and allow glyphs to overlap (but not obstruct).
+##### Observations
+
+- The tight spacing produced by the spacing axis is considerably tighter (denser) than tracking by the same value.
 {: .card-text }
 </div>
 
@@ -116,18 +117,23 @@ The animations below allow us to compare the different results of tracking and t
 </div>
 
 <div class="alert alert-warning" role="alert" markdown='1'>
-- Loose spacing sources were produced by adding `100` units to both left and right margins of each glyph. The kerning was then adjusted accordingly.
+##### Observations
+
+- Loose spacing sources were produced by adding `100` units to both left and right margins of each glyph. The kerning values were then adjusted accordingly.
 - The spacing axis makes spacing looser by adding space to both left and right margins, instead of just to the right margin as tracking. This causes a visible shift to the first letter.
 {: .card-text }
 </div>
 
-### Advantages of the spacing axis
+Advantages and disadvantages of the spacing axis
+------------------------------------------------
+
+### Advantages
 
 - better distribution of whitespace between the glyphs thanks to proportional scaling
 - in tight settings: maximum tightness by allowing glyphs to touch at the same location
 - in loose settings: more even text rhythm 
 
-### Disadvantages of the spacing axis
+### Disadvantages
 
 - more work for the type designer (more sources, more kerning)
 - in tight settings: no overlapping allowed (yet)

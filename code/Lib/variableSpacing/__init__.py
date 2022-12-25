@@ -43,6 +43,16 @@ font.lib[KEY_KERNING] = {
 }
 '''
 
+__all__ = [
+    'getSpacingStates', 'getSpacingLib', 'getKerningLib',
+    'saveSpacingToLib', 'saveKerningToLib',
+    'collectGlyphsByType', 'loadSpacingFromLib', 'loadKerningFromLib',
+    'deleteSpacingState', 'deleteSpacingStates',
+    'buildSpacingSources',
+    'exportSpacingStates', 'importSpacingStates',
+    'getMargins', 'setLeftMargin', 'setRightMargin', 'smartSetMargins',
+]
+
 KEY = 'com.hipertipo.spacingaxis'
 KEY_SPACING = f'{KEY}.spacing'
 KEY_KERNING = f'{KEY}.kerning'
@@ -192,10 +202,10 @@ def collectGlyphsByType(font):
         from variableSpacing import collectGlyphsByType
         font = CurrentFont()
         contours, empty, components, mixed = collectGlyphsByType(f)
-        print('glyphs with contours only:\n', ' '.join(contours), '\n')
-        print('empty glyphs:\n', ' '.join(empty), '\n')
-        print('glyphs with components only:\n', ' '.join(components), '\n')
-        print('glyphs with contours and components:\n', ' '.join(mixed), '\n')
+        print('glyphs with contours only:', ' '.join(contours))
+        print('empty glyphs:', ' '.join(empty))
+        print('glyphs with components only:', ' '.join(components))
+        print('glyphs with contours and components:', ' '.join(mixed))
 
     '''
     glyphsContours = [
@@ -353,10 +363,7 @@ def deleteSpacingState(font, spacingState, KEY=KEY):
             del font.lib[kerningKey][spacingState]
 
 def deleteSpacingStates(font, key=KEY):
-    '''
-    Delete top-level font libs with the given key prefix from the font.
-
-    '''
+    '''Delete top-level font libs with the given key prefix from the font.'''
     for k in font.lib.keys():
         if k.startswith(key):
             del font.lib[k]
@@ -594,13 +601,11 @@ def setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight=None):
     return oldRight - glyph.rightMargin
 
 def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMode=0, rightMode=0, useBeam=False, beamY=400, setUndo=True):
-    '''
-    Set left and right glyph margins while preserving their positions in components.
+    '''Set left and right glyph margins while preserving their positions in components.'''
 
-    ADD SPECIAL HANDLING FOR NEGATIVE MARGINS
-    TO PREVENT NEGATIVE GLYPH WIDTHS AS RESULT
+    ### ADD SPECIAL HANDLING FOR NEGATIVE MARGINS
+    ### TO PREVENT NEGATIVE GLYPH WIDTHS AS RESULT
 
-    '''
     glyphsContours, glyphsEmpty, glyphsComponents, glyphsMixed = collectGlyphsByType(font)
 
     # empty glyphs: do nothing

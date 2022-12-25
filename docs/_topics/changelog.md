@@ -34,6 +34,13 @@ types of changes:
 
 -->
 
+0.1.4
+-----
+
+- <span class='badge'>Changed</span> Rewriting the code to keep components in place using a new algorithm (thanks DB!).
+- <span class='badge'>Changed</span> Removing the `componentsLib` from the spacing states data format.
+- <span class='badge'>Changed</span> Adding automatic documentation writer for the `spacingStates` Pyhon module.
+
 0.1.3
 -----
 
@@ -46,10 +53,8 @@ types of changes:
 0.1.2
 -----
 
-- <span class='badge'>Changed</span> Modified the [components lib specification] to allow multiple copies of the same component.
+- <span class='badge'>Changed</span> Modified the components lib specification to allow multiple copies of the same component.
 - <span class='badge'>Changed</span> Updated code, tools and demo fonts to the new data format.
-
-[components lib specification]: ../reference/spacing-states-format/#components-lib
 
 0.1.1
 -----

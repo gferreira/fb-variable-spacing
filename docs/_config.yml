@@ -17,7 +17,7 @@ collections:
     output: true
     permalink: /tutorials/:path/
 
-version: 0.1.3
+version: 0.1.4
 
 exclude:
   - .sass-cache/
