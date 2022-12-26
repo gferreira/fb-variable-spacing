@@ -39,7 +39,8 @@ types of changes:
 
 - <span class='badge'>Changed</span> Rewriting the code to keep components in place using a new algorithm (thanks DB!).
 - <span class='badge'>Changed</span> Removing the `componentsLib` from the spacing states data format.
-- <span class='badge'>Changed</span> Adding automatic documentation writer for the `spacingStates` Pyhon module.
+- <span class='badge'>Changed</span> Adding automatic documentation writer for the `spacingStates` Python module.
+- <span class='badge'>Changed</span> Updating and improving the documentation.
 
 0.1.3
 -----

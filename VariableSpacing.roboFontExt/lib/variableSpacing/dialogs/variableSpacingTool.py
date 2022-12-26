@@ -1,5 +1,3 @@
-# menuTitle: Spacing States tool
-
 from importlib import reload
 import variableSpacing
 reload(variableSpacing)
@@ -12,7 +10,7 @@ from mojo.UI import UpdateCurrentGlyphView, PutFile, GetFile
 from mojo import drawingTools as ctx
 
 from variableSpacing import *
-from variableSpacing.extras.hTools3_dialogs import *
+from hTools3.dialogs import hDialog
 
 # -------
 # objects
@@ -20,7 +18,7 @@ from variableSpacing.extras.hTools3_dialogs import *
 
 class VariableSpacingTool(hDialog, BaseWindowController):
     '''
-    A tool to enable multiple spacing states for the same set of glyph contours.
+    A RoboFont3 tool to create and manage multiple spacing states in a single font.
 
     '''
     spacingKey = KEY_SPACING
@@ -163,7 +161,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             print(f"creating new spacing state '{newStateName}'...")
 
         # add new state to font libs
-        saveComponentsToLib(self.font)
+        # saveComponentsToLib(self.font)
         saveSpacingToLib(self.font, newStateName)
         saveKerningToLib(self.font, newStateName)
 
@@ -197,7 +195,7 @@ class VariableSpacingTool(hDialog, BaseWindowController):
         if self.verbose:
             print(f"saving spacing state '{self.currentState}' to the lib...")
 
-        saveComponentsToLib(self.font)
+        # saveComponentsToLib(self.font)
         saveSpacingToLib(self.font, self.currentState)
         saveKerningToLib(self.font, self.currentState)
 
@@ -371,7 +369,8 @@ class VariableSpacingTool(hDialog, BaseWindowController):
             xLeft = 0
 
         xRight = xLeft + glyphWidth
-        
+
+        # draw glyph window preview
         ctx.save()
         ctx.lineDash(3*scale, 3*scale)
         ctx.strokeWidth(2*scale)
@@ -402,4 +401,5 @@ class VariableSpacingTool(hDialog, BaseWindowController):
 
 if __name__ == '__main__':
 
+    from mojo.roboFont import OpenWindow
     OpenWindow(VariableSpacingTool)

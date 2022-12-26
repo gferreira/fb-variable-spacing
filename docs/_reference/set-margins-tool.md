@@ -1,5 +1,5 @@
 ---
-title  : SmartMargins tool
+title  : SetMargins+ tool
 layout : default
 order  : 3
 ---
@@ -9,14 +9,20 @@ A tool to set margins of glyphs with components without changing their internal 
 
 <div class='row'>
 <div class='col-sm-4' markdown='1'>
-![]({{ site.url }}/images/smart-margins-tool.png){: .img-fluid}
+![]({{ site.url }}/images/set-margins-tool.png){: .img-fluid}
 </div>
 <div class='col-sm-8' markdown='1'>
-left margin
-: New value for left margins.
+left mode
+: Choose how the left value will be used. (see [Margin modes](#margin-modes))
 
-right margin
-: New value for right margins.
+left value
+: New value for setting left margins.
+
+right mode
+: Choose how the right value will be used. (see [Margin modes](#margin-modes))
+
+right value
+: New value for setting right margins.
 
 use beam
 : Measure glyph margins using a horizontal beam.
@@ -29,6 +35,29 @@ left / right
 
 apply
 : Apply the new margins to the selected glyphs in the current font.
+
+##### Margin modes
+{: .mt-3 }
+
+<table class='table-fluid'>
+  <tr>
+    <th width='25%'>mode</th>
+    <th>description</th>
+  </tr>
+  <tr>
+    <td><code>=</code></td>
+    <td>set left margin equal to value</td>
+  </tr>
+  <tr>
+    <td><code>+</code></td>
+    <td>add/subtract value from left margin</td>
+  </tr>
+  <tr>
+    <td><code>%</code></td>
+    <td>multiply left margin by a percentage</td>
+  </tr>
+</table>
+
 </div>
 </div>
 

@@ -16,14 +16,14 @@ A format to store various sets of glyph metrics and kerning values inside the sa
 Spacing State definition
 ------------------------
 
-A *spacing state* is a description of all spacing values in a font.
+A **spacing state** is a description of all spacing values in the font.
 
-A single set of glyph contours can contain multiple spacing states, for example: *standard*, *tight* and *loose*.
+A single set of glyph contours can contain multiple spacing states, for example: **default**, **tight** and **loose**.
 
 A spacing state is defined by:
 
-- the *left margin* and *advance width* of all glyphs
-- all *kerning values* in the font
+- the **left margin** and **advance width** of all glyphs
+- all **kerning pairs** and **kerning values** in the font
 
 ### Libs overview
 
@@ -163,3 +163,11 @@ font.lib['com.hipertipo.spacingaxis.kerning'] = {
   </array>
 </dict>
 ```
+
+
+JSON format
+-----------
+
+Spacing states can also be saved outside the UFO sources as standalone JSON files.
+
+See the functions [`exportSpacingStates`](../spacing-states-module/#exportspacingstates) and [`importSpacingStates`](../spacing-states-module/#importspacingstates).
