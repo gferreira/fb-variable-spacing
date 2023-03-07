@@ -43,7 +43,12 @@ font.lib[KEY_KERNING] = {
 }
 '''
 
+KEY = 'com.hipertipo.spacingaxis'
+KEY_SPACING = f'{KEY}.spacing'
+KEY_KERNING = f'{KEY}.kerning'
+
 __all__ = [
+    'KEY', 'KEY_SPACING', 'KEY_KERNING',
     'getSpacingStates', 'getSpacingLib', 'getKerningLib',
     'saveSpacingToLib', 'saveKerningToLib',
     'collectGlyphsByType', 'loadSpacingFromLib', 'loadKerningFromLib',
@@ -52,10 +57,6 @@ __all__ = [
     'exportSpacingStates', 'importSpacingStates',
     'getMargins', 'setLeftMargin', 'setRightMargin', 'smartSetMargins',
 ]
-
-KEY = 'com.hipertipo.spacingaxis'
-KEY_SPACING = f'{KEY}.spacing'
-KEY_KERNING = f'{KEY}.kerning'
 
 # -------
 # reading
@@ -612,9 +613,16 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
 
     # glyphs with contours only
     for glyphName in glyphsContours:
+        if glyphName not in glyphNames:
+            continue
         glyph = font[glyphName]
         if useBeam:
-            beamLeft, beamRight = getMargins(glyph, useBeam=useBeam, beamY=beamY)
+            intersections = getMargins(glyph, useBeam=useBeam, beamY=beamY)
+            if type(intersections) is tuple and len(intersections) == 2:
+                beamLeft, beamRight = intersections
+            else:
+                # beamLeft = beamRight = None
+                continue
         else:
             beamLeft = beamRight = None
         # set left margin
@@ -629,11 +637,17 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
                     c.offset = cx + diff, cy
         # set right margin
         setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight)
+        # fix glyphs with negative width
+        if glyph.width < 0:
+           glyph.width = 0 
+        # done with glyph
         if setUndo:
             glyph.performUndo()
 
     # glyphs with components
     for glyphName in glyphsComponents + glyphsMixed:
+        if glyphName not in glyphNames:
+            continue
         glyph = font[glyphName]
         if useBeam:
             beamLeft, beamRight = getMargins(glyph, useBeam=useBeam, beamY=beamY)
@@ -651,5 +665,11 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
                     c.offset = cx + diff, cy
         # set right margin
         setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight)
+        # fix glyphs with negative width
+        if glyph.width < 0:
+           glyph.width = 0 
+        # done with glyph
         if setUndo:
             glyph.performUndo()
+
+

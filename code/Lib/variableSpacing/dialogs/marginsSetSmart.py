@@ -1,5 +1,5 @@
 from importlib import reload
-import variableSpacing 
+import variableSpacing
 reload(variableSpacing)
 
 from variableSpacing import smartSetMargins
