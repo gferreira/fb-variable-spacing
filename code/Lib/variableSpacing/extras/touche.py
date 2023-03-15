@@ -1,12 +1,18 @@
 '''
 Touché by Nina Stössinger & Frederik Berlaen
+# add link to public repository on github
 
-with small changes by GF
+with some changes by Gustavo Ferreira (2023)
 
 '''
 from fontTools.pens.basePen import BasePen
 from fontTools.misc.arrayTools import pointInRect, offsetRect, sectRect
-from lib.tools.bezierTools import intersectCubicCubic, intersectCubicLine, intersectLineLine
+try:
+    # check if these available somewhere else
+    from lib.tools.bezierTools import intersectCubicCubic, intersectCubicLine, intersectLineLine
+except:
+    # print('not in RF')
+    pass
 
 def pointBoundTouche(point, bounds):
     found = pointInRect(point, bounds)

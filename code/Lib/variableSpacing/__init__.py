@@ -1,7 +1,8 @@
 import os, glob, shutil, json
 from fontParts.world import OpenFont
+from variableSpacing.extras.touche import Touche
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 
 '''
 SPACING STATES DATA FORMAT
@@ -246,7 +247,7 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, verbose=True)
         loadSpacingFromLib(f, 'tight')
 
     '''
-    print('loading spacing states...')
+    print(f"loading spacing state '{spacingState}'...")
 
     if not spacingKey in font.lib:
         return
@@ -602,7 +603,14 @@ def setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight=None):
     return oldRight - glyph.rightMargin
 
 def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMode=0, rightMode=0, useBeam=False, beamY=400, setUndo=True):
-    '''Set left and right glyph margins while preserving their positions in components.'''
+    '''
+    Set left and right glyph margins while preserving their positions in components.
+
+    mode 0 : set equal to
+    mode 1 : add / subtract
+    mode 2 : percentage
+
+    '''
 
     ### ADD SPECIAL HANDLING FOR NEGATIVE MARGINS
     ### TO PREVENT NEGATIVE GLYPH WIDTHS AS RESULT
@@ -672,4 +680,57 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
         if setUndo:
             glyph.performUndo()
 
+def autoSetTightKerning(font, steps=100, step=5, verbose=False):
+    '''
+    Automatically set 'tight' kerning for almost touching glyphs.
+
+    steps : maximum attempts for each pair
+    step  : kerning increment in font units
+
+
+    '''
+    T = Touche(font)
+
+    for g1, g2 in font.kerning.keys():
+
+        # get key glyphs for kerning groups
+        if 'public.kern' in g1:
+            if g1 in font.groups and len(font.groups[g1]):
+                glyph1 = font.groups[g1][0]
+            else:
+                print('\tempty group, skipping...')
+                continue
+        else:
+            glyph1 = g1
+        if 'public.kern' in g2:
+            if g2 in font.groups and len(font.groups[g2]):
+                glyph2 = font.groups[g2][0]
+            else:
+                print('\tempty group, skipping...')
+                continue
+        else:
+            glyph2 = g2    
+
+        # adjust pair until it (almost) touches
+        if verbose:
+            print(f'adjusting pair {g1} {g2}...')
+        for i in range(steps):
+            T.lookupSidebearings([font[glyph1], font[glyph2]])
+            if T.checkPair(font[glyph1], font[glyph2]):
+                # pair overlaps, take previous value
+                value = T.getKerning(font[glyph1], font[glyph2])
+                value += step
+                if verbose:
+                    print(f'\tfound value: {value}')
+                font.kerning[(g1, g2)] = value
+                font.kerning.changed()
+                break
+            else:
+                value = T.getKerning(font[glyph1], font[glyph2])
+                value -= step
+                # update font
+                font.kerning[(g1, g2)] = value
+                font.kerning.changed()
+                # update touché
+                T.flatKerning = font.naked().flatKerning
 
