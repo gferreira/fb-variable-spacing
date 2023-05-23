@@ -14,7 +14,7 @@ Method and tools to add a spacing axis to variable fonts.
 Topics
 ------
 
-- [Overview](overview)
+- [Overview of Variable Spacing](overview)
 - [Spacing vs. tracking](spacing-vs-tracking)
 - [Installation](install)
 </div>
