@@ -56,4 +56,5 @@ Tutorials
 ## Development
 
 - [Changelog](changelog)
+- <a href="http://github.com/gferreira/VariableSpacing">Source code on GitHub <i class="bi bi-arrow-up-right"></i></a>
 - <a href='http://github.com/gferreira/VariableSpacing/issues'>Issues <i class="bi bi-arrow-up-right"></i></a>
