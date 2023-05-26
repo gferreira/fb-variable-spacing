@@ -8,7 +8,7 @@ with some changes by Gustavo Ferreira (2023)
 from fontTools.pens.basePen import BasePen
 from fontTools.misc.arrayTools import pointInRect, offsetRect, sectRect
 try:
-    # check if these available somewhere else
+    # check if these are available somewhere else
     from lib.tools.bezierTools import intersectCubicCubic, intersectCubicLine, intersectLineLine
 except:
     # print('not in RF')

@@ -22,10 +22,6 @@ font.lib[KEY_SPACING] = {
         'ntilde' : {
             'width': 620,
             'leftMargin': 96,
-            'components' : {
-                'n' : (0, 0),
-                'tilde' : (110, 57),
-            },
         },
     },
     'tight' : {},
@@ -44,7 +40,7 @@ font.lib[KEY_KERNING] = {
 }
 '''
 
-KEY = 'com.hipertipo.spacingaxis'
+KEY = 'com.fontbureau.variableSpacing'
 KEY_SPACING = f'{KEY}.spacing'
 KEY_KERNING = f'{KEY}.kerning'
 
@@ -313,7 +309,7 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, verbose=True)
 
 def loadKerningFromLib(font, spacingState, kerningKey=KEY_KERNING):
     '''
-    Load kerning data for a given state from the lib into the font.
+    Load kerning data for a given spacing state from the lib into the font.
 
     ::
 
@@ -341,7 +337,7 @@ def loadKerningFromLib(font, spacingState, kerningKey=KEY_KERNING):
 
 def deleteSpacingState(font, spacingState, KEY=KEY):
     '''
-    Delete a given state from the spacing and kerning libs in the font.
+    Delete a given spacing state from the spacing and kerning libs in the font.
 
     ::
 
@@ -686,7 +682,6 @@ def autoSetTightKerning(font, steps=100, step=5, verbose=False):
 
     steps : maximum attempts for each pair
     step  : kerning increment in font units
-
 
     '''
     T = Touche(font)
