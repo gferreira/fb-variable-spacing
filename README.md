@@ -1,7 +1,7 @@
 Variable Spacing
 ================
 
-Workflow and tools to add a spacing axis to variable fonts.
+Tools to add a spacing axis to variable fonts.
 
 Background
 ----------
