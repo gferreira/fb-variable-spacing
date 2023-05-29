@@ -1,9 +1,5 @@
-from importlib import reload
-import variableSpacing
-reload(variableSpacing)
-
 from variableSpacing import smartSetMargins
-from hTools3.dialogs.glyphs.marginsSet import SetMarginsDialog
+from variableSpacing.extras.hTools3_marginsSet
 
 class SmartSetMarginsDialog(SetMarginsDialog):
 

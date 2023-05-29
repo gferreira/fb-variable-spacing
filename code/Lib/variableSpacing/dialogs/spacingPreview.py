@@ -1,7 +1,3 @@
-from importlib import reload
-import variableSpacing.spacingAreas
-reload(variableSpacing.spacingAreas)
-
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
 from defcon import Glyph, registerRepresentationFactory, unregisterRepresentationFactory
