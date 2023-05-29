@@ -1,7 +1,7 @@
 Variable Spacing
 ================
 
-Workflow and tools to add a spacing axis to variable fonts.
+Tools to add a spacing axis to variable fonts.
 
 Background
 ----------
@@ -22,4 +22,4 @@ In this repository
 - demo fonts and their respective build scripts
 - DrawBot scripts to visualize and compare spacing in a designspace
 
-see the [documentation](http://hipertipo.gitlab.io/VariableSpacing/) for more info 
+see the [documentation](http://gferreira.github.io/VariableSpacing/) for more info 
