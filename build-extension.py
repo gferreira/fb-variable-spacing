@@ -8,12 +8,12 @@ from hTools3.modules.sys import pycClear, pyCacheClear, removeGitFiles
 # settings
 # --------
 
-version          = '0.1.4'
+version          = '0.1.5'
 baseFolder       = os.path.dirname(__file__)
 libFolder        = os.path.join(baseFolder, 'code', 'Lib')
 licensePath      = None # os.path.join(baseFolder, 'license.txt')
 resourcesFolder  = None # os.path.join(baseFolder, 'Resources')
-imagePath        = os.path.join(baseFolder, 'VariableSpacingIcon.png')
+imagePath        = None # os.path.join(baseFolder, 'VariableSpacingIcon.png')
 
 outputFolder     = baseFolder 
 extensionPath    = os.path.join(outputFolder, 'VariableSpacing.roboFontExt')
@@ -28,7 +28,7 @@ def buildExtension():
     pycOnly = False # [ "3.6", "3.7" ]
 
     B = ExtensionBundle()
-    B.name                 = "Variable Spacing"
+    B.name                 = "VariableSpacing"
     B.developer            = 'Gustavo Ferreira'
     B.developerURL         = 'http://hipertipo.com/'
     B.icon                 = imagePath
@@ -43,7 +43,7 @@ def buildExtension():
     B.addToMenu = [
         {
             'path'          : 'variableSpacing/dialogs/variableSpacingTool.py',
-            'preferredName' : 'Spacing States',
+            'preferredName' : 'SpacingStates',
             'shortKey'      : '',
         },
     ]
@@ -71,7 +71,7 @@ def buildExtension():
 # build extension
 # ---------------
 
-pycClear(baseFolder)
+# pycClear(baseFolder) # don't -- otherwise it will delete pyc modules!
 pyCacheClear(baseFolder)
 print(f'building Variable Spacing extension {version}...\n')
 buildExtension()

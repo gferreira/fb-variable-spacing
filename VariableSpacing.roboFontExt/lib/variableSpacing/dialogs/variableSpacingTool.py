@@ -1,16 +1,12 @@
-from importlib import reload
-import variableSpacing
-reload(variableSpacing)
-
 import os, shutil
 from vanilla import *
 from defconAppKit.windows.baseWindow import BaseWindowController
 from mojo.events import addObserver, removeObserver
 from mojo.UI import UpdateCurrentGlyphView, PutFile, GetFile
+from mojo.roboFont import CurrentFont, OpenFont
 from mojo import drawingTools as ctx
-
 from variableSpacing import *
-from hTools3.dialogs import hDialog
+from variableSpacing.extras.hTools3_dialogs import hDialog
 
 # -------
 # objects

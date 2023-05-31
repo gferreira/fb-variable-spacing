@@ -8,7 +8,7 @@
 			<key>path</key>
 			<string>variableSpacing/dialogs/variableSpacingTool.py</string>
 			<key>preferredName</key>
-			<string>Spacing States</string>
+			<string>SpacingStates</string>
 			<key>shortKey</key>
 			<string></string>
 		</dict>
@@ -26,14 +26,14 @@
 	<key>mainScript</key>
 	<string>start.py</string>
 	<key>name</key>
-	<string>Variable Spacing</string>
+	<string>VariableSpacing</string>
 	<key>requiresVersionMajor</key>
 	<string>3</string>
 	<key>requiresVersionMinor</key>
 	<string>4</string>
 	<key>timeStamp</key>
-	<real>1672052065.1224792</real>
+	<real>1685577389.8220859</real>
 	<key>version</key>
-	<string>0.1.4</string>
+	<string>0.1.5</string>
 </dict>
 </plist>

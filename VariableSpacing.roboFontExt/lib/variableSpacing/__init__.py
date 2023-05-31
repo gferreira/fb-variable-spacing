@@ -1,7 +1,8 @@
 import os, glob, shutil, json
 from fontParts.world import OpenFont
+from variableSpacing.extras.touche import Touche
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 
 '''
 SPACING STATES DATA FORMAT
@@ -21,10 +22,6 @@ font.lib[KEY_SPACING] = {
         'ntilde' : {
             'width': 620,
             'leftMargin': 96,
-            'components' : {
-                'n' : (0, 0),
-                'tilde' : (110, 57),
-            },
         },
     },
     'tight' : {},
@@ -43,7 +40,12 @@ font.lib[KEY_KERNING] = {
 }
 '''
 
+KEY = 'com.fontbureau.variableSpacing'
+KEY_SPACING = f'{KEY}.spacing'
+KEY_KERNING = f'{KEY}.kerning'
+
 __all__ = [
+    'KEY', 'KEY_SPACING', 'KEY_KERNING',
     'getSpacingStates', 'getSpacingLib', 'getKerningLib',
     'saveSpacingToLib', 'saveKerningToLib',
     'collectGlyphsByType', 'loadSpacingFromLib', 'loadKerningFromLib',
@@ -52,10 +54,6 @@ __all__ = [
     'exportSpacingStates', 'importSpacingStates',
     'getMargins', 'setLeftMargin', 'setRightMargin', 'smartSetMargins',
 ]
-
-KEY = 'com.hipertipo.spacingaxis'
-KEY_SPACING = f'{KEY}.spacing'
-KEY_KERNING = f'{KEY}.kerning'
 
 # -------
 # reading
@@ -245,7 +243,7 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, verbose=True)
         loadSpacingFromLib(f, 'tight')
 
     '''
-    print('loading spacing states...')
+    print(f"loading spacing state '{spacingState}'...")
 
     if not spacingKey in font.lib:
         return
@@ -311,7 +309,7 @@ def loadSpacingFromLib(font, spacingState, spacingKey=KEY_SPACING, verbose=True)
 
 def loadKerningFromLib(font, spacingState, kerningKey=KEY_KERNING):
     '''
-    Load kerning data for a given state from the lib into the font.
+    Load kerning data for a given spacing state from the lib into the font.
 
     ::
 
@@ -339,7 +337,7 @@ def loadKerningFromLib(font, spacingState, kerningKey=KEY_KERNING):
 
 def deleteSpacingState(font, spacingState, KEY=KEY):
     '''
-    Delete a given state from the spacing and kerning libs in the font.
+    Delete a given spacing state from the spacing and kerning libs in the font.
 
     ::
 
@@ -601,7 +599,14 @@ def setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight=None):
     return oldRight - glyph.rightMargin
 
 def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMode=0, rightMode=0, useBeam=False, beamY=400, setUndo=True):
-    '''Set left and right glyph margins while preserving their positions in components.'''
+    '''
+    Set left and right glyph margins while preserving their positions in components.
+
+    mode 0 : set equal to
+    mode 1 : add / subtract
+    mode 2 : percentage
+
+    '''
 
     ### ADD SPECIAL HANDLING FOR NEGATIVE MARGINS
     ### TO PREVENT NEGATIVE GLYPH WIDTHS AS RESULT
@@ -612,9 +617,16 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
 
     # glyphs with contours only
     for glyphName in glyphsContours:
+        if glyphName not in glyphNames:
+            continue
         glyph = font[glyphName]
         if useBeam:
-            beamLeft, beamRight = getMargins(glyph, useBeam=useBeam, beamY=beamY)
+            intersections = getMargins(glyph, useBeam=useBeam, beamY=beamY)
+            if type(intersections) is tuple and len(intersections) == 2:
+                beamLeft, beamRight = intersections
+            else:
+                # beamLeft = beamRight = None
+                continue
         else:
             beamLeft = beamRight = None
         # set left margin
@@ -629,11 +641,17 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
                     c.offset = cx + diff, cy
         # set right margin
         setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight)
+        # fix glyphs with negative width
+        if glyph.width < 0:
+           glyph.width = 0 
+        # done with glyph
         if setUndo:
             glyph.performUndo()
 
     # glyphs with components
     for glyphName in glyphsComponents + glyphsMixed:
+        if glyphName not in glyphNames:
+            continue
         glyph = font[glyphName]
         if useBeam:
             beamLeft, beamRight = getMargins(glyph, useBeam=useBeam, beamY=beamY)
@@ -651,5 +669,63 @@ def smartSetMargins(font, glyphNames, leftMargin=None, rightMargin=None, leftMod
                     c.offset = cx + diff, cy
         # set right margin
         setRightMargin(glyph, rightMargin, rightMode, useBeam, beamRight)
+        # fix glyphs with negative width
+        if glyph.width < 0:
+           glyph.width = 0 
+        # done with glyph
         if setUndo:
             glyph.performUndo()
+
+def autoSetTightKerning(font, steps=100, step=5, verbose=False):
+    '''
+    Automatically set 'tight' kerning for almost touching glyphs.
+
+    steps : maximum attempts for each pair
+    step  : kerning increment in font units
+
+    '''
+    T = Touche(font)
+
+    for g1, g2 in font.kerning.keys():
+
+        # get key glyphs for kerning groups
+        if 'public.kern' in g1:
+            if g1 in font.groups and len(font.groups[g1]):
+                glyph1 = font.groups[g1][0]
+            else:
+                print('\tempty group, skipping...')
+                continue
+        else:
+            glyph1 = g1
+        if 'public.kern' in g2:
+            if g2 in font.groups and len(font.groups[g2]):
+                glyph2 = font.groups[g2][0]
+            else:
+                print('\tempty group, skipping...')
+                continue
+        else:
+            glyph2 = g2    
+
+        # adjust pair until it (almost) touches
+        if verbose:
+            print(f'adjusting pair {g1} {g2}...')
+        for i in range(steps):
+            T.lookupSidebearings([font[glyph1], font[glyph2]])
+            if T.checkPair(font[glyph1], font[glyph2]):
+                # pair overlaps, take previous value
+                value = T.getKerning(font[glyph1], font[glyph2])
+                value += step
+                if verbose:
+                    print(f'\tfound value: {value}')
+                font.kerning[(g1, g2)] = value
+                font.kerning.changed()
+                break
+            else:
+                value = T.getKerning(font[glyph1], font[glyph2])
+                value -= step
+                # update font
+                font.kerning[(g1, g2)] = value
+                font.kerning.changed()
+                # update touché
+                T.flatKerning = font.naked().flatKerning
+
