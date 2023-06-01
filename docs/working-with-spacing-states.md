@@ -40,11 +40,6 @@ The tight margins can be set automatically using a script, and/or manually using
 
 Should the opaque shapes of adjacent glyphs be allowed to touch each other? In other words, should the tight margins be positive, zero, or negative? It is up to the designer to decide based on the typeface style.
 
-Examples: 
-
-- Publica, a grotesk typeface, has positive margins of 10 units in its tight spacing state – so most glyphs do not touch
-- Escrow, a serif typeface, has mostly negative margins in tight spacing state – so most serifs overlap each other
-
 ##### 6. Adjust tight kerning
 
 After the tight glyph margins have been set, adjust the kerning values of the font accordingly.
@@ -58,9 +53,13 @@ Make sure to save the tight spacing state to the lib after editing it.
 - Select the `tight` state in the list.
 - Click on the **save** button to save the font’s current spacing and kerning into the tight spacing state.
 
-##### 8. Further editing
+##### 8. Create loose state
 
-You can switch between the two spacing states at any time for further editing.
+Optionally, repeat steps 4-7 to create the `loose` extreme of the spacing axis.
+
+##### 9. Further editing
+
+You can switch between the various spacing states at any time for further editing.
 
 Don’t forget to save the current spacing state to the lib before loading another one.
 

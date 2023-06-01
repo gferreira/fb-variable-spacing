@@ -27,9 +27,14 @@ The illustrations are generated with [DrawBot] from a designspace file and relat
 
 The typesetting code was written from scratch for the purpose of this demonstration. It handles spacing, tracking and kerning. Tracking is expressed in *thousands of em*; kerning is expressed in font units. This behaviour replicates existing typesetting engines.
 
-The demo font is a simplified version of [Roboto] containing fewer characters and only a weight axis. The spacing axis is implemented using the [Spacing States tool].
+The demo font is a simplified version of [Roboto] containing fewer characters and only a weight axis. The spacing axis is implemented using the [SpacingStates tool].
 
 The illustrations show a range of 5 steps with different spacing or tracking settings, going from loose (`100`) to default (`0`) to tight (`-100`). The colors are used to reveal how the different types of whitespace interact.
+
+<div class="alert alert-primary" role="alert" markdown='1'>
+This investigation was conducted in the early stages of our work on the spacing axis, before (and in preparation for) the development of [Roboto Flex SPAC](http://github.com/gferreira/roboto-flex-spac). For a more accurate comparison between spacing axis and tracking, using real fonts in the browser, see the [Roboto Flex SPAC demo page](http://gferreira.github.io/roboto-flex-spac/).
+{: .card-text }
+</div>
 
 
 Basic typesetting
@@ -96,7 +101,7 @@ The animations below allow us to compare the different results of tracking and t
   </div>
 </div>
 
-<div class="alert alert-warning" role="alert" markdown='1'>
+<div class="alert alert-primary" role="alert" markdown='1'>
 ##### Observations
 
 - The tight spacing produced by the spacing axis is considerably tighter (denser) than tracking by the same value.
@@ -116,7 +121,7 @@ The animations below allow us to compare the different results of tracking and t
   </div>
 </div>
 
-<div class="alert alert-warning" role="alert" markdown='1'>
+<div class="alert alert-primary" role="alert" markdown='1'>
 ##### Observations
 
 - Loose spacing sources were produced by adding `100` units to both left and right margins of each glyph. The kerning values were then adjusted accordingly.
@@ -124,13 +129,14 @@ The animations below allow us to compare the different results of tracking and t
 {: .card-text }
 </div>
 
+
 Advantages and disadvantages of the spacing axis
 ------------------------------------------------
 
 ### Advantages
 
 - better distribution of whitespace between the glyphs thanks to proportional scaling
-- in tight settings: maximum tightness by allowing glyphs to touch at the same location
+- in tight settings: maximum tightness by allowing glyphs to touch
 - in loose settings: more even text rhythm 
 
 ### Disadvantages
@@ -143,4 +149,4 @@ Advantages and disadvantages of the spacing axis
 [Roboto]: http://github.com/googlefonts/roboto
 [DrawBot]: http://www.drawbot.com/
 [ufoProcessor]: http://github.com/LettError/ufoProcessor
-[Spacing States tool]: ../reference/spacing-states-tool
+[SpacingStates tool]: ../reference/spacing-states-tool

@@ -27,7 +27,7 @@ A spacing state is defined by:
 
 ### Libs overview
 
-The data to enable spacing states in UFO sources is stored in 2 custom font-level libs under the prefix `com.hipertipo.spacingaxis`:
+The data to enable spacing states in UFO sources is stored in 2 custom font-level libs under the prefix `com.fontbureau.variableSpacing`:
 
 <table class='table'>
   <tr>
@@ -36,11 +36,11 @@ The data to enable spacing states in UFO sources is stored in 2 custom font-leve
   </tr>
   <tr>
     <td><a href='#spacing-lib'>spacing lib</a></td>
-    <td><code>com.hipertipo.spacingaxis.spacing</code></td>
+    <td><code>com.fontbureau.variableSpacing.spacing</code></td>
   </tr>
   <tr>
     <td><a href='#kerning-lib'>kerning lib</a></td>
-    <td><code>com.hipertipo.spacingaxis.kerning</code></td>
+    <td><code>com.fontbureau.variableSpacing.kerning</code></td>
   </tr>
 </table>
 
@@ -55,7 +55,7 @@ Empty glyphs have no margins, and are described only by their advance width.
 ##### Python example 
 
 ```python
-font.lib[f'com.hipertipo.spacingaxis.spacing'] = {
+font.lib[f'com.fontbureau.variableSpacing.spacing'] = {
     'default' : {
         'a': {'width': 543, 'leftMargin': 75},
         'space': {'width': 270},
@@ -76,7 +76,7 @@ font.lib[f'com.hipertipo.spacingaxis.spacing'] = {
 ##### XML example
 
 ```xml
-<key>com.hipertipo.spacingaxis.spacing</key>
+<key>com.fontbureau.variableSpacing.spacing</key>
 <dict>
   <key>default</key>
   <dict>
@@ -121,7 +121,7 @@ Each kerning pair is stored as a tuple of *first glyph or group*, *second glyph 
 ##### Python example 
 
 ```python
-font.lib['com.hipertipo.spacingaxis.kerning'] = {
+font.lib['com.fontbureau.variableSpacing.kerning'] = {
     'default' : [
         ('public.kern1.A', 'public.kern2.V', -40),
         ('B', 'J', -20),
@@ -138,7 +138,7 @@ font.lib['com.hipertipo.spacingaxis.kerning'] = {
 ##### XML example
 
 ```xml
-<key>com.hipertipo.spacingaxis.kerning</key>
+<key>com.fontbureau.variableSpacing.kerning</key>
 <dict>
   <key>default</key>
   <array>

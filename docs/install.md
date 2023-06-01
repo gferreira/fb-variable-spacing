@@ -32,13 +32,12 @@ The Variable Spacing extension can also be installed manually if you download th
 
 Simply double-click the file `VariableSpacing.roboFontExt` to have it installed in RoboFont.
 
-<div class="card text-dark bg-light my-3">
-<div class="card-header">note</div>
-<div class="card-body" markdown='1'>
+<div class="alert alert-primary" role="alert" markdown='1'>
 If you install the extension manually, you will *not* be notified automatically about updates.
 {: .card-text }
 </div>
-</div>
+
+
 
 
 Installing from source
@@ -51,6 +50,6 @@ This mode allows developers to make changes to the code while using and testing 
 1. Clone the repository using `git clone` (recommended) or download the source code.
 2. In the RoboFont Preferences window, go to [Extensions > Start Up Scripts].
 3. Add the file `VariableSpacing/code/Lib/start.py` to the list of start-up scripts.
-4. Save the settings and restart RoboFont – Variable Spacing will now appear under the *Extensions* menu.
+4. Save the settings and restart RoboFont; Variable Spacing will now appear under the *Extensions* menu.
 
 [Extensions > Start Up Scripts]: http://robofont.com/documentation/workspace/preferences-window/extensions/#start-up-scripts

@@ -1,5 +1,5 @@
 ---
-title  : Variable Spacing
+title  : VariableSpacing
 layout : default
 ---
 
@@ -10,7 +10,7 @@ Method and tools to add a spacing axis to variable fonts.
 
 ## Topics
 
-- [Overview of Variable Spacing](overview)
+- [Overview of VariableSpacing](overview)
 - [Spacing vs. tracking](spacing-vs-tracking)
 
 ## Tutorials

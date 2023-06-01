@@ -19,6 +19,7 @@ folder/
 ├── MyFont.designspace
 ├── MyFont_default.ufo
 ├── MyFont_tight.ufo*
+├── MyFont_loose.ufo*
 └── MyFont.ttf
 ```
 
@@ -31,7 +32,7 @@ Designspace file
 ```xml
 <designspace>
   <axes>
-    <axis tag="SPAC" name="spacing" minimum="-1000" maximum="0" default="0"/>
+    <axis tag="SPAC" name="spacing" minimum="-100" maximum="100" default="0"/>
   </axes>
   <sources>
     <source filename="MyFont_default.ufo" name="normal" familyname="MyFont" stylename="normal">
@@ -41,7 +42,12 @@ Designspace file
     </source>
     <source filename="MyFont_tight.ufo" name="tight" familyname="MyFont" stylename="tight">
       <location>
-        <dimension name="spacing" xvalue="-1000"/>
+        <dimension name="spacing" xvalue="-100"/>
+      </location>
+    </source>
+    <source filename="MyFont_loose.ufo" name="loose" familyname="MyFont" stylename="loose">
+      <location>
+        <dimension name="spacing" xvalue="100"/>
       </location>
     </source>
   </sources>
@@ -56,8 +62,8 @@ Build script
 # parent folder with ufo source(s) and designspace file
 folder = '/folder/'
 
-# build temporary 'tight' spacing sources
-from variableSpacingLib import buildSpacingSources
+# build temporary 'tight' and 'loose' spacing sources
+from variableSpacing import buildSpacingSources
 newSources = buildSpacingSources(folder)
 
 # generate variable font
@@ -72,3 +78,10 @@ import shutil
 for ufoPath in newSources:
     shutil.rmtree(ufoPath)
 ```
+
+<div class="alert alert-primary" role="alert" markdown='1'>
+For a more complex example, see the [build script for Roboto Flex SPAC](http://github.com/gferreira/roboto-flex-spac/blob/master/scripts/build-variable-font.py).
+{: .card-text }
+</div>
+
+
