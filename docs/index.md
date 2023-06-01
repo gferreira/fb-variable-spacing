@@ -8,53 +8,36 @@ layout : default
 Method and tools to add a spacing axis to variable fonts.
 {: .lead }
 
-<div class='row'>
-
-<div class='col-12 col-sm-6 col-md-4 mb-1' markdown='1'>
-Topics
-------
+## Topics
 
 - [Overview of Variable Spacing](overview)
 - [Spacing vs. tracking](spacing-vs-tracking)
-- [Installation](install)
-</div>
 
-<div class='col-12 col-sm-6 col-md-4 mb-1' markdown='1'>
-Reference
----------
+## Tutorials
+
+- [working with spacing states](working-with-spacing-states)
+- [generating variable fonts with a spacing axis](generating-variable-font)
+
+## How-To's
+
+- [Installation](install)
+
+## Reference
 
 ##### APIs
 
-- [SpacingStates format](reference/spacing-states-format)
-- [SpacingStates module](reference/spacing-states-module)
+- [SpacingStates format](spacing-states-format)
+- [SpacingStates module](spacing-states-module)
 
 ##### Dialogs
 
-- [SpacingStates tool](reference/spacing-states-tool)
-- [SetMargins+ tool](reference/set-margins-tool)
-</div>
-
-<div class='col-12 col-sm-6 col-md-4 mb-1' markdown='1'>
-Tutorials
----------
-
-- [working with spacing states](tutorials/working-with-spacing-states)
-- [generating variable fonts with a spacing axis](tutorials/generating-variable-font)
-
-{% comment %}
-##### Spacing visualization 
-
-- [visualize spacing and kerning](tutorials/visualize-spacing-kerning)
-- [visualize spacing areas](tutorials/visualize-spacing-areas)
-{% endcomment %}
-</div>
-
-</div>
+- [SpacingStates tool](spacing-states-tool)
+- [SetMargins+ tool](set-margins-tool)
 
 - - -
 
 ## Development
 
 - [Changelog](changelog)
-- <a href="http://github.com/gferreira/VariableSpacing">Source code on GitHub <i class="bi bi-arrow-up-right"></i></a>
-- <a href='http://github.com/gferreira/VariableSpacing/issues'>Issues <i class="bi bi-arrow-up-right"></i></a>
+- [Source code](http://github.com/gferreira/VariableSpacing)
+- [Issues](http://github.com/gferreira/VariableSpacing/issues)

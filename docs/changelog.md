@@ -5,7 +5,7 @@ class  : changelog
 order  : 3
 ---
 
-All notable changes to Variable Spacing are documented in this file.
+All notable changes to VariableSpacing are documented in this file.
 {: .lead }
 
 <!--
@@ -33,6 +33,16 @@ types of changes:
 - `Security` in case of vulnerabilities.
 
 -->
+
+
+0.1.5
+-----
+
+First public release.
+
+- <span class='badge'>Changed</span> Changing private lib key from `com.hipertipo.spacingaxis` to `com.fontbureau.variableSpacing`.
+- <span class='badge'>Changed</span> Cleaning up documentation content and layout.
+
 
 0.1.4
 -----
