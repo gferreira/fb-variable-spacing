@@ -1,7 +1,6 @@
 ---
 title  : Visualize spacing and kerning
 layout : default
-order  : 1
 ---
 
 Creating a visualization of spacing and kerning in a UFO designspace using DrawBot.

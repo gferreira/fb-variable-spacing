@@ -15,12 +15,12 @@ Method and tools to add a spacing axis to variable fonts.
 
 ## Tutorials
 
-- [working with spacing states](working-with-spacing-states)
-- [generating variable fonts with a spacing axis](generating-variable-font)
+- [Adding spacing states to a font](adding-spacing-states)
+- [Generating variable fonts with a spacing axis](generating-variable-font)
 
 ## How-To's
 
-- [Installation](install)
+- [How to install VariableSpacing](install)
 
 ## Reference
 

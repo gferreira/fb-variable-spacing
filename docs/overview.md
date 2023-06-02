@@ -31,11 +31,11 @@ In the design stage, when the glyph shapes are still changing, it is important t
 
 ### Streamlined workflow
 
-**The VariableSpacing workflow aims to reduce data duplication and streamline the process of creating and editing the spacing axis.**
+The VariableSpacing workflow aims to reduce data duplication and streamline the process of creating and editing the spacing axis.
 
-The various ‘spacing states’ – *normal*, *tight*, *loose* – can be stored in the same UFO: in the font lib, using a custom key.
+The various ‘spacing states’ – *normal*, *tight*, *loose* – are stored in the font lib of the same UFO using a custom key.
 
-This way we can have **one set of glyph contours and multiple spacing states** which we can load into the font, one at a time.
+This way we can have one set of glyph contours and multiple spacing states which we can load into the font, one at a time.
 
 ### Variable font generation
 

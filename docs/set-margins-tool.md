@@ -8,9 +8,11 @@ A tool to set margins of glyphs with components without changing their internal 
 {: .lead}
 
 <div class='row'>
+
 <div class='col-sm-4' markdown='1'>
 ![]({{ site.url }}/images/set-margins-tool.png){: .img-fluid}
 </div>
+
 <div class='col-sm-8' markdown='1'>
 left mode
 : Choose how the left value will be used. (see [Margin modes](#margin-modes))
@@ -57,9 +59,11 @@ apply
     <td>multiply left margin by a percentage</td>
   </tr>
 </table>
+</div>
 
 </div>
-</div>
+
+{% comment %}
 
 <div class="card bg-light my-3">
 <div class="card-header">note</div>
@@ -70,3 +74,5 @@ This dialog is a modified version of the [Set margins tool] in hTools3.
 </div>
 
 [Set margins tool]: http://hipertipo.gitlab.io/htools3-extension/glyphs/metrics/set-margins/
+
+{% endcomment %}
