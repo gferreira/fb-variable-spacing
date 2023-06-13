@@ -1,7 +1,6 @@
 ---
 title  : Visualize spacing areas
 layout : default
-order  : 1
 ---
 
 Creating a visualization of inner and outer transparent shapes in a UFO using DrawBot.

@@ -1,7 +1,6 @@
 ---
 title  : SetMargins+ tool
 layout : default
-order  : 3
 ---
 
 A tool to set margins of glyphs with components without changing their internal relative positions.

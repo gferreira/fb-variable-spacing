@@ -1,7 +1,6 @@
 ---
 title  : Overview of VariableSpacing
 layout : default
-order  : 1
 ---
 
 Methodology and tools to add a spacing axis to variable fonts.

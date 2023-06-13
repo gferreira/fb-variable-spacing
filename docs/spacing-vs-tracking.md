@@ -1,7 +1,6 @@
 ---
 title  : Spacing axis vs. tracking
 layout : default
-order  : 1
 ---
 
 Looking into the fundamental differences between tracking and the spacing axis.

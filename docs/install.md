@@ -1,10 +1,9 @@
 ---
-title  : Installing Variable Spacing
+title  : Installing VariableSpacing
 layout : default
-order  : 2
 ---
 
-Variable Spacing is packaged and distributed as a [RoboFont extension].
+VariableSpacing is packaged and distributed as a [RoboFont extension].
 {: .lead }
 
 * Table of Contents
@@ -14,9 +13,9 @@ Variable Spacing is packaged and distributed as a [RoboFont extension].
 Installing with Mechanic
 ------------------------
 
-It is recommended to install Variable Spacing using [Mechanic], so it can automatically check for updates and install them.
+It is recommended to install VariableSpacing using [Mechanic], so it can automatically check for updates and install them.
 
-1. Download the file `VariableSpacing.mechanic` file from the repository.
+1. Download the file `VariableSpacing.mechanic` from the repository.
 2. Go to the Mechanic extension’s settings.
 3. Use the plus button to add the `.mechanic` file to the list of [Single Extension Items].
 
@@ -28,7 +27,7 @@ It is recommended to install Variable Spacing using [Mechanic], so it can automa
 Installing manually
 -------------------
 
-The Variable Spacing extension can also be installed manually if you download the extension package.
+The VariableSpacing extension can also be installed manually if you download the extension package.
 
 Simply double-click the file `VariableSpacing.roboFontExt` to have it installed in RoboFont.
 
@@ -38,18 +37,16 @@ If you install the extension manually, you will *not* be notified automatically 
 </div>
 
 
-
-
 Installing from source
 ----------------------
 
-Variable Spacing can be used directly from the source code if you download the repository.
+VariableSpacing can be used directly from the source code if you download the repository.
 
 This mode allows developers to make changes to the code while using and testing the tools in RoboFont.
 
 1. Clone the repository using `git clone` (recommended) or download the source code.
 2. In the RoboFont Preferences window, go to [Extensions > Start Up Scripts].
 3. Add the file `VariableSpacing/code/Lib/start.py` to the list of start-up scripts.
-4. Save the settings and restart RoboFont; Variable Spacing will now appear under the *Extensions* menu.
+4. Save the settings and restart RoboFont; VariableSpacing will now appear under the *Extensions* menu.
 
 [Extensions > Start Up Scripts]: http://robofont.com/documentation/workspace/preferences-window/extensions/#start-up-scripts

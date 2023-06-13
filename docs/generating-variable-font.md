@@ -1,7 +1,6 @@
 ---
 title  : Generating variable fonts with a spacing axis
 layout : default
-order  : 1
 ---
 
 How to generate a variable font with a spacing axis using the spacing states as sources.

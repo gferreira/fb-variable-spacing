@@ -1,7 +1,6 @@
 ---
 title  : SpacingStates tool
 layout : default
-order  : 3
 ---
 
 A tool to enable multiple spacing states for a single set of glyph contours.

@@ -1,7 +1,6 @@
 ---
 title  : SpacingStates module
 layout : default
-order  : 2
 ---
 
 <span class='badge bg-secondary'>version {{ site.version }}</span>

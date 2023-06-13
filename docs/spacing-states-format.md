@@ -1,7 +1,6 @@
 ---
 title  : Spacing States format
 layout : default
-order  : 1
 ---
 
 <span class='badge bg-secondary'>version {{ site.version }}</span>
