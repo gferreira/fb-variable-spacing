@@ -31,7 +31,7 @@ The demo font is a simplified version of [Roboto] containing fewer characters an
 The illustrations show a range of 5 steps with different spacing or tracking settings, going from loose (`100`) to default (`0`) to tight (`-100`). The colors are used to reveal how the different types of whitespace interact.
 
 <div class="alert alert-primary" role="alert" markdown='1'>
-This investigation was conducted in the early stages of our work on the spacing axis, before (and in preparation for) the development of [Roboto Flex SPAC](http://github.com/gferreira/roboto-flex-spac). For a more accurate comparison between spacing axis and tracking, using real fonts in the browser, see the [Roboto Flex SPAC demo page](http://gferreira.github.io/roboto-flex-spac/).
+This investigation was conducted in the early stages of our work on the spacing axis, before (and in preparation for) the development of [Roboto Flex SPAC]. For a more accurate comparison between spacing axis and tracking, using real fonts in the browser, see the [Roboto Flex SPAC demo page].
 {: .card-text }
 </div>
 
@@ -148,4 +148,6 @@ Advantages and disadvantages of the spacing axis
 [Roboto]: http://github.com/googlefonts/roboto
 [DrawBot]: http://www.drawbot.com/
 [ufoProcessor]: http://github.com/LettError/ufoProcessor
-[SpacingStates tool]: ../reference/spacing-states-tool
+[Roboto Flex SPAC]: http://github.com/gferreira/roboto-flex-spacing-axis-demo
+[Roboto Flex SPAC demo page]: http://gferreira.github.io/roboto-flex-spacing-axis-demo
+[SpacingStates tool]: ../spacing-states-tool
